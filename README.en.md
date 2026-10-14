@@ -18,6 +18,7 @@ The interface and clues support Simplified Chinese, English and Japanese. Answer
 | Name lookup | Search Chinese, English, kana, partial names and dictionary aliases; results show all three names |
 | Input | Keyboard navigation, direction switching at crossings, whole-word paste and Japanese IME support |
 | Settings | Interface-language and play-mode changes preserve the board, timer and used allowances; applying a different puzzle or answer script starts a new game |
+| Cloud statistics | Starts, successful completions and average solve times by puzzle revision; separate all-Challenge results and multilingual display |
 
 Timing starts when a game session is created and stops on success or confirmed early ending. Settings, search and answer dialogs do not pause it. Searches and answer reveals use separate allowances; switching modes does not restore either allowance.
 
@@ -37,6 +38,7 @@ The development server runs at `http://localhost:5173/`. Open the app over HTTP 
 | `npm run check:data` | Check puzzles, the dictionary, paired puzzles and source consistency |
 | `npm test` | Run game-logic and data regression tests with Node.js’s built-in test runner |
 | `npm run build` | Validate data and regenerate the static `dist/` output |
+| `npm run build:worker` | Generate puzzle revisions and solutions for the statistics Worker |
 | `npm run preview` | Serve `dist/` locally after building |
 
 Use `npm.cmd` instead of `npm` where needed in Windows PowerShell. `启动游戏.cmd` is a Windows shortcut for development preview. The server reads the `PORT` environment variable; development and output previews both default to port 5173, so use different ports when running them together.
@@ -50,6 +52,9 @@ Use `npm.cmd` instead of `npm` where needed in Windows PowerShell. `启动游戏
 │   ├── main.js                  # DOM rendering, input, settings and session orchestration
 │   ├── game.js                  # State, evaluation, normalization, search and validation
 │   ├── catalog.js               # Manifest and enabled-puzzle loading
+│   ├── analytics.js             # Anonymous game reports, retry outbox and cache
+│   ├── analytics-config.js      # Public API origin and production origin
+│   ├── analytics-protocol.js    # Content revisions and solution conversion
 │   ├── i18n.js                  # Interface strings and placeholder substitution
 │   └── style.css                # Page, grid and responsive styles
 ├── data/
@@ -58,8 +63,12 @@ Use `npm.cmd` instead of `npm` where needed in Windows PowerShell. `启动游戏
 │   ├── epithets.json            # Epithet mapping and clue translations
 │   └── cinderella-gray.json     # Story clues, character names and per-clue sources
 ├── schemas/                     # JSON Schemas
+├── functions/api/               # Same-origin Pages API forwarding to the Worker
+├── worker/                      # Statistics API, D1 configuration and migrations
+├── wrangler.jsonc               # Pages output and STATS service binding
+├── _routes.json                 # Invoke Pages Functions only for /api/*
 ├── scripts/                     # Local server, data checking and static build
-├── tests/game.test.js            # Game-logic and data regression tests
+├── tests/                       # Game, data, statistics and SQLite tests
 ├── docs/                        # Puzzle maintenance and source references
 └── .vscode/settings.json         # Editor associations for JSON Schemas
 ```
@@ -72,7 +81,9 @@ Use `npm.cmd` instead of `npm` where needed in Windows PowerShell. `启动游戏
 
 The `finishReason` field distinguishes `solved` from `revealed`: the former means every answer is correct; the latter means an early ending with the solution exposed. `session.completed` means the session has ended and does not, on its own, indicate success.
 
-The interface-language preference is stored under `tracen-ui-language` in `localStorage`. Board contents, timing and allowances remain in memory and are not restored after a reload. There is currently no analytics reporting, account system or shared database. An optional analytics design is documented in [the analytics proposal](docs/访问统计方案.md) (Chinese).
+The interface-language preference is stored under `tracen-ui-language` in `localStorage`. Board contents, timing and allowances remain in memory and are not restored after a reload. Each reported game gets a random ID; failed reports use a temporary local outbox. No accounts, device fingerprints or persistent visitor IDs are used.
+
+Production requests use same-origin `/api/` routes. A Pages Function calls the independent Worker through its `STATS` service binding; the Worker accesses D1 through `DB`. Database triggers maintain aggregates and prevent duplicate counts. Early endings do not count as wins. Public endpoints expose aggregates only. Local and preview builds do not write production statistics by default; reporting failures never block play. See [deployment and maintenance](docs/统计服务部署与维护.md) (Chinese).
 
 ## Puzzle data and localization
 

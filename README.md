@@ -18,6 +18,7 @@
 | 名字查询 | 支持中文、英文、假名、名字片段和维护在词典中的别名；结果同时展示三种名字 |
 | 输入 | 支持键盘导航、交叉格方向切换、整词粘贴和日语输入法 |
 | 设置切换 | 切换界面语言或游玩模式保留盘面、计时和已用次数；更换关卡或填答文字并应用后重开一局 |
+| 云端统计 | 按关卡与内容版本汇总开始局数、成功通关数和平均用时；另列全程挑战成绩，三语展示 |
 
 计时从创建游戏会话开始，正常通关或确认提前结束时停止；设置、搜索和答案窗口不会暂停计时。查询与查看答案分别计数，切换模式不会恢复已用次数。
 
@@ -37,6 +38,7 @@ npm run dev
 | `npm run check:data` | 检查关卡、名字词典、配对题目和来源数据的一致性 |
 | `npm test` | 使用 Node.js 内置测试运行器检查游戏逻辑与题库约束 |
 | `npm run build` | 校验数据，重新生成 `dist/` 静态产物 |
+| `npm run build:worker` | 为统计 Worker 生成关卡版本与标准盘面 |
 | `npm run preview` | 从 `dist/` 启动本地预览，需要先构建 |
 
 在 Windows PowerShell 中可使用 `npm.cmd` 替代 `npm`。`启动游戏.cmd` 是 Windows 开发预览的快捷入口。服务读取环境变量 `PORT`，默认开发与产物预览都使用5173端口；同时运行时需指定不同端口。
@@ -50,6 +52,9 @@ npm run dev
 │   ├── main.js                  # DOM 渲染、输入事件、设置与会话编排
 │   ├── game.js                  # 游戏状态、判定、归一化、搜索与语义校验
 │   ├── catalog.js               # 题库清单与已启用关卡加载
+│   ├── analytics.js             # 匿名单局统计、重试队列与缓存
+│   ├── analytics-config.js      # 公开统计入口与生产来源
+│   ├── analytics-protocol.js    # 内容版本与盘面转换
 │   ├── i18n.js                  # 三语界面文案与占位符替换
 │   └── style.css                # 页面、题盘和响应式样式
 ├── data/
@@ -58,8 +63,12 @@ npm run dev
 │   ├── epithets.json            # 二つ名对照与入题译文
 │   └── cinderella-gray.json     # 剧情线索、角色名字与逐题来源
 ├── schemas/                     # JSON Schema
+├── functions/api/               # Pages 同域 API，转交绑定的统计 Worker
+├── worker/                      # 统计接口、D1 配置、生成数据与 SQL 迁移
+├── wrangler.jsonc               # Pages 产物目录与 STATS 服务绑定
+├── _routes.json                 # 仅 /api/* 调用 Pages Function
 ├── scripts/                     # 本地服务、数据检查与静态构建
-├── tests/game.test.js            # 游戏逻辑与数据回归测试
+├── tests/                       # 游戏、数据、统计和真实 SQLite 测试
 ├── docs/                        # 题库维护和来源资料
 └── .vscode/settings.json         # JSON Schema 编辑器关联
 ```
@@ -72,7 +81,9 @@ npm run dev
 
 结束状态通过 `finishReason` 区分：`solved` 表示全部答对，`revealed` 表示提前结束并公布答案。`session.completed` 表示会话已经结束，不能单独用它判断是否成功通关。
 
-界面语言偏好保存在 `localStorage` 的 `tracen-ui-language` 中。盘面、计时和使用次数仅保存在内存中，刷新页面后不恢复。当前没有统计数据上报、账号系统或共享数据库；可选统计设计见[访问统计方案](docs/访问统计方案.md)。
+界面语言偏好保存在 `localStorage` 的 `tracen-ui-language` 中。盘面、计时和使用次数仅保存在内存中，刷新页面后不恢复。统计模块为每局生成随机 ID，网络失败时临时保存待上报记录；不使用账号、访客指纹或长期用户 ID。
+
+生产站点通过同域 `/api/` 进入 Pages Function，再经 `STATS` 服务绑定调用独立 Worker，由其 `DB` 绑定写入 D1。开始、成功通关、提前结束分别记录，汇总由数据库触发器维护；单局明细不通过公开接口返回。本地和预览部署默认不写生产统计，统计不可用不影响游戏。部署及维护见[统计服务文档](docs/统计服务部署与维护.md)。
 
 ## 题库与本地化
 

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "umamusume-crossword",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-14",
+  "services": [{ "binding": "STATS", "service": "umamusume-crossword-stats" }],
+  "env": { "preview": { "services": [] } }
+}

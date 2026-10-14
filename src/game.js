@@ -50,10 +50,11 @@ export class GameSession {
   restart(level) {
     this.level = level; this.values = {}; this.startedAt = this.now(); this.finishedAt = null; this.finishedMode = null; this.finishReason = null;
     this.hardSearches = 0; this.revealedEntries = new Set();
+    this.everAssisted = this.mode === 'easy'; this.lookupCount = 0;
   }
   get completed() { return this.finishedAt !== null; }
   get elapsed() { return (this.finishedAt ?? this.now()) - this.startedAt; }
-  setMode(mode) { if (!['easy', 'hard'].includes(mode)) throw new Error('Invalid play mode'); this.mode = mode; }
+  setMode(mode) { if (!['easy', 'hard'].includes(mode)) throw new Error('Invalid play mode'); this.mode = mode; if (!this.completed && mode === 'easy') this.everAssisted = true; }
   update(changes) {
     if (this.completed) return false;
     Object.assign(this.values, changes);
@@ -65,6 +66,7 @@ export class GameSession {
     if (!normalizeSearch(query)) return { status: 'empty', results: [] };
     if (this.mode === 'hard' && this.hardSearches >= 3) return { status: 'limit', results: [] };
     if (this.mode === 'hard') this.hardSearches++;
+    if (!this.completed) this.lookupCount++;
     return { status: 'ok', results: searchCharacters(characters, query) };
   }
   reveal(entryId) {

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "umamusume-crossword-stats",
+  "main": "index.js",
+  "compatibility_date": "2026-10-14",
+  "workers_dev": true,
+  "observability": { "enabled": false },
+  "vars": { "ALLOWED_ORIGINS": "https://umamusume-crossword.pages.dev" },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "umamusume-crossword-stats",
+    "database_id": "1d9d4818-1e61-4c2c-99af-e8740af09108",
+    "migrations_dir": "migrations"
+  }]
+}

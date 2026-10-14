@@ -21,6 +21,7 @@
         <div class="toolbar-main"><span class="live-dot" aria-hidden="true"></span><span id="game-status"></span><div class="mode-switch" role="group" id="mode-switch"><button id="easy-mode" type="button" aria-pressed="true" data-i18n="easy"></button><button id="hard-mode" type="button" aria-pressed="false" data-i18n="hard"></button></div><span id="mode-description" class="mode-description"></span></div>
         <div class="toolbar-right"><span class="timer-label" data-i18n="time"></span><time id="timer">00:00</time><button id="lookup" class="tool-button" data-i18n="lookup" type="button" disabled></button><button id="choose-level" class="text-button" data-i18n="chooseLevel" type="button" disabled></button><button id="restart" class="text-button" data-i18n="restart" type="button" disabled></button></div>
       </section>
+      <section id="level-statistics" class="statistics-panel" aria-live="polite"></section>
       <div class="game-layout">
         <section class="board-panel" id="board-panel"><div class="board-heading"><span id="board-label">PUZZLE</span><span id="progress"></span></div><div class="board-scroll"><div id="board" class="board"></div></div>
           <div class="active-clue"><span id="active-clue-number" class="clue-badge"></span><div class="active-clue-body"><p id="active-clue-text"></p><div id="active-answer" hidden></div></div><button id="change-direction" type="button">⇄</button></div>
@@ -42,6 +43,7 @@
         <label class="level-field"><span data-i18n="levelLabel"></span><select id="level-select"></select></label>
       </div>
       <p id="selection-note" class="selection-note" role="status" hidden></p><div class="level-description"><p id="level-description"></p><span id="level-summary"></span></div>
+      <section id="setup-statistics" class="statistics-panel statistics-compact" aria-live="polite"></section>
       <div class="mode-section-label"><strong data-i18n="modeLabel"></strong><span data-i18n="modeHelp"></span></div>
       <div class="mode-options">
         <label class="mode-card"><input type="radio" name="mode" value="easy" checked /><span class="mode-card-top"><span data-i18n="easy"></span><span class="radio-mark"></span></span><span class="mode-card-copy" data-i18n="easyDescription"></span></label>

@@ -1,6 +1,8 @@
 import { loadCatalog } from './catalog.js';
 import { GameSession, cellKey, entryCells, normalizeAnswer, feedbackFor, formatTime, LANGUAGES } from './game.js';
 import { translate } from './i18n.js';
+import { AnalyticsClient } from './analytics.js';
+import { analyticsConfig } from './analytics-config.js';
 
 const $ = (id) => document.getElementById(id);
 let language = 'zh-CN';
@@ -12,6 +14,16 @@ let inputs = new Map(), containers = new Map(), members = new Map();
 let draft = { difficulty:'beginner', answerLanguage:'en', levelId:'', mode:'easy' };
 let searchState = { status:'initial', results:[], query:'' };
 let revealedEntryId = null;
+let runHandle = null;
+let statsStorage = null;
+try { statsStorage = localStorage; } catch { /* Anonymous statistics remain optional. */ }
+const localApi = /^http:\/\/(localhost|127\.0\.0\.1):\d+$/.test(analyticsConfig.apiBaseUrl);
+const analytics = new AnalyticsClient({ ...analyticsConfig, storage: statsStorage,
+  enabled: location.origin === analyticsConfig.productionOrigin || (localApi && ['localhost','127.0.0.1'].includes(location.hostname)),
+  onChange: () => refreshStatistics(),
+});
+const statistics = new Map();
+let statisticsRequest = 0;
 const setup = $('start-dialog'), finish = $('finish-dialog'), searchDialog = $('search-dialog');
 const currentLevel = () => session?.level || previewLevel;
 const entries = () => currentLevel()?.entries || [];
@@ -44,7 +56,7 @@ function renderStrings() {
     const [row,column] = key.split(',').map(Number);
     input.setAttribute('aria-label', t('cellLabel', {row:row+1,column:column+1}));
   }
-  if (levels.length) { renderSetup(); renderGame(); renderSearch(); renderAnswerDialog(); }
+  if (levels.length) { renderSetup(); renderGame(); renderSearch(); renderAnswerDialog(); refreshStatistics(); }
   else $('load-status').textContent = t(loadFailed ? 'loadError' : 'loading');
 }
 
@@ -90,7 +102,45 @@ function renderSetup() {
   $('start-button').disabled = !level;
   $('start-button-label').textContent = t(!session ? 'start' : forceRestart || level?.id !== session.level.id ? 'startNew' : 'apply');
   $('cancel-setup').hidden = !session;
+  if (level) void loadStatistics(level, 'setup-statistics');
 }
+
+function paintStatistics(element, result = { status: 'loading' }) {
+  element.replaceChildren();
+  const heading = document.createElement('strong'); heading.className = 'statistics-title'; heading.textContent = t('statsTitle'); element.append(heading);
+  if (result.status !== 'ok') {
+    const note = document.createElement('p'); note.textContent = t({ loading:'statsLoading', disabled:'statsDisabled', error:'statsError' }[result.status]); element.append(note);
+  } else {
+    const metrics = document.createElement('dl'); metrics.className = 'statistics-metrics';
+    for (const [label, value] of [['statsStarts', result.starts.toLocaleString(language)], ['statsSolved', result.solved.toLocaleString(language)],
+      ['statsAverage', result.averageMs === null ? t('statsNoCompletions') : formatTime(result.averageMs)]]) {
+      const item = document.createElement('div'), dt = document.createElement('dt'), dd = document.createElement('dd'); dt.textContent = t(label); dd.textContent = value; item.append(dt,dd); metrics.append(item);
+    }
+    element.append(metrics);
+    const challenge = document.createElement('p'); challenge.textContent = t('statsChallenge', { n:result.challengeSolved.toLocaleString(language),
+      time:result.challengeAverageMs === null ? t('statsNoCompletions') : formatTime(result.challengeAverageMs) }); element.append(challenge);
+  }
+  if (analytics.enabled) {
+    const note = document.createElement('small'); note.textContent = t('statsPrivacy'); element.append(note);
+    const button = document.createElement('button'); button.type = 'button'; button.className = 'text-button statistics-refresh'; button.textContent = t('statsRefresh');
+    button.addEventListener('click', () => { const level = levels.find((level) => level.id === element.dataset.level); if (level) void loadStatistics(level,element.id,true); }); element.append(button);
+  }
+}
+async function loadStatistics(level, elementId, force = false) {
+  const element = $(elementId); if (!element) return;
+  const request = String(++statisticsRequest); element.dataset.request = request;
+  element.dataset.level = level.id; paintStatistics(element, force ? undefined : statistics.get(level.id));
+  const result = await analytics.stats(level, force); statistics.set(level.id, result);
+  if (element.dataset.level === level.id && element.dataset.request === request) paintStatistics(element, result);
+}
+function refreshStatistics() {
+  if (currentLevel()) void loadStatistics(currentLevel(), 'level-statistics');
+  const selected = levels.find((level) => level.id === draft.levelId);
+  if (selected) void loadStatistics(selected, 'setup-statistics');
+}
+window.addEventListener('online', () => { void analytics.flush(); refreshStatistics(); });
+document.addEventListener('visibilitychange', () => { if (!document.hidden) { void analytics.flush(); refreshStatistics(); } });
+void analytics.flush();
 
 function openSetup(replay = false) {
   finish.close();
@@ -222,6 +272,7 @@ function commit(changes) {
   for (const key of Object.keys(changes)) inputs.get(key).value=session.values[key]||'';
   renderGame();
   if (completed) {
+    void analytics.end(runHandle, session);
     for (const input of inputs.values()) input.readOnly=true;
     announce(t('finishAnnouncement',{time:formatTime(session.elapsed)})); finish.showModal();
   }
@@ -299,6 +350,7 @@ function buildBoard(level,enabled = false) {
 function launch(level,mode) {
   revealedEntryId=null;
   session=new GameSession(level,mode);previewLevel=level;searchState={status:'initial',results:[],query:''};$('search-input').value='';
+  runHandle=analytics.begin(session); refreshStatistics();
   buildBoard(level,true);renderGame();renderSearch();
   for(const id of ['lookup','choose-level','restart'])$(id).disabled=false;
   activate(active,activeKey);$('clue-list').scrollTop=0;announce(t('startedAnnouncement'));
@@ -365,6 +417,7 @@ $('end-game').addEventListener('click',()=>{if(session&&!session.completed&&sess
 $('cancel-end').addEventListener('click',()=>$('end-dialog').close());
 $('confirm-end').addEventListener('click',()=>{
   $('end-dialog').close();if(!session?.endAndReveal())return;
+  void analytics.end(runHandle, session);
   for(const [key,input] of inputs){input.value=session.values[key]||'';input.readOnly=true;}
   renderGame();announce(t('endedAnnouncement',{time:formatTime(session.elapsed)}));finish.showModal();
 });
