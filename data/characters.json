@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "source": "https://umamusume.jp/character",
+  "characters": [
+    {
+      "id": "meisho-doto",
+      "names": {
+        "zh-CN": "名将怒涛",
+        "en": "Meisho Doto",
+        "ja": "メイショウドトウ"
+      },
+      "aliases": [
+        "名將怒濤"
+      ],
+      "source": "https://umamusume.jp/character/meishodoto"
+    },
+    {
+      "id": "nice-nature",
+      "names": {
+        "zh-CN": "优秀素质",
+        "en": "Nice Nature",
+        "ja": "ナイスネイチャ"
+      },
+      "aliases": [
+        "優秀素質",
+        "内恰",
+        "ネイチャ"
+      ],
+      "source": "https://umamusume.jp/character/nicenature"
+    },
+    {
+      "id": "twin-turbo",
+      "names": {
+        "zh-CN": "双涡轮",
+        "en": "Twin Turbo",
+        "ja": "ツインターボ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/twinturbo"
+    },
+    {
+      "id": "matikanefukukitaru",
+      "names": {
+        "zh-CN": "待兼福来",
+        "en": "Matikanefukukitaru",
+        "ja": "マチカネフクキタル"
+      },
+      "aliases": [
+        "待兼福來",
+        "Machikane Fukukitaru"
+      ],
+      "source": "https://umamusume.jp/character/matikanefukukitaru"
+    },
+    {
+      "id": "manhattan-cafe",
+      "names": {
+        "zh-CN": "曼城茶座",
+        "en": "Manhattan Cafe",
+        "ja": "マンハッタンカフェ"
+      },
+      "aliases": [
+        "曼城茶座"
+      ],
+      "source": "https://umamusume.jp/character/manhattancafe"
+    },
+    {
+      "id": "tokai-teio",
+      "names": {
+        "zh-CN": "东海帝王",
+        "en": "Tokai Teio",
+        "ja": "トウカイテイオー"
+      },
+      "aliases": [
+        "東海帝王"
+      ],
+      "source": "https://umamusume.jp/character/tokaiteio"
+    },
+    {
+      "id": "silence-suzuka",
+      "names": {
+        "zh-CN": "无声铃鹿",
+        "en": "Silence Suzuka",
+        "ja": "サイレンススズカ"
+      },
+      "aliases": [
+        "無聲鈴鹿",
+        "无声铃鹿"
+      ],
+      "source": "https://umamusume.jp/character/silencesuzuka"
+    },
+    {
+      "id": "rice-shower",
+      "names": {
+        "zh-CN": "米浴",
+        "en": "Rice Shower",
+        "ja": "ライスシャワー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/riceshower"
+    },
+    {
+      "id": "biko-pegasus",
+      "names": {
+        "zh-CN": "微光飞驹",
+        "en": "Biko Pegasus",
+        "ja": "ビコーペガサス"
+      },
+      "aliases": [
+        "微光飛駒"
+      ],
+      "source": "https://umamusume.jp/character/bikopegasus"
+    },
+    {
+      "id": "gold-ship",
+      "names": {
+        "zh-CN": "黄金船",
+        "en": "Gold Ship",
+        "ja": "ゴールドシップ"
+      },
+      "aliases": [
+        "黃金船",
+        "皮皮船"
+      ],
+      "source": "https://umamusume.jp/character/goldship"
+    },
+    {
+      "id": "agnes-tachyon",
+      "names": {
+        "zh-CN": "爱丽速子",
+        "en": "Agnes Tachyon",
+        "ja": "アグネスタキオン"
+      },
+      "aliases": [
+        "愛麗速子"
+      ],
+      "source": "https://umamusume.jp/character/agnestachyon"
+    },
+    {
+      "id": "vodka",
+      "names": {
+        "zh-CN": "伏特加",
+        "en": "Vodka",
+        "ja": "ウオッカ"
+      },
+      "aliases": [
+        "伏特加",
+        "ウオッカ"
+      ],
+      "source": "https://umamusume.jp/character/vodka"
+    },
+    {
+      "id": "sakura-bakushin-o",
+      "names": {
+        "zh-CN": "樱花进王",
+        "en": "Sakura Bakushin O",
+        "ja": "サクラバクシンオー"
+      },
+      "aliases": [
+        "櫻花進王",
+        "樱花爆进王"
+      ],
+      "source": "https://umamusume.jp/character/sakurabakushino"
+    },
+    {
+      "id": "mejiro-mcqueen",
+      "names": {
+        "zh-CN": "目白麦昆",
+        "en": "Mejiro McQueen",
+        "ja": "メジロマックイーン"
+      },
+      "aliases": [
+        "目白麥昆"
+      ],
+      "source": "https://umamusume.jp/character/mejiromcqueen"
+    },
+    {
+      "id": "haru-urara",
+      "names": {
+        "zh-CN": "春乌拉拉",
+        "en": "Haru Urara",
+        "ja": "ハルウララ"
+      },
+      "aliases": [
+        "春麗",
+        "春丽"
+      ],
+      "source": "https://umamusume.jp/character/haruurara"
+    },
+    {
+      "id": "seeking-the-pearl",
+      "names": {
+        "zh-CN": "采珠",
+        "en": "Seeking the Pearl",
+        "ja": "シーキングザパール"
+      },
+      "aliases": [
+        "採珠"
+      ],
+      "source": "https://umamusume.jp/character/seekingthepearl"
+    },
+    {
+      "id": "hishi-akebono",
+      "names": {
+        "zh-CN": "菱曙",
+        "en": "Hishi Akebono",
+        "ja": "ヒシアケボノ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/hishiakebono"
+    },
+    {
+      "id": "yukino-bijin",
+      "names": {
+        "zh-CN": "雪之美人",
+        "en": "Yukino Bijin",
+        "ja": "ユキノビジン"
+      },
+      "aliases": [
+        "雪之美人"
+      ],
+      "source": "https://umamusume.jp/character/yukinobijin"
+    },
+    {
+      "id": "daiwa-scarlet",
+      "names": {
+        "zh-CN": "大和赤骥",
+        "en": "Daiwa Scarlet",
+        "ja": "ダイワスカーレット"
+      },
+      "aliases": [
+        "大和赤驥"
+      ],
+      "source": "https://umamusume.jp/character/daiwascarlet"
+    },
+    {
+      "id": "oguri-cap",
+      "names": {
+        "zh-CN": "小栗帽",
+        "en": "Oguri Cap",
+        "ja": "オグリキャップ"
+      },
+      "aliases": [
+        "小栗帽"
+      ],
+      "source": "https://umamusume.jp/character/oguricap"
+    },
+    {
+      "id": "special-week",
+      "names": {
+        "zh-CN": "特别周",
+        "en": "Special Week",
+        "ja": "スペシャルウィーク"
+      },
+      "aliases": [
+        "特別週",
+        "特别星期"
+      ],
+      "source": "https://umamusume.jp/character/specialweek"
+    },
+    {
+      "id": "king-halo",
+      "names": {
+        "zh-CN": "帝王光辉",
+        "en": "King Halo",
+        "ja": "キングヘイロー"
+      },
+      "aliases": [
+        "帝王光輝"
+      ],
+      "source": "https://umamusume.jp/character/kinghalo"
+    },
+    {
+      "id": "fuji-kiseki",
+      "names": {
+        "zh-CN": "富士奇石",
+        "en": "Fuji Kiseki",
+        "ja": "フジキセキ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/fujikiseki"
+    },
+    {
+      "id": "tamamo-cross",
+      "names": {
+        "zh-CN": "玉藻十字",
+        "en": "Tamamo Cross",
+        "ja": "タマモクロス"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/tamamocross"
+    },
+    {
+      "id": "ikuno-dictus",
+      "names": {
+        "zh-CN": "生野狄杜斯",
+        "en": "Ikuno Dictus",
+        "ja": "イクノディクタス"
+      },
+      "aliases": [
+        "生野狄杜斯"
+      ],
+      "source": "https://umamusume.jp/character/ikunodictus"
+    },
+    {
+      "id": "nakayama-festa",
+      "names": {
+        "zh-CN": "中山庆典",
+        "en": "Nakayama Festa",
+        "ja": "ナカヤマフェスタ"
+      },
+      "aliases": [
+        "中山慶典"
+      ],
+      "source": "https://umamusume.jp/character/nakayamafesta"
+    },
+    {
+      "id": "shinko-windy",
+      "names": {
+        "zh-CN": "新光风",
+        "en": "Shinko Windy",
+        "ja": "シンコウウインディ"
+      },
+      "aliases": [
+        "新光風"
+      ],
+      "source": "https://umamusume.jp/character/shinkowindy"
+    },
+    {
+      "id": "zenno-rob-roy",
+      "names": {
+        "zh-CN": "荒漠英雄",
+        "en": "Zenno Rob Roy",
+        "ja": "ゼンノロブロイ"
+      },
+      "aliases": [
+        "荒漠英雄"
+      ],
+      "source": "https://umamusume.jp/character/zennorobroy"
+    },
+    {
+      "id": "bamboo-memory",
+      "names": {
+        "zh-CN": "青竹回忆",
+        "en": "Bamboo Memory",
+        "ja": "バンブーメモリー"
+      },
+      "aliases": [
+        "青竹回憶"
+      ],
+      "source": "https://umamusume.jp/character/bamboomemory"
+    },
+    {
+      "id": "seiun-sky",
+      "names": {
+        "zh-CN": "星云天空",
+        "en": "Seiun Sky",
+        "ja": "セイウンスカイ"
+      },
+      "aliases": [
+        "星雲天空"
+      ],
+      "source": "https://umamusume.jp/character/seiunsky"
+    },
+    {
+      "id": "grass-wonder",
+      "names": {
+        "zh-CN": "草上飞",
+        "en": "Grass Wonder",
+        "ja": "グラスワンダー"
+      },
+      "aliases": [
+        "草上飛"
+      ],
+      "source": "https://umamusume.jp/character/grasswonder"
+    },
+    {
+      "id": "tsurumaru-tsuyoshi",
+      "names": {
+        "zh-CN": "鹤丸刚志",
+        "en": "Tsurumaru Tsuyoshi",
+        "ja": "ツルマルツヨシ"
+      },
+      "aliases": [
+        "鶴丸剛志"
+      ],
+      "source": "https://umamusume.jp/character/tsurumarutsuyoshi"
+    },
+    {
+      "id": "narita-brian",
+      "names": {
+        "zh-CN": "成田白仁",
+        "en": "Narita Brian",
+        "ja": "ナリタブライアン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/naritabrian"
+    },
+    {
+      "id": "yaeno-muteki",
+      "names": {
+        "zh-CN": "八重无敌",
+        "en": "Yaeno Muteki",
+        "ja": "ヤエノムテキ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/yaenomuteki"
+    },
+    {
+      "id": "ines-fujin",
+      "names": {
+        "zh-CN": "艾尼斯风神",
+        "en": "Ines Fujin",
+        "ja": "アイネスフウジン"
+      },
+      "aliases": [
+        "艾尼斯風神"
+      ],
+      "source": "https://umamusume.jp/character/inesfujin"
+    },
+    {
+      "id": "inari-one",
+      "names": {
+        "zh-CN": "稻荷一",
+        "en": "Inari One",
+        "ja": "イナリワン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/inarione"
+    },
+    {
+      "id": "sakura-chiyono-o",
+      "names": {
+        "zh-CN": "樱花千代王",
+        "en": "Sakura Chiyono O",
+        "ja": "サクラチヨノオー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/sakurachiyonoo"
+    },
+    {
+      "id": "air-groove",
+      "names": {
+        "zh-CN": "气槽",
+        "en": "Air Groove",
+        "ja": "エアグルーヴ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/airgroove"
+    },
+    {
+      "id": "mejiro-palmer",
+      "names": {
+        "zh-CN": "目白善信",
+        "en": "Mejiro Palmer",
+        "ja": "メジロパーマー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/mejiropalmer"
+    },
+    {
+      "id": "mejiro-bright",
+      "names": {
+        "zh-CN": "目白光明",
+        "en": "Mejiro Bright",
+        "ja": "メジロブライト"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character/mejirobright"
+    },
+    {
+      "id": "maruzensky",
+      "names": {
+        "zh-CN": "丸善斯基",
+        "en": "Maruzensky",
+        "ja": "マルゼンスキー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "taiki-shuttle",
+      "names": {
+        "zh-CN": "大树快车",
+        "en": "Taiki Shuttle",
+        "ja": "タイキシャトル"
+      },
+      "aliases": [
+        "大樹快車"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "hishi-amazon",
+      "names": {
+        "zh-CN": "菱亚马逊",
+        "en": "Hishi Amazon",
+        "ja": "ヒシアマゾン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "el-condor-pasa",
+      "names": {
+        "zh-CN": "神鹰",
+        "en": "El Condor Pasa",
+        "ja": "エルコンドルパサー"
+      },
+      "aliases": [
+        "神鷹"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "t-m-opera-o",
+      "names": {
+        "zh-CN": "好歌剧",
+        "en": "T.M. Opera O",
+        "ja": "テイエムオペラオー"
+      },
+      "aliases": [
+        "好歌劇",
+        "TM Opera O"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "symboli-rudolf",
+      "names": {
+        "zh-CN": "鲁道夫象征",
+        "en": "Symboli Rudolf",
+        "ja": "シンボリルドルフ"
+      },
+      "aliases": [
+        "魯道夫象徵"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "agnes-digital",
+      "names": {
+        "zh-CN": "爱丽数码",
+        "en": "Agnes Digital",
+        "ja": "アグネスデジタル"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "fine-motion",
+      "names": {
+        "zh-CN": "美妙姿势",
+        "en": "Fine Motion",
+        "ja": "ファインモーション"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "biwa-hayahide",
+      "names": {
+        "zh-CN": "琵琶晨光",
+        "en": "Biwa Hayahide",
+        "ja": "ビワハヤヒデ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "mayano-top-gun",
+      "names": {
+        "zh-CN": "重炮",
+        "en": "Mayano Top Gun",
+        "ja": "マヤノトップガン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "mihono-bourbon",
+      "names": {
+        "zh-CN": "美浦波旁",
+        "en": "Mihono Bourbon",
+        "ja": "ミホノブルボン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "mejiro-ryan",
+      "names": {
+        "zh-CN": "目白赖恩",
+        "en": "Mejiro Ryan",
+        "ja": "メジロライアン"
+      },
+      "aliases": [
+        "目白賴恩"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "admire-vega",
+      "names": {
+        "zh-CN": "爱慕织姬",
+        "en": "Admire Vega",
+        "ja": "アドマイヤベガ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "winning-ticket",
+      "names": {
+        "zh-CN": "胜利奖券",
+        "en": "Winning Ticket",
+        "ja": "ウイニングチケット"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "air-shakur",
+      "names": {
+        "zh-CN": "空中神宫",
+        "en": "Air Shakur",
+        "ja": "エアシャカール"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "eishin-flash",
+      "names": {
+        "zh-CN": "荣进闪耀",
+        "en": "Eishin Flash",
+        "ja": "エイシンフラッシュ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "curren-chan",
+      "names": {
+        "zh-CN": "真机伶",
+        "en": "Curren Chan",
+        "ja": "カレンチャン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "kawakami-princess",
+      "names": {
+        "zh-CN": "川上公主",
+        "en": "Kawakami Princess",
+        "ja": "カワカミプリンセス"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "gold-city",
+      "names": {
+        "zh-CN": "黄金城市",
+        "en": "Gold City",
+        "ja": "ゴールドシチー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "sweep-tosho",
+      "names": {
+        "zh-CN": "东商变革",
+        "en": "Sweep Tosho",
+        "ja": "スイープトウショウ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "super-creek",
+      "names": {
+        "zh-CN": "超级小溪",
+        "en": "Super Creek",
+        "ja": "スーパークリーク"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "smart-falcon",
+      "names": {
+        "zh-CN": "醒目飞鹰",
+        "en": "Smart Falcon",
+        "ja": "スマートファルコン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "tosen-jordan",
+      "names": {
+        "zh-CN": "东瀛佐敦",
+        "en": "Tosen Jordan",
+        "ja": "トーセンジョーダン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "narita-taishin",
+      "names": {
+        "zh-CN": "成田大进",
+        "en": "Narita Taishin",
+        "ja": "ナリタタイシン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "nishino-flower",
+      "names": {
+        "zh-CN": "西野花",
+        "en": "Nishino Flower",
+        "ja": "ニシノフラワー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "marvelous-sunday",
+      "names": {
+        "zh-CN": "美丽周日",
+        "en": "Marvelous Sunday",
+        "ja": "マーベラスサンデー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "mejiro-dober",
+      "names": {
+        "zh-CN": "目白多伯",
+        "en": "Mejiro Dober",
+        "ja": "メジロドーベル"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "matikanetannhauser",
+      "names": {
+        "zh-CN": "待兼诗歌剧",
+        "en": "Matikanetannhauser",
+        "ja": "マチカネタンホイザ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "daitaku-helios",
+      "names": {
+        "zh-CN": "大拓太阳神",
+        "en": "Daitaku Helios",
+        "ja": "ダイタクヘリオス"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "satono-diamond",
+      "names": {
+        "zh-CN": "里见光钻",
+        "en": "Satono Diamond",
+        "ja": "サトノダイヤモンド"
+      },
+      "aliases": [
+        "里見光鑽"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "kitasan-black",
+      "names": {
+        "zh-CN": "北部玄驹",
+        "en": "Kitasan Black",
+        "ja": "キタサンブラック"
+      },
+      "aliases": [
+        "北部玄駒"
+      ],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "sirius-symboli",
+      "names": {
+        "zh-CN": "天狼星象征",
+        "en": "Sirius Symboli",
+        "ja": "シリウスシンボリ"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "mejiro-ardan",
+      "names": {
+        "zh-CN": "目白阿尔丹",
+        "en": "Mejiro Ardan",
+        "ja": "メジロアルダン"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "daring-tact",
+      "names": {
+        "zh-CN": "谋勇兼备",
+        "en": "Daring Tact",
+        "ja": "デアリングタクト"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "sakura-laurel",
+      "names": {
+        "zh-CN": "樱花桂冠",
+        "en": "Sakura Laurel",
+        "ja": "サクラローレル"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "narita-top-road",
+      "names": {
+        "zh-CN": "成田路",
+        "en": "Narita Top Road",
+        "ja": "ナリタトップロード"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "yamanin-zephyr",
+      "names": {
+        "zh-CN": "也文摄辉",
+        "en": "Yamanin Zephyr",
+        "ja": "ヤマニンゼファー"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "north-flight",
+      "names": {
+        "zh-CN": "北方飞翔",
+        "en": "North Flight",
+        "ja": "ノースフライト"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "symboli-kris-s",
+      "names": {
+        "zh-CN": "吉兆",
+        "en": "Symboli Kris S",
+        "ja": "シンボリクリスエス"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "tanino-gimlet",
+      "names": {
+        "zh-CN": "谷水琴蕾",
+        "en": "Tanino Gimlet",
+        "ja": "タニノギムレット"
+      },
+      "aliases": [],
+      "source": "https://umamusume.jp/character"
+    }
+  ]
+}

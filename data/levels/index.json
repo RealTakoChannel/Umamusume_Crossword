@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "levels": [
+    {
+      "id": "beginner-1-en",
+      "file": "beginner-1-en.json",
+      "enabled": true
+    },
+    {
+      "id": "advanced-1-en",
+      "file": "advanced-1-en.json",
+      "enabled": true
+    },
+    {
+      "id": "advanced-1-kana",
+      "file": "advanced-1-kana.json",
+      "enabled": true
+    }
+  ]
+}

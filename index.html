@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#245746" />
+  <meta name="description" content="Umamusume crosswords with Chinese, English and Japanese clues; English and katakana answers." />
+  <title>特雷森填字室 · 赛马娘填字游戏</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" /><link rel="stylesheet" href="./src/style.css" />
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="./"><span class="brand-icon" aria-hidden="true">✦</span><span><span data-i18n="appTitle"></span><span class="brand-en">TRACEN CROSSWORD CLUB</span></span></a>
+      <div class="header-actions"><span class="edition" data-i18n="edition"></span><label class="language-control"><span data-i18n="uiLanguage"></span><select id="ui-language" aria-label="Language"><option value="zh-CN">简体中文</option><option value="en">English</option><option value="ja">日本語</option></select></label></div>
+    </header>
+    <main>
+      <section class="intro"><div><p class="eyebrow">UMAMUSUME · NAME THAT RUNNER</p><h1 data-i18n="hero"></h1><p class="intro-copy" data-i18n="intro"></p></div><div class="puzzle-meta"><span id="level-category"></span><strong id="level-title"></strong></div></section>
+      <p id="load-status" class="load-status" role="alert"></p>
+      <section class="game-toolbar" aria-label="Game controls">
+        <div class="toolbar-main"><span class="live-dot" aria-hidden="true"></span><span id="game-status"></span><div class="mode-switch" role="group" id="mode-switch"><button id="easy-mode" type="button" aria-pressed="true" data-i18n="easy"></button><button id="hard-mode" type="button" aria-pressed="false" data-i18n="hard"></button></div><span id="mode-description" class="mode-description"></span></div>
+        <div class="toolbar-right"><span class="timer-label" data-i18n="time"></span><time id="timer">00:00</time><button id="lookup" class="tool-button" data-i18n="lookup" type="button" disabled></button><button id="choose-level" class="text-button" data-i18n="chooseLevel" type="button" disabled></button><button id="restart" class="text-button" data-i18n="restart" type="button" disabled></button></div>
+      </section>
+      <div class="game-layout">
+        <section class="board-panel" id="board-panel"><div class="board-heading"><span id="board-label">PUZZLE</span><span id="progress"></span></div><div class="board-scroll"><div id="board" class="board"></div></div>
+          <div class="active-clue"><span id="active-clue-number" class="clue-badge"></span><div class="active-clue-body"><p id="active-clue-text"></p><div id="active-answer" hidden></div></div><button id="change-direction" type="button">⇄</button></div>
+          <div class="answer-actions"><button id="reveal-answer" class="tool-button" type="button" disabled></button><span id="reveal-allowance"></span><button id="end-game" class="tool-button danger-button" data-i18n="endGame" type="button" hidden></button><span id="answer-action-note"></span></div>
+          <div class="board-help"><span><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> <span data-i18n="move"></span></span><span><kbd>Tab</kbd> <span data-i18n="nextClue"></span></span><span><kbd data-i18n="spaceKey"></kbd> <span data-i18n="switchDirection"></span></span></div><p class="input-note" id="input-rule"></p>
+        </section>
+        <aside class="clues-panel"><div class="clues-heading"><h2 data-i18n="cluesTitle"></h2><span data-i18n="lengthNote"></span></div><div class="clue-tabs" role="group"><button id="across-tab" type="button"><span data-i18n="across"></span> <small>ACROSS</small><b id="across-count"></b></button><button id="down-tab" type="button"><span data-i18n="down"></span> <small>DOWN</small><b id="down-count"></b></button></div><div id="clue-list" class="clue-list"></div></aside>
+      </div><p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    </main><footer><span data-i18n="footer"></span><span data-i18n="fanNote"></span></footer>
+  </div>
+
+  <dialog id="start-dialog" class="game-dialog setup-dialog" aria-labelledby="start-title">
+    <form id="start-form">
+      <div class="dialog-toolbar"><span class="eyebrow">READY, TRAINER?</span><label class="language-control"><span data-i18n="uiLanguage"></span><select id="setup-language" aria-label="Language"><option value="zh-CN">简体中文</option><option value="en">English</option><option value="ja">日本語</option></select></label></div>
+      <h2 id="start-title" data-i18n="setupTitle"></h2><p class="dialog-copy" data-i18n="setupDescription"></p>
+      <div class="setup-fields">
+        <label><span data-i18n="difficultyLabel"></span><small data-i18n="difficultyHelp"></small><select id="difficulty-select"><option value="beginner" data-i18n="beginner"></option><option value="advanced" data-i18n="advanced"></option></select></label>
+        <label><span data-i18n="answerLabel"></span><small data-i18n="answerHelp"></small><select id="answer-select"><option value="en" data-i18n="answerEn"></option><option value="ja" data-i18n="answerJa"></option></select></label>
+        <label class="level-field"><span data-i18n="levelLabel"></span><select id="level-select"></select></label>
+      </div>
+      <p id="selection-note" class="selection-note" role="status" hidden></p><div class="level-description"><p id="level-description"></p><span id="level-summary"></span></div>
+      <div class="mode-section-label"><strong data-i18n="modeLabel"></strong><span data-i18n="modeHelp"></span></div>
+      <div class="mode-options">
+        <label class="mode-card"><input type="radio" name="mode" value="easy" checked /><span class="mode-card-top"><span data-i18n="easy"></span><span class="radio-mark"></span></span><span class="mode-card-copy" data-i18n="easyDescription"></span></label>
+        <label class="mode-card"><input type="radio" name="mode" value="hard" /><span class="mode-card-top"><span data-i18n="hard"></span><span class="radio-mark"></span></span><span class="mode-card-copy" data-i18n="hardDescription"></span></label>
+      </div>
+      <p class="settings-rule" data-i18n="resetNotice"></p><p class="settings-rule preserve-rule" data-i18n="preserveNotice"></p>
+      <div class="setup-actions"><button class="primary-button" id="start-button" type="submit" disabled><span id="start-button-label" data-i18n="start"></span><span aria-hidden="true">→</span></button><button class="dialog-cancel text-button" id="cancel-setup" type="button" data-i18n="cancel" hidden></button></div>
+    </form>
+  </dialog>
+  <dialog id="finish-dialog" class="game-dialog" aria-labelledby="finish-title"><span class="dialog-emblem" aria-hidden="true">✦</span><h2 id="finish-title" data-i18n="finishTitle"></h2><p class="dialog-copy" data-i18n="finishCopy"></p><div class="finish-stats"><span><span data-i18n="finishTime"></span><strong id="finish-time"></strong></span><span><span data-i18n="finishMode"></span><strong id="finish-mode"></strong></span></div><button id="review-board" class="primary-button" type="button" data-i18n="review"></button><button id="play-again" class="text-button dialog-cancel" type="button" data-i18n="playAgain"></button></dialog>
+  <dialog id="restart-dialog" class="game-dialog" aria-labelledby="restart-title"><h2 id="restart-title" data-i18n="restartTitle"></h2><p class="dialog-copy" data-i18n="restartCopy"></p><button id="confirm-restart" class="primary-button" type="button" data-i18n="restartConfirm"></button><button id="cancel-restart" class="text-button dialog-cancel" type="button" data-i18n="cancel"></button></dialog>
+  <dialog id="answer-dialog" class="game-dialog answer-dialog" aria-labelledby="answer-dialog-title"><h2 id="answer-dialog-title" data-i18n="revealTitle"></h2><p id="revealed-clue" class="dialog-copy"></p><p id="revealed-literal" class="literal-answer"></p><div id="revealed-names"></div><p id="answer-dialog-note" class="dialog-copy"></p><button id="close-answer" class="primary-button" type="button" data-i18n="continueGame"></button></dialog>
+  <dialog id="end-dialog" class="game-dialog" aria-labelledby="end-title"><h2 id="end-title" data-i18n="endTitle"></h2><p class="dialog-copy" data-i18n="endCopy"></p><button id="confirm-end" class="primary-button danger-primary" type="button" data-i18n="confirmEnd"></button><button id="cancel-end" class="text-button dialog-cancel" type="button" data-i18n="cancel"></button></dialog>
+  <dialog id="search-dialog" class="game-dialog search-dialog" aria-labelledby="search-title">
+    <div class="search-heading"><h2 id="search-title" data-i18n="searchTitle"></h2><button id="close-search" class="text-button" type="button" data-i18n="close"></button></div>
+    <p id="search-allowance" class="search-allowance"></p><form id="search-form"><label class="sr-only" for="search-input" data-i18n="lookup"></label><div class="search-bar"><input id="search-input" type="search" autocomplete="off" /><button type="submit" id="search-submit" class="tool-button" data-i18n="searchButton"></button></div></form>
+    <p class="search-policy" data-i18n="searchPolicy"></p><p class="dictionary-count" id="dictionary-count"></p><p id="search-query" hidden></p><p id="search-message" role="status"></p><div id="search-results" class="search-results"></div>
+  </dialog>
+</body></html>

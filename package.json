@@ -1,0 +1,13 @@
+{
+  "name": "umamusume-crossword",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs --dist",
+    "test": "node --test --test-isolation=none",
+    "check:data": "node scripts/check-data.mjs"
+  }
+}

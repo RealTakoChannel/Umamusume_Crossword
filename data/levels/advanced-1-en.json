@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "id": "advanced-1-en",
+  "title": {
+    "zh-CN": "进阶版 1 · 英文",
+    "en": "Advanced 1 · English",
+    "ja": "発展 1・英字"
+  },
+  "description": {
+    "zh-CN": "更多冷门角色，线索更精简。",
+    "en": "More lesser-known runners, with shorter clues.",
+    "ja": "少し珍しいウマ娘も登場。ヒントは短め。"
+  },
+  "difficulty": "advanced",
+  "answerLanguage": "en",
+  "grid": {
+    "rows": 25,
+    "columns": 25,
+    "layout": [
+      "#####............########",
+      "##########.##############",
+      "######.###.##############",
+      "######.#.#.########.#####",
+      "######.#.#.########.#####",
+      "####.#.#.#.#..........###",
+      "####.#.#.#.########.#####",
+      "###...........#####.#####",
+      "#.##.#.#.#.##.#####.#####",
+      "#.##.#.#.#.##.#.###.#.###",
+      "...........#...........##",
+      "#.##.#.#.#.##.#.###.#.###",
+      "#.##.#.............##.###",
+      "#.###.##.#.##.#.###.#.###",
+      "#.###.####.##.#.###.#.###",
+      "#.###.####.##.#.###.#.###",
+      "#.#...........#.###.#.###",
+      "#.###.#######.#.###.#.###",
+      "#.###.####...........####",
+      "#####.#######.#####.#####",
+      "####............###.#####",
+      "#####.###########........",
+      "#####.#############.#####",
+      "#####.#############.#####",
+      "####...........####.#####"
+    ]
+  },
+  "entries": [
+    {
+      "id": "1-across",
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "column": 5,
+      "characterId": "agnes-tachyon",
+      "answer": "AGNESTACHYON",
+      "clues": {
+        "zh-CN": "原型马以四战全胜拿下2001年皋月赏。",
+        "en": "His fourth start brought a fourth win in the 2001 Satsuki Sho.",
+        "ja": "モデル馬は2001年の皐月賞を勝ち、四戦四勝となった。"
+      }
+    },
+    {
+      "id": "7-across",
+      "number": 7,
+      "direction": "across",
+      "row": 5,
+      "column": 12,
+      "characterId": "fuji-kiseki",
+      "answer": "FUJIKISEKI",
+      "clues": {
+        "zh-CN": "母亲是舞台演员的栗东宿舍长。",
+        "en": "The Ritto dorm leader whose mother is a stage performer.",
+        "ja": "母が舞台俳優の、栗東寮の寮長。"
+      }
+    },
+    {
+      "id": "8-across",
+      "number": 8,
+      "direction": "across",
+      "row": 7,
+      "column": 3,
+      "characterId": "tamamo-cross",
+      "answer": "TAMAMOCROSS",
+      "clues": {
+        "zh-CN": "贫穷磨出的斗志，藏在一口关西腔里。",
+        "en": "A fighting spirit forged by poverty, voiced in a Kansai dialect.",
+        "ja": "貧しさが鍛えた闘志を、関西弁に乗せて。"
+      }
+    },
+    {
+      "id": "13-across",
+      "number": 13,
+      "direction": "across",
+      "row": 10,
+      "column": 0,
+      "characterId": "ikuno-dictus",
+      "answer": "IKUNODICTUS",
+      "clues": {
+        "zh-CN": "彻底管理身体，只为把竞赛生涯延长。",
+        "en": "She manages her condition meticulously to keep racing for as long as possible.",
+        "ja": "徹底した体調管理で、できるだけ長く走る。"
+      }
+    },
+    {
+      "id": "14-across",
+      "number": 14,
+      "direction": "across",
+      "row": 10,
+      "column": 12,
+      "characterId": "yukino-bijin",
+      "answer": "YUKINOBIJIN",
+      "clues": {
+        "zh-CN": "农家出身，想做闪闪发光的都市女孩。",
+        "en": "A farm girl who wants to become a sparkling city girl.",
+        "ja": "農家育ちで、きらめくシチーガールを夢見る。"
+      }
+    },
+    {
+      "id": "15-across",
+      "number": 15,
+      "direction": "across",
+      "row": 12,
+      "column": 6,
+      "characterId": "nakayama-festa",
+      "answer": "NAKAYAMAFESTA",
+      "clues": {
+        "zh-CN": "原型马是2010年凯旋门赏亚军。",
+        "en": "Her real-life counterpart finished second in the 2010 Prix de l'Arc de Triomphe.",
+        "ja": "モデル馬は2010年の凱旋門賞で二着。"
+      }
+    },
+    {
+      "id": "18-across",
+      "number": 18,
+      "direction": "across",
+      "row": 16,
+      "column": 3,
+      "characterId": "shinko-windy",
+      "answer": "SHINKOWINDY",
+      "clues": {
+        "zh-CN": "原型马赢得1997年二月锦标。",
+        "en": "Her counterpart won the 1997 February Stakes.",
+        "ja": "モデル馬は1997年のフェブラリーSを制した。"
+      }
+    },
+    {
+      "id": "19-across",
+      "number": 19,
+      "direction": "across",
+      "row": 18,
+      "column": 10,
+      "characterId": "zenno-rob-roy",
+      "answer": "ZENNOROBROY",
+      "clues": {
+        "zh-CN": "图书委员，心里装着成为故事主角的梦。",
+        "en": "A library committee member who dreams of being a story's heroine.",
+        "ja": "物語の主人公を夢見る図書委員。"
+      }
+    },
+    {
+      "id": "20-across",
+      "number": 20,
+      "direction": "across",
+      "row": 20,
+      "column": 4,
+      "characterId": "bamboo-memory",
+      "answer": "BAMBOOMEMORY",
+      "clues": {
+        "zh-CN": "因电视剧里的竹刀形象而当上风纪委员长。",
+        "en": "A TV drama character with a bamboo sword inspired her to lead the disciplinary committee.",
+        "ja": "ドラマの竹刀姿に憧れ、風紀委員長に。"
+      }
+    },
+    {
+      "id": "21-across",
+      "number": 21,
+      "direction": "across",
+      "row": 21,
+      "column": 17,
+      "characterId": "seiun-sky",
+      "answer": "SEIUNSKY",
+      "clues": {
+        "zh-CN": "午睡与钓鱼，也是她的日常功课。",
+        "en": "Naps and fishing are part of her daily routine.",
+        "ja": "昼寝と釣りも日々の楽しみ。"
+      }
+    },
+    {
+      "id": "22-across",
+      "number": 22,
+      "direction": "across",
+      "row": 24,
+      "column": 4,
+      "characterId": "grass-wonder",
+      "answer": "GRASSWONDER",
+      "clues": {
+        "zh-CN": "美国出生，却从小深受日本文化熏陶。",
+        "en": "Born in America, but immersed in Japanese culture from childhood.",
+        "ja": "アメリカ生まれ、日本文化に憧れて育った。"
+      }
+    },
+    {
+      "id": "2-down",
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "column": 10,
+      "characterId": "tsurumaru-tsuyoshi",
+      "answer": "TSURUMARUTSUYOSHI",
+      "clues": {
+        "zh-CN": "向往三冠，却常因全力以赴而累倒。",
+        "en": "She dreams of the Triple Crown but often collapses after giving her all.",
+        "ja": "三冠を夢見て全力投球、でも倒れてしまいがち。"
+      }
+    },
+    {
+      "id": "3-down",
+      "number": 3,
+      "direction": "down",
+      "row": 2,
+      "column": 6,
+      "characterId": "narita-brian",
+      "answer": "NARITABRIAN",
+      "clues": {
+        "zh-CN": "琵琶晨光的妹妹，身兼学生会副会长。",
+        "en": "Biwa Hayahide's younger sister, and a student council vice president.",
+        "ja": "ビワハヤヒデの妹で、生徒会副会長も務める。"
+      }
+    },
+    {
+      "id": "4-down",
+      "number": 4,
+      "direction": "down",
+      "row": 3,
+      "column": 8,
+      "characterId": "yaeno-muteki",
+      "answer": "YAENOMUTEKI",
+      "clues": {
+        "zh-CN": "用竞赛磨炼家传武艺，报答祖父母。",
+        "en": "She hones her family's martial art through racing to repay her grandparents.",
+        "ja": "レースで家伝の武術を磨き、祖父母に恩返し。"
+      }
+    },
+    {
+      "id": "5-down",
+      "number": 5,
+      "direction": "down",
+      "row": 3,
+      "column": 19,
+      "characterId": "ines-fujin",
+      "answer": "INESFUJIN",
+      "clues": {
+        "zh-CN": "为了补贴家用而打工，家中有一对双胞胎妹妹。",
+        "en": "She works part-time to support her family and has twin younger sisters.",
+        "ja": "家計を助けるためにアルバイト。双子の妹がいる。"
+      }
+    },
+    {
+      "id": "6-down",
+      "number": 6,
+      "direction": "down",
+      "row": 5,
+      "column": 4,
+      "characterId": "inari-one",
+      "answer": "INARIONE",
+      "clues": {
+        "zh-CN": "139厘米的江户姑娘。",
+        "en": "An Edo girl standing 139 cm tall.",
+        "ja": "身長139cmの江戸っ子。"
+      }
+    },
+    {
+      "id": "9-down",
+      "number": 9,
+      "direction": "down",
+      "row": 7,
+      "column": 13,
+      "characterId": "sakura-chiyono-o",
+      "answer": "SAKURACHIYONOO",
+      "clues": {
+        "zh-CN": "把每日心得写成不太好懂的格言。",
+        "en": "She turns her daily discoveries into rather puzzling maxims.",
+        "ja": "日々の気づきを、ちょっと伝わりにくい格言に。"
+      }
+    },
+    {
+      "id": "10-down",
+      "number": 10,
+      "direction": "down",
+      "row": 8,
+      "column": 1,
+      "characterId": "biko-pegasus",
+      "answer": "BIKOPEGASUS",
+      "clues": {
+        "zh-CN": "走进玩具店，就会很久不肯出来。",
+        "en": "Once she enters a toy shop, she does not come out for quite a while.",
+        "ja": "おもちゃ屋に入ると、なかなか出てこない。"
+      }
+    },
+    {
+      "id": "11-down",
+      "number": 11,
+      "direction": "down",
+      "row": 9,
+      "column": 15,
+      "characterId": "rice-shower",
+      "answer": "RICESHOWER",
+      "clues": {
+        "zh-CN": "原型马在1993年终结春季天皇赏三连霸之梦。",
+        "en": "Her counterpart ended a bid for three consecutive spring Tenno Sho wins in 1993.",
+        "ja": "モデル馬は1993年、天皇賞（春）三連覇の夢を阻んだ。"
+      }
+    },
+    {
+      "id": "12-down",
+      "number": 12,
+      "direction": "down",
+      "row": 9,
+      "column": 21,
+      "characterId": "air-groove",
+      "answer": "AIRGROOVE",
+      "clues": {
+        "zh-CN": "喜爱花卉的学生会副会长。",
+        "en": "A flower-loving vice president of the student council.",
+        "ja": "花を愛する生徒会副会長。"
+      }
+    },
+    {
+      "id": "16-down",
+      "number": 16,
+      "direction": "down",
+      "row": 13,
+      "column": 5,
+      "characterId": "mejiro-palmer",
+      "answer": "MEJIROPALMER",
+      "clues": {
+        "zh-CN": "在优秀亲族的阴影下，找到“逃”的答案。",
+        "en": "In the shadow of talented relatives, she found her answer in running away.",
+        "ja": "優秀な親族の陰で、見つけた答えは「逃げる」こと。"
+      }
+    },
+    {
+      "id": "17-down",
+      "number": 17,
+      "direction": "down",
+      "row": 13,
+      "column": 19,
+      "characterId": "mejiro-bright",
+      "answer": "MEJIROBRIGHT",
+      "clues": {
+        "zh-CN": "名门出身，却始终慢悠悠地按自己的步调前行。",
+        "en": "Born into a prestigious family, she still moves at her own unhurried pace.",
+        "ja": "名門育ちでも、のんびりマイペースを貫く。"
+      }
+    }
+  ]
+}
