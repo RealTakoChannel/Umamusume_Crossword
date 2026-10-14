@@ -52,9 +52,9 @@
       "songId": 734,
       "answer": "ENERGYSYNERGYMATRIX",
       "clues": {
-        "zh-CN": "曲师：Tanchiky；社区别名：“一只猫拖着另一只猫跑”；BPM：160；谱面：STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13。请填写英文曲名。",
-        "en": "Artist: Tanchiky; community alias: “一只猫拖着另一只猫跑”; BPM: 160; charts: STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：Tanchiky／コミュニティ別名：「一只猫拖着另一只猫跑」／BPM：160／譜面：STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“一只猫拖着另一只猫跑”，就是 Tanchiky 的这首作品。再给你一个提示：标准紫谱为 13+ 级，BPM 是 160。",
+        "en": "Players know this Tanchiky track by the nickname “一只猫拖着另一只猫跑”. One more hint: its standard MASTER chart is level 13+, at 160 BPM.",
+        "ja": "プレイヤーに「一只猫拖着另一只猫跑」と呼ばれる、Tanchikyの楽曲です。もう一つのヒント：スタンダードのMASTERはレベル13+、BPMは160。"
       }
     },
     {
@@ -66,9 +66,9 @@
       "songId": 1568,
       "answer": "INTERNETOVERDOSE",
       "clues": {
-        "zh-CN": "曲师：Aiobahn feat. KOTOKO；社区别名：“超天酱”；BPM：163；谱面：DX MASTER 13。请填写英文曲名。",
-        "en": "Artist: Aiobahn feat. KOTOKO; community alias: “超天酱”; BPM: 163; charts: DX MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：Aiobahn feat. KOTOKO／コミュニティ別名：「超天酱」／BPM：163／譜面：DX MASTER 13。英語の曲名を入力。"
+        "zh-CN": "Aiobahn feat. KOTOKO 的这首歌有个玩家别名：“超天酱”。想不起曲名的话，可以参考它的DX紫谱：13 级，BPM 163。",
+        "en": "This track by Aiobahn feat. KOTOKO has a player nickname: “超天酱”. Need another clue? Its DX MASTER chart is level 13, with a BPM of 163.",
+        "ja": "Aiobahn feat. KOTOKOのこの曲には、「超天酱」という呼び名があります。曲名が浮かばなければ、レベル13のDXのMASTER、BPM 163を手がかりに。"
       }
     },
     {
@@ -80,9 +80,9 @@
       "songId": 736,
       "answer": "WORLDVANQUISHER",
       "clues": {
-        "zh-CN": "曲师：void (Mournfinale)；社区别名：“世界征服者”；BPM：170；谱面：STD MASTER 14。请填写英文曲名。",
-        "en": "Artist: void (Mournfinale); community alias: “世界征服者”; BPM: 170; charts: STD MASTER 14. Enter the English song title.",
-        "ja": "アーティスト：void (Mournfinale)／コミュニティ別名：「世界征服者」／BPM：170／譜面：STD MASTER 14。英語の曲名を入力。"
+        "zh-CN": "void (Mournfinale) 的这首歌有个玩家别名：“世界征服者”。想不起曲名的话，可以参考它的标准紫谱：14 级，BPM 170。",
+        "en": "This track by void (Mournfinale) has a player nickname: “世界征服者”. Need another clue? Its standard MASTER chart is level 14, with a BPM of 170.",
+        "ja": "void (Mournfinale)のこの曲には、「世界征服者」という呼び名があります。曲名が浮かばなければ、レベル14のスタンダードのMASTER、BPM 170を手がかりに。"
       }
     },
     {
@@ -94,9 +94,9 @@
       "songId": 641,
       "answer": "CALAMITYFORTUNE",
       "clues": {
-        "zh-CN": "曲师：LeaF；社区别名：“东风谷早苗”；BPM：200；谱面：STD MASTER 14 / DX MASTER 13+。请填写英文曲名。",
-        "en": "Artist: LeaF; community alias: “东风谷早苗”; BPM: 200; charts: STD MASTER 14 / DX MASTER 13+. Enter the English song title.",
-        "ja": "アーティスト：LeaF／コミュニティ別名：「东风谷早苗」／BPM：200／譜面：STD MASTER 14 / DX MASTER 13+。英語の曲名を入力。"
+        "zh-CN": "从“东风谷早苗”这个别名找找灵感，这首歌的曲师是 LeaF。标准紫谱为 14 级，BPM 200，你想起它了吗？",
+        "en": "Start with the nickname “东风谷早苗” and the artist LeaF. Its standard MASTER chart is level 14, at 200 BPM. Does the title ring a bell?",
+        "ja": "「东风谷早苗」という呼び名と、アーティストのLeaFが手がかりです。スタンダードのMASTERはレベル14、BPMは200。曲名を思い出せますか？"
       }
     },
     {
@@ -108,9 +108,9 @@
       "songId": 834,
       "answer": "PANDORAPARADOXXX",
       "clues": {
-        "zh-CN": "曲师：削除；社区别名：“潘多拉”；BPM：150；谱面：STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15。请填写英文曲名。",
-        "en": "Artist: 削除; community alias: “潘多拉”; BPM: 150; charts: STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15. Enter the English song title.",
-        "ja": "アーティスト：削除／コミュニティ別名：「潘多拉」／BPM：150／譜面：STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“潘多拉”，就是 削除 的这首作品。再给你一个提示：标准白谱为 15 级，BPM 是 150。",
+        "en": "Players know this 削除 track by the nickname “潘多拉”. One more hint: its standard Re:MASTER chart is level 15, at 150 BPM.",
+        "ja": "プレイヤーに「潘多拉」と呼ばれる、削除の楽曲です。もう一つのヒント：スタンダードのRe:MASTERはレベル15、BPMは150。"
       }
     },
     {
@@ -122,9 +122,9 @@
       "songId": 82,
       "answer": "REACHFORTHESTARS",
       "clues": {
-        "zh-CN": "曲师：大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」；社区别名：“追星”；BPM：203；谱面：STD MASTER 13+。请填写英文曲名。",
-        "en": "Artist: 大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」; community alias: “追星”; BPM: 203; charts: STD MASTER 13+. Enter the English song title.",
-        "ja": "アーティスト：大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」／コミュニティ別名：「追星」／BPM：203／譜面：STD MASTER 13+。英語の曲名を入力。"
+        "zh-CN": "大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」 的这首歌有个玩家别名：“追星”。想不起曲名的话，可以参考它的标准紫谱：13+ 级，BPM 203。",
+        "en": "This track by 大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」 has a player nickname: “追星”. Need another clue? Its standard MASTER chart is level 13+, with a BPM of 203.",
+        "ja": "大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」のこの曲には、「追星」という呼び名があります。曲名が浮かばなければ、レベル13+のスタンダードのMASTER、BPM 203を手がかりに。"
       }
     },
     {
@@ -136,9 +136,9 @@
       "songId": 143,
       "answer": "FRAGRANCE",
       "clues": {
-        "zh-CN": "曲师：Tsukasa(Arte Refact)；社区别名：“香水”；BPM：180；谱面：STD MASTER 14 / STD Re:MASTER 14+。请填写英文曲名。",
-        "en": "Artist: Tsukasa(Arte Refact); community alias: “香水”; BPM: 180; charts: STD MASTER 14 / STD Re:MASTER 14+. Enter the English song title.",
-        "ja": "アーティスト：Tsukasa(Arte Refact)／コミュニティ別名：「香水」／BPM：180／譜面：STD MASTER 14 / STD Re:MASTER 14+。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“香水”，就是 Tsukasa(Arte Refact) 的这首作品。再给你一个提示：标准白谱为 14+ 级，BPM 是 180。",
+        "en": "Players know this Tsukasa(Arte Refact) track by the nickname “香水”. One more hint: its standard Re:MASTER chart is level 14+, at 180 BPM.",
+        "ja": "プレイヤーに「香水」と呼ばれる、Tsukasa(Arte Refact)の楽曲です。もう一つのヒント：スタンダードのRe:MASTERはレベル14+、BPMは180。"
       }
     },
     {
@@ -150,9 +150,9 @@
       "songId": 200,
       "answer": "BADAPPLEFEATNOMICO",
       "clues": {
-        "zh-CN": "曲师：Masayoshi Minoshima；社区别名：“坏苹果”；BPM：138；谱面：STD Re:MASTER 13。请填写英文曲名。",
-        "en": "Artist: Masayoshi Minoshima; community alias: “坏苹果”; BPM: 138; charts: STD Re:MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：Masayoshi Minoshima／コミュニティ別名：「坏苹果」／BPM：138／譜面：STD Re:MASTER 13。英語の曲名を入力。"
+        "zh-CN": "从“坏苹果”这个别名找找灵感，这首歌的曲师是 Masayoshi Minoshima。标准白谱为 13 级，BPM 138，你想起它了吗？",
+        "en": "Start with the nickname “坏苹果” and the artist Masayoshi Minoshima. Its standard Re:MASTER chart is level 13, at 138 BPM. Does the title ring a bell?",
+        "ja": "「坏苹果」という呼び名と、アーティストのMasayoshi Minoshimaが手がかりです。スタンダードのRe:MASTERはレベル13、BPMは138。曲名を思い出せますか？"
       }
     },
     {
@@ -164,9 +164,9 @@
       "songId": 145,
       "answer": "STARLIGHTDISCO",
       "clues": {
-        "zh-CN": "曲师：loos feat. Meramipop；社区别名：“星光迪斯科”；BPM：128；谱面：DX MASTER 13。请填写英文曲名。",
-        "en": "Artist: loos feat. Meramipop; community alias: “星光迪斯科”; BPM: 128; charts: DX MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：loos feat. Meramipop／コミュニティ別名：「星光迪斯科」／BPM：128／譜面：DX MASTER 13。英語の曲名を入力。"
+        "zh-CN": "loos feat. Meramipop 的这首歌有个玩家别名：“星光迪斯科”。想不起曲名的话，可以参考它的DX紫谱：13 级，BPM 128。",
+        "en": "This track by loos feat. Meramipop has a player nickname: “星光迪斯科”. Need another clue? Its DX MASTER chart is level 13, with a BPM of 128.",
+        "ja": "loos feat. Meramipopのこの曲には、「星光迪斯科」という呼び名があります。曲名が浮かばなければ、レベル13のDXのMASTER、BPM 128を手がかりに。"
       }
     },
     {
@@ -178,9 +178,9 @@
       "songId": 456,
       "answer": "GLORIOUSCROWN",
       "clues": {
-        "zh-CN": "曲师：xi；社区别名：“皇冠”；BPM：225；谱面：STD EXPERT 13 / STD MASTER 14+。请填写英文曲名。",
-        "en": "Artist: xi; community alias: “皇冠”; BPM: 225; charts: STD EXPERT 13 / STD MASTER 14+. Enter the English song title.",
-        "ja": "アーティスト：xi／コミュニティ別名：「皇冠」／BPM：225／譜面：STD EXPERT 13 / STD MASTER 14+。英語の曲名を入力。"
+        "zh-CN": "从“皇冠”这个别名找找灵感，这首歌的曲师是 xi。标准紫谱为 14+ 级，BPM 225，你想起它了吗？",
+        "en": "Start with the nickname “皇冠” and the artist xi. Its standard MASTER chart is level 14+, at 225 BPM. Does the title ring a bell?",
+        "ja": "「皇冠」という呼び名と、アーティストのxiが手がかりです。スタンダードのMASTERはレベル14+、BPMは225。曲名を思い出せますか？"
       }
     },
     {
@@ -192,9 +192,9 @@
       "songId": 238,
       "answer": "GETHAPPY",
       "clues": {
-        "zh-CN": "曲师：Jimmy Weckl；社区别名：“变得开心”；BPM：150；谱面：STD MASTER 13+。请填写英文曲名。",
-        "en": "Artist: Jimmy Weckl; community alias: “变得开心”; BPM: 150; charts: STD MASTER 13+. Enter the English song title.",
-        "ja": "アーティスト：Jimmy Weckl／コミュニティ別名：「变得开心」／BPM：150／譜面：STD MASTER 13+。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“变得开心”，就是 Jimmy Weckl 的这首作品。再给你一个提示：标准紫谱为 13+ 级，BPM 是 150。",
+        "en": "Players know this Jimmy Weckl track by the nickname “变得开心”. One more hint: its standard MASTER chart is level 13+, at 150 BPM.",
+        "ja": "プレイヤーに「变得开心」と呼ばれる、Jimmy Wecklの楽曲です。もう一つのヒント：スタンダードのMASTERはレベル13+、BPMは150。"
       }
     },
     {
@@ -206,9 +206,9 @@
       "songId": 738,
       "answer": "BRAINPOWER",
       "clues": {
-        "zh-CN": "曲师：ノマ；社区别名：“脑力”；BPM：170；谱面：STD MASTER 13。请填写英文曲名。",
-        "en": "Artist: ノマ; community alias: “脑力”; BPM: 170; charts: STD MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：ノマ／コミュニティ別名：「脑力」／BPM：170／譜面：STD MASTER 13。英語の曲名を入力。"
+        "zh-CN": "从“脑力”这个别名找找灵感，这首歌的曲师是 ノマ。标准紫谱为 13 级，BPM 170，你想起它了吗？",
+        "en": "Start with the nickname “脑力” and the artist ノマ. Its standard MASTER chart is level 13, at 170 BPM. Does the title ring a bell?",
+        "ja": "「脑力」という呼び名と、アーティストのノマが手がかりです。スタンダードのMASTERはレベル13、BPMは170。曲名を思い出せますか？"
       }
     },
     {
@@ -220,9 +220,9 @@
       "songId": 58,
       "answer": "ENDLESSWORLD",
       "clues": {
-        "zh-CN": "曲师：RYOHEI KOHNO/保立美和子；社区别名：“无尽世界”；BPM：142；谱面：STD MASTER 13 / STD Re:MASTER 13。请填写英文曲名。",
-        "en": "Artist: RYOHEI KOHNO/保立美和子; community alias: “无尽世界”; BPM: 142; charts: STD MASTER 13 / STD Re:MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：RYOHEI KOHNO/保立美和子／コミュニティ別名：「无尽世界」／BPM：142／譜面：STD MASTER 13 / STD Re:MASTER 13。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“无尽世界”，就是 RYOHEI KOHNO/保立美和子 的这首作品。再给你一个提示：标准白谱为 13 级，BPM 是 142。",
+        "en": "Players know this RYOHEI KOHNO/保立美和子 track by the nickname “无尽世界”. One more hint: its standard Re:MASTER chart is level 13, at 142 BPM.",
+        "ja": "プレイヤーに「无尽世界」と呼ばれる、RYOHEI KOHNO/保立美和子の楽曲です。もう一つのヒント：スタンダードのRe:MASTERはレベル13、BPMは142。"
       }
     },
     {
@@ -234,9 +234,9 @@
       "songId": 261,
       "answer": "DEATHSCYTHE",
       "clues": {
-        "zh-CN": "曲师：SHIKI；社区别名：“死镰”；BPM：182；谱面：STD MASTER 13+ / STD Re:MASTER 14。请填写英文曲名。",
-        "en": "Artist: SHIKI; community alias: “死镰”; BPM: 182; charts: STD MASTER 13+ / STD Re:MASTER 14. Enter the English song title.",
-        "ja": "アーティスト：SHIKI／コミュニティ別名：「死镰」／BPM：182／譜面：STD MASTER 13+ / STD Re:MASTER 14。英語の曲名を入力。"
+        "zh-CN": "SHIKI 的这首歌有个玩家别名：“死镰”。想不起曲名的话，可以参考它的标准白谱：14 级，BPM 182。",
+        "en": "This track by SHIKI has a player nickname: “死镰”. Need another clue? Its standard Re:MASTER chart is level 14, with a BPM of 182.",
+        "ja": "SHIKIのこの曲には、「死镰」という呼び名があります。曲名が浮かばなければ、レベル14のスタンダードのRe:MASTER、BPM 182を手がかりに。"
       }
     },
     {
@@ -248,9 +248,9 @@
       "songId": 593,
       "answer": "CONFLICT",
       "clues": {
-        "zh-CN": "曲师：siromaru + cranky；社区别名：“公交车”；BPM：160；谱面：STD MASTER 14 / DX MASTER 13。请填写英文曲名。",
-        "en": "Artist: siromaru + cranky; community alias: “公交车”; BPM: 160; charts: STD MASTER 14 / DX MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：siromaru + cranky／コミュニティ別名：「公交车」／BPM：160／譜面：STD MASTER 14 / DX MASTER 13。英語の曲名を入力。"
+        "zh-CN": "siromaru + cranky 的这首歌有个玩家别名：“公交车”。想不起曲名的话，可以参考它的标准紫谱：14 级，BPM 160。",
+        "en": "This track by siromaru + cranky has a player nickname: “公交车”. Need another clue? Its standard MASTER chart is level 14, with a BPM of 160.",
+        "ja": "siromaru + crankyのこの曲には、「公交车」という呼び名があります。曲名が浮かばなければ、レベル14のスタンダードのMASTER、BPM 160を手がかりに。"
       }
     },
     {
@@ -262,9 +262,9 @@
       "songId": 689,
       "answer": "CREDITS",
       "clues": {
-        "zh-CN": "曲师：Frums；社区别名：“学分”；BPM：179；谱面：STD EXPERT 13 / STD MASTER 14+。请填写英文曲名。",
-        "en": "Artist: Frums; community alias: “学分”; BPM: 179; charts: STD EXPERT 13 / STD MASTER 14+. Enter the English song title.",
-        "ja": "アーティスト：Frums／コミュニティ別名：「学分」／BPM：179／譜面：STD EXPERT 13 / STD MASTER 14+。英語の曲名を入力。"
+        "zh-CN": "还记得玩家说的“学分”吗？曲师署名是 Frums，标准紫谱为 14+ 级，BPM 179。试着把它的英文曲名填进题盘。",
+        "en": "Remember the track players call “学分”? The artist credit is Frums; its standard MASTER chart is level 14+, at 179 BPM. Try filling in its English title.",
+        "ja": "「学分」と呼ばれるこの曲、覚えていますか？アーティスト表記はFrums。スタンダードのMASTERはレベル14+、BPMは179です。英語の曲名をマスに入れてみましょう。"
       }
     },
     {
@@ -276,9 +276,9 @@
       "songId": 133,
       "answer": "WEGONNAPARTY",
       "clues": {
-        "zh-CN": "曲师：Cranky；社区别名：“我们去派对”；BPM：159；谱面：STD MASTER 13+ / STD Re:MASTER 13+。请填写英文曲名。",
-        "en": "Artist: Cranky; community alias: “我们去派对”; BPM: 159; charts: STD MASTER 13+ / STD Re:MASTER 13+. Enter the English song title.",
-        "ja": "アーティスト：Cranky／コミュニティ別名：「我们去派对」／BPM：159／譜面：STD MASTER 13+ / STD Re:MASTER 13+。英語の曲名を入力。"
+        "zh-CN": "还记得玩家说的“我们去派对”吗？曲师署名是 Cranky，标准白谱为 13+ 级，BPM 159。试着把它的英文曲名填进题盘。",
+        "en": "Remember the track players call “我们去派对”? The artist credit is Cranky; its standard Re:MASTER chart is level 13+, at 159 BPM. Try filling in its English title.",
+        "ja": "「我们去派对」と呼ばれるこの曲、覚えていますか？アーティスト表記はCranky。スタンダードのRe:MASTERはレベル13+、BPMは159です。英語の曲名をマスに入れてみましょう。"
       }
     },
     {
@@ -290,9 +290,9 @@
       "songId": 231,
       "answer": "HEARTBEATS",
       "clues": {
-        "zh-CN": "曲师：RAMM feat. 若井友希；社区别名：“心跳”；BPM：170；谱面：STD MASTER 13。请填写英文曲名。",
-        "en": "Artist: RAMM feat. 若井友希; community alias: “心跳”; BPM: 170; charts: STD MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：RAMM feat. 若井友希／コミュニティ別名：「心跳」／BPM：170／譜面：STD MASTER 13。英語の曲名を入力。"
+        "zh-CN": "还记得玩家说的“心跳”吗？曲师署名是 RAMM feat. 若井友希，标准紫谱为 13 级，BPM 170。试着把它的英文曲名填进题盘。",
+        "en": "Remember the track players call “心跳”? The artist credit is RAMM feat. 若井友希; its standard MASTER chart is level 13, at 170 BPM. Try filling in its English title.",
+        "ja": "「心跳」と呼ばれるこの曲、覚えていますか？アーティスト表記はRAMM feat. 若井友希。スタンダードのMASTERはレベル13、BPMは170です。英語の曲名をマスに入れてみましょう。"
       }
     },
     {
@@ -304,9 +304,9 @@
       "songId": 521,
       "answer": "ECHO",
       "clues": {
-        "zh-CN": "曲师：CIRCRUSH；社区别名：“回声”；BPM：140；谱面：STD MASTER 13。请填写英文曲名。",
-        "en": "Artist: CIRCRUSH; community alias: “回声”; BPM: 140; charts: STD MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：CIRCRUSH／コミュニティ別名：「回声」／BPM：140／譜面：STD MASTER 13。英語の曲名を入力。"
+        "zh-CN": "玩家口中的“回声”，就是 CIRCRUSH 的这首作品。再给你一个提示：标准紫谱为 13 级，BPM 是 140。",
+        "en": "Players know this CIRCRUSH track by the nickname “回声”. One more hint: its standard MASTER chart is level 13, at 140 BPM.",
+        "ja": "プレイヤーに「回声」と呼ばれる、CIRCRUSHの楽曲です。もう一つのヒント：スタンダードのMASTERはレベル13、BPMは140。"
       }
     },
     {
@@ -318,9 +318,9 @@
       "songId": 494,
       "answer": "CITRUSMONSTER",
       "clues": {
-        "zh-CN": "曲师：D-Cee；社区别名：“橘子怪兽”；BPM：220；谱面：STD MASTER 14。请填写英文曲名。",
-        "en": "Artist: D-Cee; community alias: “橘子怪兽”; BPM: 220; charts: STD MASTER 14. Enter the English song title.",
-        "ja": "アーティスト：D-Cee／コミュニティ別名：「橘子怪兽」／BPM：220／譜面：STD MASTER 14。英語の曲名を入力。"
+        "zh-CN": "还记得玩家说的“橘子怪兽”吗？曲师署名是 D-Cee，标准紫谱为 14 级，BPM 220。试着把它的英文曲名填进题盘。",
+        "en": "Remember the track players call “橘子怪兽”? The artist credit is D-Cee; its standard MASTER chart is level 14, at 220 BPM. Try filling in its English title.",
+        "ja": "「橘子怪兽」と呼ばれるこの曲、覚えていますか？アーティスト表記はD-Cee。スタンダードのMASTERはレベル14、BPMは220です。英語の曲名をマスに入れてみましょう。"
       }
     },
     {
@@ -332,9 +332,9 @@
       "songId": 773,
       "answer": "SILENTBLUE",
       "clues": {
-        "zh-CN": "曲师：かねこちはる；社区别名：“静蓝”；BPM：210；谱面：STD MASTER 14+。请填写英文曲名。",
-        "en": "Artist: かねこちはる; community alias: “静蓝”; BPM: 210; charts: STD MASTER 14+. Enter the English song title.",
-        "ja": "アーティスト：かねこちはる／コミュニティ別名：「静蓝」／BPM：210／譜面：STD MASTER 14+。英語の曲名を入力。"
+        "zh-CN": "还记得玩家说的“静蓝”吗？曲师署名是 かねこちはる，标准紫谱为 14+ 级，BPM 210。试着把它的英文曲名填进题盘。",
+        "en": "Remember the track players call “静蓝”? The artist credit is かねこちはる; its standard MASTER chart is level 14+, at 210 BPM. Try filling in its English title.",
+        "ja": "「静蓝」と呼ばれるこの曲、覚えていますか？アーティスト表記はかねこちはる。スタンダードのMASTERはレベル14+、BPMは210です。英語の曲名をマスに入れてみましょう。"
       }
     },
     {
@@ -346,9 +346,9 @@
       "songId": 100,
       "answer": "TELLYOURWORLD",
       "clues": {
-        "zh-CN": "曲师：livetune；社区别名：“告诉你的世界”；BPM：150；谱面：STD Re:MASTER 13。请填写英文曲名。",
-        "en": "Artist: livetune; community alias: “告诉你的世界”; BPM: 150; charts: STD Re:MASTER 13. Enter the English song title.",
-        "ja": "アーティスト：livetune／コミュニティ別名：「告诉你的世界」／BPM：150／譜面：STD Re:MASTER 13。英語の曲名を入力。"
+        "zh-CN": "从“告诉你的世界”这个别名找找灵感，这首歌的曲师是 livetune。标准白谱为 13 级，BPM 150，你想起它了吗？",
+        "en": "Start with the nickname “告诉你的世界” and the artist livetune. Its standard Re:MASTER chart is level 13, at 150 BPM. Does the title ring a bell?",
+        "ja": "「告诉你的世界」という呼び名と、アーティストのlivetuneが手がかりです。スタンダードのRe:MASTERはレベル13、BPMは150。曲名を思い出せますか？"
       }
     }
   ]
