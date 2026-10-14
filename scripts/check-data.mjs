@@ -1,19 +1,28 @@
 import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { validateCharacters, validateLevel } from '../src/game.js';
+import { selectEnglishSongs, validateSongs, songClues } from '../src/songs.js';
 const root = new URL('../data/', import.meta.url);
 const read = async (path) => JSON.parse(await readFile(new URL(path, root), 'utf8'));
 export async function checkData() {
   const registry = validateCharacters(await read('characters.json'));
+  const songRegistry = validateSongs(await read('maimai.json'));
+  const snapshot = await read('sources/maimai-api.json');
+  const expectedSongs = selectEnglishSongs(snapshot);
+  if (JSON.stringify(expectedSongs) !== JSON.stringify(songRegistry.songs) || JSON.stringify(snapshot.source) !== JSON.stringify(songRegistry.source)) throw new Error('Song registry/API snapshot mismatch');
   const manifest = await read('levels/index.json');
   if (manifest.schemaVersion !== 1 || !Array.isArray(manifest.levels) || !manifest.levels.length) throw new Error('Invalid level manifest');
   const seen = new Set(), levels = [];
   for (const item of manifest.levels) {
     if (!/^[a-z0-9-]+\.json$/.test(item.file) || seen.has(item.id)) throw new Error('Invalid or duplicate manifest entry');
     seen.add(item.id);
-    const level = validateLevel(await read(`levels/${item.file}`), registry.characters);
+    const level = validateLevel(await read(`levels/${item.file}`), registry.characters, songRegistry.songs);
     if (level.id !== item.id) throw new Error('Manifest id mismatch');
     levels.push(level);
+  }
+  for (const level of levels.filter((level) => level.difficulty === 'maimai')) for (const entry of level.entries) {
+    const song = songRegistry.songs.find((song) => song.id === entry.songId);
+    if (JSON.stringify(entry.clues) !== JSON.stringify(songClues(song))) throw new Error(`Song clue/source mismatch: ${entry.songId}`);
   }
   for (const english of levels.filter((level) => level.answerLanguage === 'en')) {
     const kana = levels.find((level) => level.id === english.id.replace(/-en$/, '-kana'));
@@ -43,9 +52,9 @@ export async function checkData() {
     const character = registry.characters.find((character) => character.id === entry.characterId);
     if (['zh-CN', 'en', 'ja'].some((lang) => character.names[lang] !== row.names?.[lang])) throw new Error(`Cinderella name/source mismatch: ${entry.characterId}`);
   }
-  return { characters:registry.characters,levels,manifest };
+  return { characters:registry.characters,songs:songRegistry.songs,levels,manifest };
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const {characters,levels} = await checkData();
-  console.log(`Validated ${levels.length} trilingual levels and ${characters.length} character records.`);
+  const {characters,songs,levels} = await checkData();
+  console.log(`Validated ${levels.length} trilingual levels, ${characters.length} character records and ${songs.length} songs.`);
 }

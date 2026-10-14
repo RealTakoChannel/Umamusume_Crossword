@@ -40,6 +40,11 @@
       "id": "cinderella-1-kana",
       "file": "cinderella-1-kana.json",
       "enabled": true
+    },
+    {
+      "id": "maimai-1-en",
+      "file": "maimai-1-en.json",
+      "enabled": true
     }
   ]
 }

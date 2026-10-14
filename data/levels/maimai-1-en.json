@@ -1,0 +1,355 @@
+{
+  "schemaVersion": 1,
+  "id": "maimai-1-en",
+  "title": {
+    "zh-CN": "舞萌 DX · 英文曲名 01",
+    "en": "maimai DX · English titles 01",
+    "ja": "maimai DX・英語曲名 01"
+  },
+  "description": {
+    "zh-CN": "根据曲师、社区别名与 BPM 猜英文曲名。仅填写 A–Z，忽略大小写、空格和标点。",
+    "en": "Guess English song titles from artists, community aliases and BPM. Use A–Z, ignoring case, spaces and punctuation.",
+    "ja": "アーティスト・コミュニティ別名・BPMから英語曲名を推測。A–Zのみ入力し、大小文字・空白・記号は区別しません。"
+  },
+  "difficulty": "maimai",
+  "answerLanguage": "en",
+  "grid": {
+    "rows": 23,
+    "columns": 27,
+    "layout": [
+      "##########.################",
+      "#########................##",
+      "#.###.####.################",
+      "#.#.#.####................#",
+      "#.#.#.####.####.###########",
+      "#.#.#.##.#.##..............",
+      "#.#.#.##.#.####.###########",
+      "#.#.#.##.#.#.............##",
+      "#.#.#.##.#.#.##.###########",
+      "#.#.#.##.#.#.##.###########",
+      "#.#.#.##.#.#.##.########.##",
+      "#.#.#.##.#.#.##............",
+      "#.#.#.##.#.#.###########.#.",
+      "#.#.#.##.#.#.###########.#.",
+      "#.#.#.##.#.#.#........##.#.",
+      "............##.#########.#.",
+      "#.#.#.##.#.##..........#.#.",
+      "###.####.#.###.####.####.#.",
+      "###.####.#.###.####.####.#.",
+      "########.###.............#.",
+      "########.#####.###########.",
+      "########.########..........",
+      "###.............###########"
+    ]
+  },
+  "entries": [
+    {
+      "id": "maimai-734",
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "column": 10,
+      "songId": 734,
+      "answer": "ENERGYSYNERGYMATRIX",
+      "clues": {
+        "zh-CN": "曲师：Tanchiky；社区别名：“一只猫拖着另一只猫跑”；BPM：160；谱面：STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13。请填写英文曲名。",
+        "en": "Artist: Tanchiky; community alias: “一只猫拖着另一只猫跑”; BPM: 160; charts: STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：Tanchiky／コミュニティ別名：「一只猫拖着另一只猫跑」／BPM：160／譜面：STD EXPERT 13 / STD MASTER 13+ / DX MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-1568",
+      "number": 2,
+      "direction": "across",
+      "row": 1,
+      "column": 9,
+      "songId": 1568,
+      "answer": "INTERNETOVERDOSE",
+      "clues": {
+        "zh-CN": "曲师：Aiobahn feat. KOTOKO；社区别名：“超天酱”；BPM：163；谱面：DX MASTER 13。请填写英文曲名。",
+        "en": "Artist: Aiobahn feat. KOTOKO; community alias: “超天酱”; BPM: 163; charts: DX MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：Aiobahn feat. KOTOKO／コミュニティ別名：「超天酱」／BPM：163／譜面：DX MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-736",
+      "number": 3,
+      "direction": "down",
+      "row": 2,
+      "column": 1,
+      "songId": 736,
+      "answer": "WORLDVANQUISHER",
+      "clues": {
+        "zh-CN": "曲师：void (Mournfinale)；社区别名：“世界征服者”；BPM：170；谱面：STD MASTER 14。请填写英文曲名。",
+        "en": "Artist: void (Mournfinale); community alias: “世界征服者”; BPM: 170; charts: STD MASTER 14. Enter the English song title.",
+        "ja": "アーティスト：void (Mournfinale)／コミュニティ別名：「世界征服者」／BPM：170／譜面：STD MASTER 14。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-641",
+      "number": 4,
+      "direction": "down",
+      "row": 2,
+      "column": 5,
+      "songId": 641,
+      "answer": "CALAMITYFORTUNE",
+      "clues": {
+        "zh-CN": "曲师：LeaF；社区别名：“东风谷早苗”；BPM：200；谱面：STD MASTER 14 / DX MASTER 13+。请填写英文曲名。",
+        "en": "Artist: LeaF; community alias: “东风谷早苗”; BPM: 200; charts: STD MASTER 14 / DX MASTER 13+. Enter the English song title.",
+        "ja": "アーティスト：LeaF／コミュニティ別名：「东风谷早苗」／BPM：200／譜面：STD MASTER 14 / DX MASTER 13+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-834",
+      "number": 5,
+      "direction": "down",
+      "row": 3,
+      "column": 3,
+      "songId": 834,
+      "answer": "PANDORAPARADOXXX",
+      "clues": {
+        "zh-CN": "曲师：削除；社区别名：“潘多拉”；BPM：150；谱面：STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15。请填写英文曲名。",
+        "en": "Artist: 削除; community alias: “潘多拉”; BPM: 150; charts: STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15. Enter the English song title.",
+        "ja": "アーティスト：削除／コミュニティ別名：「潘多拉」／BPM：150／譜面：STD EXPERT 13+ / STD MASTER 14+ / STD Re:MASTER 15。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-82",
+      "number": 6,
+      "direction": "across",
+      "row": 3,
+      "column": 10,
+      "songId": 82,
+      "answer": "REACHFORTHESTARS",
+      "clues": {
+        "zh-CN": "曲师：大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」；社区别名：“追星”；BPM：203；谱面：STD MASTER 13+。请填写英文曲名。",
+        "en": "Artist: 大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」; community alias: “追星”; BPM: 203; charts: STD MASTER 13+. Enter the English song title.",
+        "ja": "アーティスト：大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」／コミュニティ別名：「追星」／BPM：203／譜面：STD MASTER 13+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-143",
+      "number": 7,
+      "direction": "down",
+      "row": 3,
+      "column": 15,
+      "songId": 143,
+      "answer": "FRAGRANCE",
+      "clues": {
+        "zh-CN": "曲师：Tsukasa(Arte Refact)；社区别名：“香水”；BPM：180；谱面：STD MASTER 14 / STD Re:MASTER 14+。请填写英文曲名。",
+        "en": "Artist: Tsukasa(Arte Refact); community alias: “香水”; BPM: 180; charts: STD MASTER 14 / STD Re:MASTER 14+. Enter the English song title.",
+        "ja": "アーティスト：Tsukasa(Arte Refact)／コミュニティ別名：「香水」／BPM：180／譜面：STD MASTER 14 / STD Re:MASTER 14+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-200",
+      "number": 8,
+      "direction": "down",
+      "row": 5,
+      "column": 8,
+      "songId": 200,
+      "answer": "BADAPPLEFEATNOMICO",
+      "clues": {
+        "zh-CN": "曲师：Masayoshi Minoshima；社区别名：“坏苹果”；BPM：138；谱面：STD Re:MASTER 13。请填写英文曲名。",
+        "en": "Artist: Masayoshi Minoshima; community alias: “坏苹果”; BPM: 138; charts: STD Re:MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：Masayoshi Minoshima／コミュニティ別名：「坏苹果」／BPM：138／譜面：STD Re:MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-145",
+      "number": 9,
+      "direction": "across",
+      "row": 5,
+      "column": 13,
+      "songId": 145,
+      "answer": "STARLIGHTDISCO",
+      "clues": {
+        "zh-CN": "曲师：loos feat. Meramipop；社区别名：“星光迪斯科”；BPM：128；谱面：DX MASTER 13。请填写英文曲名。",
+        "en": "Artist: loos feat. Meramipop; community alias: “星光迪斯科”; BPM: 128; charts: DX MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：loos feat. Meramipop／コミュニティ別名：「星光迪斯科」／BPM：128／譜面：DX MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-456",
+      "number": 10,
+      "direction": "across",
+      "row": 7,
+      "column": 12,
+      "songId": 456,
+      "answer": "GLORIOUSCROWN",
+      "clues": {
+        "zh-CN": "曲师：xi；社区别名：“皇冠”；BPM：225；谱面：STD EXPERT 13 / STD MASTER 14+。请填写英文曲名。",
+        "en": "Artist: xi; community alias: “皇冠”; BPM: 225; charts: STD EXPERT 13 / STD MASTER 14+. Enter the English song title.",
+        "ja": "アーティスト：xi／コミュニティ別名：「皇冠」／BPM：225／譜面：STD EXPERT 13 / STD MASTER 14+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-238",
+      "number": 10,
+      "direction": "down",
+      "row": 7,
+      "column": 12,
+      "songId": 238,
+      "answer": "GETHAPPY",
+      "clues": {
+        "zh-CN": "曲师：Jimmy Weckl；社区别名：“变得开心”；BPM：150；谱面：STD MASTER 13+。请填写英文曲名。",
+        "en": "Artist: Jimmy Weckl; community alias: “变得开心”; BPM: 150; charts: STD MASTER 13+. Enter the English song title.",
+        "ja": "アーティスト：Jimmy Weckl／コミュニティ別名：「变得开心」／BPM：150／譜面：STD MASTER 13+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-738",
+      "number": 11,
+      "direction": "down",
+      "row": 10,
+      "column": 24,
+      "songId": 738,
+      "answer": "BRAINPOWER",
+      "clues": {
+        "zh-CN": "曲师：ノマ；社区别名：“脑力”；BPM：170；谱面：STD MASTER 13。请填写英文曲名。",
+        "en": "Artist: ノマ; community alias: “脑力”; BPM: 170; charts: STD MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：ノマ／コミュニティ別名：「脑力」／BPM：170／譜面：STD MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-58",
+      "number": 12,
+      "direction": "across",
+      "row": 11,
+      "column": 15,
+      "songId": 58,
+      "answer": "ENDLESSWORLD",
+      "clues": {
+        "zh-CN": "曲师：RYOHEI KOHNO/保立美和子；社区别名：“无尽世界”；BPM：142；谱面：STD MASTER 13 / STD Re:MASTER 13。请填写英文曲名。",
+        "en": "Artist: RYOHEI KOHNO/保立美和子; community alias: “无尽世界”; BPM: 142; charts: STD MASTER 13 / STD Re:MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：RYOHEI KOHNO/保立美和子／コミュニティ別名：「无尽世界」／BPM：142／譜面：STD MASTER 13 / STD Re:MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-261",
+      "number": 13,
+      "direction": "down",
+      "row": 11,
+      "column": 26,
+      "songId": 261,
+      "answer": "DEATHSCYTHE",
+      "clues": {
+        "zh-CN": "曲师：SHIKI；社区别名：“死镰”；BPM：182；谱面：STD MASTER 13+ / STD Re:MASTER 14。请填写英文曲名。",
+        "en": "Artist: SHIKI; community alias: “死镰”; BPM: 182; charts: STD MASTER 13+ / STD Re:MASTER 14. Enter the English song title.",
+        "ja": "アーティスト：SHIKI／コミュニティ別名：「死镰」／BPM：182／譜面：STD MASTER 13+ / STD Re:MASTER 14。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-593",
+      "number": 14,
+      "direction": "across",
+      "row": 14,
+      "column": 14,
+      "songId": 593,
+      "answer": "CONFLICT",
+      "clues": {
+        "zh-CN": "曲师：siromaru + cranky；社区别名：“公交车”；BPM：160；谱面：STD MASTER 14 / DX MASTER 13。请填写英文曲名。",
+        "en": "Artist: siromaru + cranky; community alias: “公交车”; BPM: 160; charts: STD MASTER 14 / DX MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：siromaru + cranky／コミュニティ別名：「公交车」／BPM：160／譜面：STD MASTER 14 / DX MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-689",
+      "number": 14,
+      "direction": "down",
+      "row": 14,
+      "column": 14,
+      "songId": 689,
+      "answer": "CREDITS",
+      "clues": {
+        "zh-CN": "曲师：Frums；社区别名：“学分”；BPM：179；谱面：STD EXPERT 13 / STD MASTER 14+。请填写英文曲名。",
+        "en": "Artist: Frums; community alias: “学分”; BPM: 179; charts: STD EXPERT 13 / STD MASTER 14+. Enter the English song title.",
+        "ja": "アーティスト：Frums／コミュニティ別名：「学分」／BPM：179／譜面：STD EXPERT 13 / STD MASTER 14+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-133",
+      "number": 15,
+      "direction": "across",
+      "row": 15,
+      "column": 0,
+      "songId": 133,
+      "answer": "WEGONNAPARTY",
+      "clues": {
+        "zh-CN": "曲师：Cranky；社区别名：“我们去派对”；BPM：159；谱面：STD MASTER 13+ / STD Re:MASTER 13+。请填写英文曲名。",
+        "en": "Artist: Cranky; community alias: “我们去派对”; BPM: 159; charts: STD MASTER 13+ / STD Re:MASTER 13+. Enter the English song title.",
+        "ja": "アーティスト：Cranky／コミュニティ別名：「我们去派对」／BPM：159／譜面：STD MASTER 13+ / STD Re:MASTER 13+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-231",
+      "number": 16,
+      "direction": "across",
+      "row": 16,
+      "column": 13,
+      "songId": 231,
+      "answer": "HEARTBEATS",
+      "clues": {
+        "zh-CN": "曲师：RAMM feat. 若井友希；社区别名：“心跳”；BPM：170；谱面：STD MASTER 13。请填写英文曲名。",
+        "en": "Artist: RAMM feat. 若井友希; community alias: “心跳”; BPM: 170; charts: STD MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：RAMM feat. 若井友希／コミュニティ別名：「心跳」／BPM：170／譜面：STD MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-521",
+      "number": 17,
+      "direction": "down",
+      "row": 16,
+      "column": 19,
+      "songId": 521,
+      "answer": "ECHO",
+      "clues": {
+        "zh-CN": "曲师：CIRCRUSH；社区别名：“回声”；BPM：140；谱面：STD MASTER 13。请填写英文曲名。",
+        "en": "Artist: CIRCRUSH; community alias: “回声”; BPM: 140; charts: STD MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：CIRCRUSH／コミュニティ別名：「回声」／BPM：140／譜面：STD MASTER 13。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-494",
+      "number": 18,
+      "direction": "across",
+      "row": 19,
+      "column": 12,
+      "songId": 494,
+      "answer": "CITRUSMONSTER",
+      "clues": {
+        "zh-CN": "曲师：D-Cee；社区别名：“橘子怪兽”；BPM：220；谱面：STD MASTER 14。请填写英文曲名。",
+        "en": "Artist: D-Cee; community alias: “橘子怪兽”; BPM: 220; charts: STD MASTER 14. Enter the English song title.",
+        "ja": "アーティスト：D-Cee／コミュニティ別名：「橘子怪兽」／BPM：220／譜面：STD MASTER 14。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-773",
+      "number": 19,
+      "direction": "across",
+      "row": 21,
+      "column": 17,
+      "songId": 773,
+      "answer": "SILENTBLUE",
+      "clues": {
+        "zh-CN": "曲师：かねこちはる；社区别名：“静蓝”；BPM：210；谱面：STD MASTER 14+。请填写英文曲名。",
+        "en": "Artist: かねこちはる; community alias: “静蓝”; BPM: 210; charts: STD MASTER 14+. Enter the English song title.",
+        "ja": "アーティスト：かねこちはる／コミュニティ別名：「静蓝」／BPM：210／譜面：STD MASTER 14+。英語の曲名を入力。"
+      }
+    },
+    {
+      "id": "maimai-100",
+      "number": 20,
+      "direction": "across",
+      "row": 22,
+      "column": 3,
+      "songId": 100,
+      "answer": "TELLYOURWORLD",
+      "clues": {
+        "zh-CN": "曲师：livetune；社区别名：“告诉你的世界”；BPM：150；谱面：STD Re:MASTER 13。请填写英文曲名。",
+        "en": "Artist: livetune; community alias: “告诉你的世界”; BPM: 150; charts: STD Re:MASTER 13. Enter the English song title.",
+        "ja": "アーティスト：livetune／コミュニティ別名：「告诉你的世界」／BPM：150／譜面：STD Re:MASTER 13。英語の曲名を入力。"
+      }
+    }
+  ]
+}

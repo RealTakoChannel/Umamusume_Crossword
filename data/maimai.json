@@ -1,0 +1,1092 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "provider": "落雪咖啡屋 maimai DX 查分器",
+    "documentation": "https://maimai.lxns.net/docs/api/maimai",
+    "songUrl": "https://maimai.lxns.net/api/v0/maimai/song/list?version=25500",
+    "aliasUrl": "https://maimai.lxns.net/api/v0/maimai/alias/list",
+    "version": 25500,
+    "region": "舞萌 DX（中国大陆）",
+    "fetchedAt": "2026-10-14T18:06:00.022Z",
+    "songCount": 1344,
+    "aliasRecordCount": 1067,
+    "sha256": {
+      "songs": "502d86d123d296629bcd445e9161ca565588891f88af6f57e4f4e861aa748874",
+      "aliases": "d147a35c3d15111e03cacd47c77a6736658621f64ffe0944921ddd4b16b6e8f8"
+    }
+  },
+  "songs": [
+    {
+      "id": 58,
+      "title": "Endless World",
+      "artist": "RYOHEI KOHNO/保立美和子",
+      "genre": "maimai",
+      "bpm": 142,
+      "version": 11007,
+      "disabled": false,
+      "aliases": [
+        "无尽世界"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7",
+          "levelValue": 7
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "11",
+          "levelValue": 11.2
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "13",
+          "levelValue": 13.4
+        }
+      ],
+      "clueAlias": "无尽世界",
+      "answer": "ENDLESSWORLD"
+    },
+    {
+      "id": 82,
+      "title": "Reach For The Stars",
+      "artist": "大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」",
+      "genre": "ゲームバラエティ",
+      "bpm": 203,
+      "version": 10002,
+      "disabled": false,
+      "aliases": [
+        "追星",
+        "索尼克"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "10+",
+          "levelValue": 10.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.9
+        }
+      ],
+      "clueAlias": "追星",
+      "answer": "REACHFORTHESTARS"
+    },
+    {
+      "id": 100,
+      "title": "Tell Your World",
+      "artist": "livetune",
+      "genre": "niconicoボーカロイド",
+      "bpm": 150,
+      "version": 11003,
+      "disabled": false,
+      "aliases": [
+        "告诉你的世界"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7",
+          "levelValue": 7.5
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "10",
+          "levelValue": 10.5
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "12",
+          "levelValue": 12.4
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "13",
+          "levelValue": 13.2
+        }
+      ],
+      "clueAlias": "告诉你的世界",
+      "answer": "TELLYOURWORLD"
+    },
+    {
+      "id": 133,
+      "title": "We Gonna Party",
+      "artist": "Cranky",
+      "genre": "maimai",
+      "bpm": 159,
+      "version": 11000,
+      "disabled": false,
+      "aliases": [
+        "wgp",
+        "我们去派对",
+        "埃菲尔铁塔着火"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.7
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "13+",
+          "levelValue": 13.9
+        }
+      ],
+      "clueAlias": "我们去派对",
+      "answer": "WEGONNAPARTY"
+    },
+    {
+      "id": 143,
+      "title": "Fragrance",
+      "artist": "Tsukasa(Arte Refact)",
+      "genre": "maimai",
+      "bpm": 180,
+      "version": 11004,
+      "disabled": false,
+      "aliases": [
+        "香水",
+        "斜塔",
+        "香水塔",
+        "芳香"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "9",
+          "levelValue": 9.3
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.7
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14",
+          "levelValue": 14.2
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "14+",
+          "levelValue": 14.6
+        }
+      ],
+      "clueAlias": "香水",
+      "answer": "FRAGRANCE"
+    },
+    {
+      "id": 145,
+      "title": "Starlight Disco",
+      "artist": "loos feat. Meramipop",
+      "genre": "maimai",
+      "bpm": 128,
+      "version": 11000,
+      "disabled": false,
+      "aliases": [
+        "星光迪斯科"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7+",
+          "levelValue": 7.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "11+",
+          "levelValue": 11.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "12",
+          "levelValue": 12.4
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "12+",
+          "levelValue": 12.7
+        },
+        {
+          "type": "dx",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "dx",
+          "difficulty": 1,
+          "level": "7",
+          "levelValue": 7.5
+        },
+        {
+          "type": "dx",
+          "difficulty": 2,
+          "level": "11+",
+          "levelValue": 11.9
+        },
+        {
+          "type": "dx",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.4
+        }
+      ],
+      "clueAlias": "星光迪斯科",
+      "answer": "STARLIGHTDISCO"
+    },
+    {
+      "id": 200,
+      "title": "Bad Apple!! feat.nomico",
+      "artist": "Masayoshi Minoshima",
+      "genre": "東方Project",
+      "bpm": 138,
+      "version": 12000,
+      "disabled": false,
+      "aliases": [
+        "坏苹果",
+        "好华为",
+        "烂苹果",
+        "吃一堑吃一堑",
+        "吃一堑吃一堑吃一堑",
+        "年年考年年错"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "3",
+          "levelValue": 3
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "6",
+          "levelValue": 6.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "10+",
+          "levelValue": 10.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "12",
+          "levelValue": 12.5
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "13",
+          "levelValue": 13.3
+        }
+      ],
+      "clueAlias": "坏苹果",
+      "answer": "BADAPPLEFEATNOMICO"
+    },
+    {
+      "id": 231,
+      "title": "Heartbeats",
+      "artist": "RAMM feat. 若井友希",
+      "genre": "maimai",
+      "bpm": 170,
+      "version": 13003,
+      "disabled": false,
+      "aliases": [
+        "心跳"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "11+",
+          "levelValue": 11.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.2
+        }
+      ],
+      "clueAlias": "心跳",
+      "answer": "HEARTBEATS"
+    },
+    {
+      "id": 238,
+      "title": "Get Happy",
+      "artist": "Jimmy Weckl",
+      "genre": "maimai",
+      "bpm": 150,
+      "version": 12000,
+      "disabled": false,
+      "aliases": [
+        "变得开心"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7+",
+          "levelValue": 7.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.8
+        }
+      ],
+      "clueAlias": "变得开心",
+      "answer": "GETHAPPY"
+    },
+    {
+      "id": 261,
+      "title": "Death Scythe",
+      "artist": "SHIKI",
+      "genre": "maimai",
+      "bpm": 182,
+      "version": 12003,
+      "disabled": false,
+      "aliases": [
+        "死镰"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12",
+          "levelValue": 12.1
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "14",
+          "levelValue": 14.2
+        }
+      ],
+      "clueAlias": "死镰",
+      "answer": "DEATHSCYTHE"
+    },
+    {
+      "id": 456,
+      "title": "Glorious Crown",
+      "artist": "xi",
+      "genre": "maimai",
+      "bpm": 225,
+      "version": 16014,
+      "disabled": false,
+      "aliases": [
+        "皇冠",
+        "辉煌之冠"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "7",
+          "levelValue": 7
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "10",
+          "levelValue": 10.5
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "13",
+          "levelValue": 13.2
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14+",
+          "levelValue": 14.8
+        }
+      ],
+      "clueAlias": "皇冠",
+      "answer": "GLORIOUSCROWN"
+    },
+    {
+      "id": 494,
+      "title": "CITRUS MONSTER",
+      "artist": "D-Cee",
+      "genre": "maimai",
+      "bpm": 220,
+      "version": 17015,
+      "disabled": false,
+      "aliases": [
+        "橘子怪兽",
+        "桔子怪兽"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "7",
+          "levelValue": 7
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "9",
+          "levelValue": 9.3
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14",
+          "levelValue": 14.5
+        }
+      ],
+      "clueAlias": "橘子怪兽",
+      "answer": "CITRUSMONSTER"
+    },
+    {
+      "id": 521,
+      "title": "ECHO",
+      "artist": "CIRCRUSH",
+      "genre": "niconicoボーカロイド",
+      "bpm": 140,
+      "version": 17017,
+      "disabled": false,
+      "aliases": [
+        "回声"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7+",
+          "levelValue": 7.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "11",
+          "levelValue": 11.3
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.5
+        }
+      ],
+      "clueAlias": "回声",
+      "answer": "ECHO"
+    },
+    {
+      "id": 593,
+      "title": "conflict",
+      "artist": "siromaru + cranky",
+      "genre": "ゲームバラエティ",
+      "bpm": 160,
+      "version": 18007,
+      "disabled": false,
+      "aliases": [
+        "公交车"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8",
+          "levelValue": 8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.7
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14",
+          "levelValue": 14.2
+        },
+        {
+          "type": "dx",
+          "difficulty": 0,
+          "level": "3",
+          "levelValue": 3
+        },
+        {
+          "type": "dx",
+          "difficulty": 1,
+          "level": "8",
+          "levelValue": 8.2
+        },
+        {
+          "type": "dx",
+          "difficulty": 2,
+          "level": "11",
+          "levelValue": 11.4
+        },
+        {
+          "type": "dx",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.5
+        }
+      ],
+      "clueAlias": "公交车",
+      "answer": "CONFLICT"
+    },
+    {
+      "id": 641,
+      "title": "Calamity Fortune",
+      "artist": "LeaF",
+      "genre": "東方Project",
+      "bpm": 200,
+      "version": 18512,
+      "disabled": false,
+      "aliases": [
+        "cf",
+        "穿越火线",
+        "东风谷早苗",
+        "风神录五面道中"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "7",
+          "levelValue": 7
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "9",
+          "levelValue": 9.3
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14",
+          "levelValue": 14.2
+        },
+        {
+          "type": "dx",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "dx",
+          "difficulty": 1,
+          "level": "8",
+          "levelValue": 8.5
+        },
+        {
+          "type": "dx",
+          "difficulty": 2,
+          "level": "11",
+          "levelValue": 11.4
+        },
+        {
+          "type": "dx",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.6
+        }
+      ],
+      "clueAlias": "东风谷早苗",
+      "answer": "CALAMITYFORTUNE"
+    },
+    {
+      "id": 689,
+      "title": "Credits",
+      "artist": "Frums",
+      "genre": "ゲームバラエティ",
+      "bpm": 179,
+      "version": 19006,
+      "disabled": false,
+      "aliases": [
+        "信用",
+        "学分",
+        "18118181181111",
+        "天气预报",
+        "制作组",
+        "末影珍珠"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "9",
+          "levelValue": 9
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "13",
+          "levelValue": 13.3
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14+",
+          "levelValue": 14.6
+        }
+      ],
+      "clueAlias": "学分",
+      "answer": "CREDITS"
+    },
+    {
+      "id": 734,
+      "title": "ENERGY SYNERGY MATRIX",
+      "artist": "Tanchiky",
+      "genre": "ゲームバラエティ",
+      "bpm": 160,
+      "version": 19500,
+      "disabled": false,
+      "aliases": [
+        "esm",
+        "esm跑",
+        "一只猫拖着另一只猫跑"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "7+",
+          "levelValue": 7.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "13",
+          "levelValue": 13
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13+",
+          "levelValue": 13.9
+        },
+        {
+          "type": "dx",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "dx",
+          "difficulty": 1,
+          "level": "8",
+          "levelValue": 8
+        },
+        {
+          "type": "dx",
+          "difficulty": 2,
+          "level": "11",
+          "levelValue": 11.4
+        },
+        {
+          "type": "dx",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.5
+        }
+      ],
+      "clueAlias": "一只猫拖着另一只猫跑",
+      "answer": "ENERGYSYNERGYMATRIX"
+    },
+    {
+      "id": 736,
+      "title": "World Vanquisher",
+      "artist": "void (Mournfinale)",
+      "genre": "オンゲキCHUNITHM",
+      "bpm": 170,
+      "version": 19500,
+      "disabled": false,
+      "aliases": [
+        "世界征服者",
+        "世征",
+        "wv",
+        "威猛先生",
+        "我的碗筷洗",
+        "噔噔噔噔噔"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "9+",
+          "levelValue": 9.6
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14",
+          "levelValue": 14.3
+        }
+      ],
+      "clueAlias": "世界征服者",
+      "answer": "WORLDVANQUISHER"
+    },
+    {
+      "id": 738,
+      "title": "Brain Power",
+      "artist": "ノマ",
+      "genre": "ゲームバラエティ",
+      "bpm": 170,
+      "version": 19501,
+      "disabled": false,
+      "aliases": [
+        "脑力",
+        "脑力量",
+        "地精老头",
+        "地精小老头",
+        "o-ooooooo aaaa-e-a-a"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "5",
+          "levelValue": 5
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.7
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "11+",
+          "levelValue": 11.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.4
+        }
+      ],
+      "clueAlias": "脑力",
+      "answer": "BRAINPOWER"
+    },
+    {
+      "id": 773,
+      "title": "SILENT BLUE",
+      "artist": "かねこちはる",
+      "genre": "maimai",
+      "bpm": 210,
+      "version": 19514,
+      "disabled": false,
+      "aliases": [
+        "静蓝",
+        "四块钱"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "6",
+          "levelValue": 6
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "8+",
+          "levelValue": 8.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "12+",
+          "levelValue": 12.8
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14+",
+          "levelValue": 14.8
+        }
+      ],
+      "clueAlias": "静蓝",
+      "answer": "SILENTBLUE"
+    },
+    {
+      "id": 834,
+      "title": "PANDORA PARADOXXX",
+      "artist": "削除",
+      "genre": "maimai",
+      "bpm": 150,
+      "version": 19998,
+      "disabled": false,
+      "aliases": [
+        "潘",
+        "潘多拉",
+        "新手教程",
+        "潘多拉悖论",
+        "我有玉玉症",
+        "天苍苍",
+        "潘多拉魔盒",
+        "天苍苍野茫茫",
+        "噔噔",
+        "我有抑郁症",
+        "15级吃分推荐榜1",
+        "最简单15",
+        "盘",
+        "推荐乐曲排行榜"
+      ],
+      "charts": [
+        {
+          "type": "standard",
+          "difficulty": 0,
+          "level": "7+",
+          "levelValue": 7.7
+        },
+        {
+          "type": "standard",
+          "difficulty": 1,
+          "level": "11",
+          "levelValue": 11.5
+        },
+        {
+          "type": "standard",
+          "difficulty": 2,
+          "level": "13+",
+          "levelValue": 13.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 3,
+          "level": "14+",
+          "levelValue": 14.9
+        },
+        {
+          "type": "standard",
+          "difficulty": 4,
+          "level": "15",
+          "levelValue": 15
+        }
+      ],
+      "clueAlias": "潘多拉",
+      "answer": "PANDORAPARADOXXX"
+    },
+    {
+      "id": 1568,
+      "title": "INTERNET OVERDOSE",
+      "artist": "Aiobahn feat. KOTOKO",
+      "genre": "POPSアニメ",
+      "bpm": 163,
+      "version": 23000,
+      "disabled": false,
+      "aliases": [
+        "超天酱",
+        "主播女孩重度依赖",
+        "朝天椒"
+      ],
+      "charts": [
+        {
+          "type": "dx",
+          "difficulty": 0,
+          "level": "4",
+          "levelValue": 4
+        },
+        {
+          "type": "dx",
+          "difficulty": 1,
+          "level": "7",
+          "levelValue": 7.5
+        },
+        {
+          "type": "dx",
+          "difficulty": 2,
+          "level": "10+",
+          "levelValue": 10.8
+        },
+        {
+          "type": "dx",
+          "difficulty": 3,
+          "level": "13",
+          "levelValue": 13.5
+        }
+      ],
+      "clueAlias": "超天酱",
+      "answer": "INTERNETOVERDOSE"
+    }
+  ]
+}

@@ -4,7 +4,8 @@ import { readFile } from 'node:fs/promises';
 import { checkData } from '../scripts/check-data.mjs';
 import { GameSession, entryCells, feedbackFor, evaluate, normalizeAnswer, searchCharacters, validateLevel, formatTime, LANGUAGES } from '../src/game.js';
 import { messages, translate } from '../src/i18n.js';
-const {levels,characters}=await checkData();
+const {levels:allLevels,characters}=await checkData();
+const levels=allLevels.filter((level)=>level.difficulty!=='maimai');
 const base=levels.find((e)=>e.id==='beginner-1-en'), advanced=levels.find((e)=>e.id==='advanced-1-en'), kana=levels.find((e)=>e.id==='beginner-1-kana'), advancedKana=levels.find((e)=>e.id==='advanced-1-kana');
 const solution=(level)=>Object.fromEntries(level.entries.flatMap((e)=>entryCells(e).map((key,i)=>[key,[...e.answer][i]])));
 

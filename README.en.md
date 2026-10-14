@@ -2,9 +2,11 @@
 
 [简体中文](README.md) · **English** · [日本語](README.ja.md)
 
-A multilingual crossword game with Umamusume character names as answers. The project uses native HTML, CSS and JavaScript, with JSON files for puzzles, the character dictionary and clue sources. Game logic is separate from DOM interaction.
+A multilingual crossword game with Umamusume character names and maimai DX English song titles as answers. The project uses native HTML, CSS and JavaScript, with JSON files for puzzles, character/song dictionaries and clue sources. Game logic is separate from DOM interaction.
 
-The interface and clues support Simplified Chinese, English and Japanese. Answers can use English letters or katakana, independently of the interface language. The current catalog contains four collections, eight puzzles and a dictionary of 97 characters.
+The interface and clues support Simplified Chinese, English and Japanese. Answers can use English letters or katakana, independently of the interface language. The catalog contains five collections, nine puzzles, 97 characters and 22 songs.
+
+The maimai collection uses English titles only; every song has at least one level 13–15 chart, including 13+ and 14+. Clues use artists, community aliases, BPM and chart levels from the LXNS API. Lookups accept titles, artists and aliases. Titles with digits and non-English titles are excluded in this first edition; there is no katakana counterpart. See [maimai sources and maintenance](docs/舞萌DX题库与来源.md) for the snapshot and refresh commands.
 
 ## Features
 
@@ -87,7 +89,7 @@ Production requests use same-origin `/api/` routes. A Pages Function calls the i
 
 ## Puzzle data and localization
 
-Each puzzle is an independent JSON file. Current puzzles have 11 across and 11 down entries. English and katakana versions of the same puzzle share a character roster but use separate layouts; numbering, positions and directions may differ. Match entries through `characterId`.
+Each puzzle is an independent JSON file. Current puzzles have 11 across and 11 down entries. Umamusume English and katakana versions share a character roster but use separate layouts; match entries through `characterId`. The maimai collection is English-only and uses integer `songId` references to `maimai.json`, mutually exclusive with `characterId`; see its source document for maintenance.
 
 | Collection | `difficulty` | English grid | Katakana grid |
 | --- | --- | --- | --- |

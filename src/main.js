@@ -1,6 +1,7 @@
 import { loadCatalog } from './catalog.js';
 import { GameSession, cellKey, entryCells, normalizeAnswer, feedbackFor, formatTime, LANGUAGES } from './game.js';
 import { translate } from './i18n.js';
+import { searchSongs } from './songs.js';
 import { AnalyticsClient } from './analytics.js';
 import { analyticsConfig } from './analytics-config.js';
 
@@ -9,6 +10,7 @@ let language = 'zh-CN';
 try { const saved = localStorage.getItem('tracen-ui-language'); if (LANGUAGES.includes(saved)) language = saved; } catch { /* Private storage may be unavailable. */ }
 const t = (key, params) => translate(language, key, params);
 let levels = [], characters = [], characterMap = new Map(), session = null, previewLevel = null, loadFailed = false;
+let songs = [], songMap = new Map();
 let active = null, activeKey = '', activeDirection = 'across', forceRestart = false, noteKey = '';
 let inputs = new Map(), containers = new Map(), members = new Map();
 let draft = { difficulty:'beginner', answerLanguage:'en', levelId:'', mode:'easy' };
@@ -26,6 +28,8 @@ const statistics = new Map();
 let statisticsRequest = 0;
 const setup = $('start-dialog'), finish = $('finish-dialog'), searchDialog = $('search-dialog');
 const currentLevel = () => session?.level || previewLevel;
+const isSongLevel = () => currentLevel()?.difficulty === 'maimai';
+const lookupText = (key, params) => t(isSongLevel() ? `song${key[0].toUpperCase()}${key.slice(1)}` : key, params);
 const entries = () => currentLevel()?.entries || [];
 const currentMode = () => session?.mode || draft.mode;
 const solutionView = () => session?.finishReason === 'revealed';
@@ -43,6 +47,18 @@ function nameCard(character, className = 'answer-names') {
   }
   return card;
 }
+
+function songCard(song) {
+  const card = document.createElement('div'); card.className = 'answer-names';
+  for (const [label, text] of [['songTitle', song.title], ['songArtist', song.artist], ['songAliases', song.aliases.join(' / ')]]) {
+    const row = document.createElement('span'); row.className = 'name-row';
+    const heading = document.createElement('small'); heading.textContent = t(label);
+    const value = document.createElement('strong'); value.textContent = text;
+    row.append(heading, value); card.append(row);
+  }
+  return card;
+}
+const answerCard = (entry) => entry.songId !== undefined ? songCard(songMap.get(entry.songId)) : nameCard(characterMap.get(entry.characterId));
 
 function renderStrings() {
   document.documentElement.lang = language;
@@ -86,6 +102,9 @@ function syncDraft(source = 'level') {
 
 function renderSetup() {
   if (!levels.length) return;
+  const songSetup = draft.difficulty === 'maimai';
+  const kanaOption = $('answer-select').querySelector('option[value="ja"]');
+  kanaOption.disabled = songSetup;
   $('difficulty-select').value = draft.difficulty; $('answer-select').value = draft.answerLanguage;
   const available = levels.filter((level) => level.difficulty === draft.difficulty && level.answerLanguage === draft.answerLanguage);
   const select = $('level-select'); select.replaceChildren();
@@ -156,6 +175,7 @@ setInterval(updateTimer, 250);
 
 function renderGame() {
   const level = currentLevel(); if (!level || !active) return;
+  $('lookup').textContent = lookupText('lookup');
   const { solved, greenCells } = feedback();
   $('level-title').textContent = level.title[language];
   $('level-category').textContent = `${t(level.difficulty)} / ${t(level.answerLanguage === 'en' ? 'answerEn':'answerJa')}`;
@@ -181,9 +201,9 @@ function renderGame() {
   $('active-clue-number').textContent = t('currentEntry',{number:active.number,direction:t(active.direction)});
   $('active-clue-text').textContent = `${active.clues[language]} (${[...active.answer].length})`;
   const answer = $('active-answer'); answer.replaceChildren(); answer.hidden = !answerVisible(active,solved);
-  if (!answer.hidden) answer.append(nameCard(characterMap.get(active.characterId)));
+  if (!answer.hidden) answer.append(answerCard(active));
   $('change-direction').disabled = (members.get(activeKey)?.length || 0) < 2 || !session || session.completed;
-  $('input-rule').textContent = t(level.answerLanguage==='ja'?'jaRule':'enRule');
+  $('input-rule').textContent = t(isSongLevel() ? 'songRule' : level.answerLanguage==='ja'?'jaRule':'enRule');
   for (const direction of ['across','down']) {
     $(`${direction}-tab`).classList.toggle('selected', activeDirection===direction);
     $(`${direction}-tab`).setAttribute('aria-pressed',String(activeDirection===direction));
@@ -212,7 +232,7 @@ function renderAnswerDialog() {
   const entry=entries().find((e)=>e.id===revealedEntryId); if(!entry)return;
   $('revealed-clue').textContent=`${t('currentEntry',{number:entry.number,direction:t(entry.direction)})} · ${entry.clues[language]}`;
   $('revealed-literal').textContent=entry.answer;
-  $('revealed-names').replaceChildren(nameCard(characterMap.get(entry.characterId)));
+  $('revealed-names').replaceChildren(answerCard(entry));
   const easy=currentMode()==='easy';
   $('answer-dialog-note').textContent=`${easy?t('revealUnlimited'):t('revealRemaining',{n:Math.max(0,3-session.hardRevealedEntries.size)})} · ${t(easy?'revealNote':'hardRevealNote')}`;
 }
@@ -229,7 +249,7 @@ function renderClues(solved = feedback().solved) {
     const length = document.createElement('span'); length.className='clue-length'; length.textContent=` (${[...entry.answer].length})`;
     content.append(text,length);
     if (answerVisible(entry,solved)) {
-      content.append(nameCard(characterMap.get(entry.characterId)));
+      content.append(answerCard(entry));
       if(solved.has(entry.id)) {
         const check = document.createElement('span'); check.className='solved-mark'; check.textContent='✓'; check.setAttribute('aria-label',t('correct')); button.append(check);
       } else {
@@ -369,16 +389,19 @@ function applyMode(mode) {
 }
 function renderSearch() {
   const hard=currentMode()==='hard', remaining=Math.max(0,3-(session?.hardSearches||0));
+  $('search-title').textContent = lookupText('searchTitle');
+  $('search-input').placeholder = lookupText('searchPlaceholder');
+  $('search-form').querySelector('label').textContent = lookupText('lookup');
   $('search-allowance').textContent=hard?t('searchRemaining',{n:remaining}):t('searchUnlimited');
-  $('dictionary-count').textContent=t('dictionaryCount',{n:characters.length});
+  $('dictionary-count').textContent=lookupText('dictionaryCount',{n:isSongLevel()?songs.length:characters.length});
   $('search-submit').disabled=!session||(hard&&remaining===0);
   $('search-query').hidden=!searchState.query;$('search-query').textContent=t('searchQuery',{query:searchState.query});
-  const message=searchState.status==='ok'?(searchState.results.length?t('resultCount',{n:searchState.results.length}):t('noResults')):
-    t({initial:'searchInitial',empty:'searchEmpty',limit:'searchLimit'}[searchState.status]);
+  const message=searchState.status==='ok'?(searchState.results.length?lookupText('resultCount',{n:searchState.results.length}):lookupText('noResults')):
+    searchState.status==='limit'?t('searchLimit'):lookupText({initial:'searchInitial',empty:'searchEmpty'}[searchState.status]);
   $('search-message').textContent=message;
   const results=$('search-results');results.replaceChildren();
   if(searchState.status==='ok')for(const character of searchState.results){
-    const card=document.createElement('article');card.className='character-result';card.dataset.character=character.id;card.append(nameCard(character));results.append(card);
+    const card=document.createElement('article');card.className='character-result';card.dataset.character=character.id;card.append(isSongLevel()?songCard(character):nameCard(character));results.append(card);
   }
 }
 
@@ -409,7 +432,7 @@ $('lookup').addEventListener('click',()=>{renderSearch();searchDialog.showModal(
 $('close-search').addEventListener('click',()=>searchDialog.close());
 $('search-form').addEventListener('submit',(event)=>{
   event.preventDefault();if(!session)return;
-  const query=$('search-input').value;searchState={...session.query(characters,query),query};renderSearch();
+  const query=$('search-input').value;searchState={...session.query(isSongLevel()?songs:characters,query,isSongLevel()?searchSongs:undefined),query};renderSearch();
 });
 $('reveal-answer').addEventListener('click',()=>{
   if(!session||session.completed)return;
@@ -432,6 +455,7 @@ $('confirm-end').addEventListener('click',()=>{
 renderStrings();setup.showModal();
 try {
   const catalog=await loadCatalog();levels=catalog.levels;characters=catalog.characters;characterMap=new Map(characters.map((c)=>[c.id,c]));
+  songs=catalog.songs;songMap=new Map(songs.map((song)=>[song.id,song]));
   previewLevel=levels[0];draft.levelId=previewLevel.id;draft.difficulty=previewLevel.difficulty;draft.answerLanguage=previewLevel.answerLanguage;
   buildBoard(previewLevel);$('load-status').textContent='';$('load-status').hidden=true;renderStrings();
 } catch(error) { loadFailed=true;$('load-status').textContent=t('loadError');console.error(error); }

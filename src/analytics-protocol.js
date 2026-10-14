@@ -1,7 +1,7 @@
 export const MAX_RUN_MS = 7 * 24 * 60 * 60 * 1000;
 export function revisionContent(level) {
-  return JSON.stringify({ grid: level.grid, entries: level.entries.map(({ id, number, direction, row, column, characterId, answer, clues }) =>
-    ({ id, number, direction, row, column, characterId, answer, clues })) });
+  return JSON.stringify({ grid: level.grid, entries: level.entries.map(({ id, number, direction, row, column, characterId, songId, answer, clues }) =>
+    ({ id, number, direction, row, column, characterId, ...(level.difficulty === 'maimai' ? { songId } : {}), answer, clues })) });
 }
 export async function levelRevision(level) {
   const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(revisionContent(level)));

@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "sync:maimai": "node scripts/sync-maimai.mjs",
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "build:worker": "node scripts/build-worker.mjs",

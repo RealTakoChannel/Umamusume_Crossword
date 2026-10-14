@@ -8,6 +8,7 @@ import { AnalyticsClient } from '../src/analytics.js';
 import { GameSession } from '../src/game.js';
 import { levelRevision, solutionCells } from '../src/analytics-protocol.js';
 import { onRequest } from '../functions/api/[[path]].js';
+import { checkData } from '../scripts/check-data.mjs';
 
 const schema = await readFile(new URL('../worker/migrations/0001_stats.sql', import.meta.url), 'utf8');
 const puzzle = JSON.parse(await readFile(new URL('../data/levels/beginner-1-en.json', import.meta.url), 'utf8'));
@@ -40,8 +41,14 @@ const apiFetch = (f) => (url, options) => { const request = new Request(url, opt
 const flush = async (client, handle) => { if (handle) await handle.ready; await client.flush(); };
 
 test('Worker puzzle revisions and server solutions match the actual catalog', async () => {
-  assert.equal(level.revision, await levelRevision(puzzle)); assert.deepEqual(level.solution,solutionCells(puzzle));
-  assert.equal(supportedLevels.length,8);
+  const { levels } = await checkData();
+  assert.equal(supportedLevels.length, levels.length);
+  for (const puzzle of levels) {
+    const supported = supportedLevels.find((item) => item.id === puzzle.id);
+    assert.ok(supported, puzzle.id);
+    assert.equal(supported.revision, await levelRevision(puzzle));
+    assert.deepEqual(supported.solution, solutionCells(puzzle));
+  }
 });
 test('unplayed puzzles return zero games and null averages, never a zero-second result',async () => {
   const f=fixture(); const stats=await f.stats(); assert.equal(stats.starts,0); assert.equal(stats.solved,0); assert.equal(stats.averageMs,null); assert.equal(stats.challengeAverageMs,null);

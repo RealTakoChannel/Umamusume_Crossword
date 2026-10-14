@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed maimai English songs",
+  "type": "object",
+  "required": ["schemaVersion", "source", "songs"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": {
+      "type": "object",
+      "required": ["provider", "documentation", "songUrl", "aliasUrl", "version", "region", "fetchedAt", "songCount", "aliasRecordCount", "sha256"],
+      "properties": {
+        "version": { "const": 25500 },
+        "songUrl": { "const": "https://maimai.lxns.net/api/v0/maimai/song/list?version=25500" },
+        "aliasUrl": { "const": "https://maimai.lxns.net/api/v0/maimai/alias/list" },
+        "fetchedAt": { "type": "string", "format": "date-time" },
+        "songCount": { "type": "integer", "minimum": 1 },
+        "aliasRecordCount": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "songs": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["id", "title", "artist", "genre", "bpm", "version", "disabled", "aliases", "charts", "clueAlias", "answer"],
+        "properties": {
+          "id": { "type": "integer", "minimum": 1 },
+          "title": { "type": "string", "pattern": "^[A-Za-z][A-Za-z\\s'’!.,?&()\\-]*$" },
+          "artist": { "type": "string", "minLength": 1 },
+          "genre": { "type": "string" },
+          "bpm": { "type": "number", "exclusiveMinimum": 0 },
+          "version": { "type": "integer" },
+          "disabled": { "const": false },
+          "aliases": { "type": "array", "uniqueItems": true, "items": { "type": "string", "minLength": 1 } },
+          "clueAlias": { "type": "string", "minLength": 1 },
+          "answer": { "type": "string", "pattern": "^[A-Z]{2,}$" },
+          "charts": {
+            "type": "array", "minItems": 1,
+            "contains": { "properties": { "levelValue": { "minimum": 13, "exclusiveMaximum": 16 } } },
+            "items": {
+              "type": "object", "additionalProperties": false,
+              "required": ["type", "difficulty", "level", "levelValue"],
+              "properties": {
+                "type": { "enum": ["standard", "dx"] },
+                "difficulty": { "type": "integer", "minimum": 0, "maximum": 4 },
+                "level": { "type": "string", "pattern": "^\\d{1,2}\\+?$" },
+                "levelValue": { "type": "number" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

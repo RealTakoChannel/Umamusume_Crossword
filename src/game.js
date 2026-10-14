@@ -64,12 +64,12 @@ export class GameSession {
     if (evaluate(this.level.entries, this.values).complete) { this.finishedAt = this.now(); this.finishedMode = this.mode; this.finishReason = 'solved'; }
     return this.completed;
   }
-  query(characters, query) {
+  query(characters, query, search = searchCharacters) {
     if (!normalizeSearch(query)) return { status: 'empty', results: [] };
     if (this.mode === 'hard' && this.hardSearches >= 3) return { status: 'limit', results: [] };
     if (this.mode === 'hard') this.hardSearches++;
     if (!this.completed) this.lookupCount++;
-    return { status: 'ok', results: searchCharacters(characters, query) };
+    return { status: 'ok', results: search(characters, query) };
   }
   reveal(entryId) {
     if (this.completed) return { status: 'finished' };
@@ -104,23 +104,31 @@ export function validateCharacters(registry) {
   }
   return registry;
 }
-export function validateLevel(level, characters) {
+export function validateLevel(level, characters, songs = []) {
   const fail = (message) => { throw new Error(`${level.id || 'level'}: ${message}`); };
   if (level.schemaVersion !== 1 || !/^[a-z0-9-]+$/.test(level.id)) fail('Invalid schemaVersion or id');
-  if (!['beginner', 'advanced', 'epithets', 'cinderella'].includes(level.difficulty) || !['en', 'ja'].includes(level.answerLanguage)) fail('Invalid collection or answerLanguage');
+  if (!['beginner', 'advanced', 'epithets', 'cinderella', 'maimai'].includes(level.difficulty) || !['en', 'ja'].includes(level.answerLanguage)) fail('Invalid collection or answerLanguage');
+  const isSongLevel = level.difficulty === 'maimai';
+  if (isSongLevel && level.answerLanguage !== 'en') fail('Songs require English answers');
   for (const lang of LANGUAGES) if (!level.title?.[lang]?.trim() || !level.description?.[lang]?.trim()) fail(`Missing metadata: ${lang}`);
   const { rows, columns, layout } = level.grid || {};
   if (!Number.isInteger(rows) || !Number.isInteger(columns) || rows < 1 || columns < 1 || rows > 60 || columns > 60) fail('Invalid dimensions');
   if (!Array.isArray(layout) || layout.length !== rows || layout.some((row) => typeof row !== 'string' || row.length !== columns || !/^[.#]+$/.test(row))) fail('Invalid grid layout');
   if (!Array.isArray(level.entries) || !level.entries.length) fail('Empty entries');
   const characterMap = new Map(characters.map((c) => [c.id, c])), ids = new Set(), answers = new Set(), grid = new Map(), starts = new Map(), usedNumbers = new Map();
+  const songMap = new Map(songs.map((song) => [song.id, song]));
   for (const e of level.entries) {
     if (!e.id || ids.has(e.id) || answers.has(e.answer)) fail(`Duplicate entry: ${e.id}`);
     ids.add(e.id); answers.add(e.answer);
     if (!['across', 'down'].includes(e.direction) || !Number.isInteger(e.row) || !Number.isInteger(e.column) || !Number.isInteger(e.number) || e.number < 1) fail(`Invalid position: ${e.id}`);
     for (const lang of LANGUAGES) if (typeof e.clues?.[lang] !== 'string' || !e.clues[lang].trim()) fail(`Missing clue ${lang}: ${e.id}`);
-    const character = characterMap.get(e.characterId);
-    if (!character || e.answer !== normalizeAnswer(character.names[level.answerLanguage], level.answerLanguage)) fail(`Answer/name mismatch: ${e.id}`);
+    if (isSongLevel) {
+      const song = songMap.get(e.songId);
+      if (e.characterId !== undefined || !Number.isInteger(e.songId) || !song || e.answer !== song.answer) fail(`Answer/song mismatch: ${e.id}`);
+    } else {
+      const character = characterMap.get(e.characterId);
+      if (e.songId !== undefined || !character || e.answer !== normalizeAnswer(character.names[level.answerLanguage], level.answerLanguage)) fail(`Answer/name mismatch: ${e.id}`);
+    }
     const start = cellKey(e.row, e.column);
     if ((starts.has(start) && starts.get(start) !== e.number) || (usedNumbers.has(e.number) && usedNumbers.get(e.number) !== start)) fail(`Inconsistent number: ${e.id}`);
     starts.set(start, e.number); usedNumbers.set(e.number, start);
