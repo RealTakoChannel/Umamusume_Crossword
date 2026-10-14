@@ -33,9 +33,9 @@ export function evaluate(entries, values) {
   }
   return { solved, filledWords, complete: entries.length > 0 && solved.size === entries.length };
 }
-export function feedbackFor(entries, values, mode) {
-  if (mode !== 'easy') return { solved: new Set(), greenCells: new Set() };
-  const { solved } = evaluate(entries, values);
+export function feedbackFor(entries, values, mode, revealed = new Set()) {
+  const correct = evaluate(entries, values).solved;
+  const solved = mode === 'easy' ? correct : new Set([...revealed].filter((id) => correct.has(id)));
   return { solved, greenCells: new Set(entries.filter((e) => solved.has(e.id)).flatMap(entryCells)) };
 }
 export function formatTime(ms) {
@@ -49,15 +49,17 @@ export class GameSession {
   }
   restart(level) {
     this.level = level; this.values = {}; this.startedAt = this.now(); this.finishedAt = null; this.finishedMode = null; this.finishReason = null;
-    this.hardSearches = 0; this.revealedEntries = new Set();
+    this.hardSearches = 0; this.revealedEntries = new Set(); this.hardRevealedEntries = new Set();
     this.everAssisted = this.mode === 'easy'; this.lookupCount = 0;
   }
   get completed() { return this.finishedAt !== null; }
   get elapsed() { return (this.finishedAt ?? this.now()) - this.startedAt; }
+  get revealedCells() { return new Set(this.level.entries.filter((entry) => this.hardRevealedEntries.has(entry.id)).flatMap(entryCells)); }
   setMode(mode) { if (!['easy', 'hard'].includes(mode)) throw new Error('Invalid play mode'); this.mode = mode; if (!this.completed && mode === 'easy') this.everAssisted = true; }
   update(changes) {
     if (this.completed) return false;
-    Object.assign(this.values, changes);
+    const locked = this.revealedCells;
+    for (const [key, value] of Object.entries(changes)) if (!locked.has(key)) this.values[key] = value;
     for (const key of Object.keys(this.values)) if (!this.values[key]) delete this.values[key];
     if (evaluate(this.level.entries, this.values).complete) { this.finishedAt = this.now(); this.finishedMode = this.mode; this.finishReason = 'solved'; }
     return this.completed;
@@ -71,16 +73,21 @@ export class GameSession {
   }
   reveal(entryId) {
     if (this.completed) return { status: 'finished' };
-    if (this.mode !== 'easy') return { status: 'unavailable' };
     const entry = this.level.entries.find((entry) => entry.id === entryId);
     if (!entry) return { status: 'invalid' };
-    if (this.revealedEntries.has(entryId)) return { status: 'ok', entry, reused: true };
-    if (this.revealedEntries.size >= 3) return { status: 'limit' };
+    const viewed = this.mode === 'hard' ? this.hardRevealedEntries : this.revealedEntries;
+    if (viewed.has(entryId)) return { status: 'ok', entry, reused: true };
+    if (this.mode === 'hard' && this.hardRevealedEntries.size >= 3) return { status: 'limit' };
     this.revealedEntries.add(entryId);
+    this.everAssisted = true;
+    if (this.mode === 'hard') {
+      this.update(Object.fromEntries(entryCells(entry).map((key, i) => [key, [...entry.answer][i]])));
+      this.hardRevealedEntries.add(entryId);
+    }
     return { status: 'ok', entry, reused: false };
   }
   endAndReveal() {
-    if (this.completed || this.mode !== 'hard') return false;
+    if (this.completed) return false;
     this.finishedAt = this.now(); this.finishedMode = this.mode; this.finishReason = 'revealed';
     this.values = Object.fromEntries(this.level.entries.flatMap((entry) => entryCells(entry).map((key, i) => [key, [...entry.answer][i]])));
     return true;

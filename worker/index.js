@@ -27,9 +27,8 @@ export function validateFinish(data, level) {
   need(integer(data.elapsedMs, MAX_MS), 'Invalid elapsed time');
   need(['easy', 'hard'].includes(data.finishedMode), 'Invalid finished mode');
   need(typeof data.everAssisted === 'boolean', 'Invalid assistance flag');
-  need(integer(data.lookupCount, 100000) && integer(data.revealCount, 3), 'Invalid help counts');
+  need(integer(data.lookupCount, 100000) && integer(data.revealCount, level.entryCount), 'Invalid help counts');
   need(data.everAssisted || (data.finishedMode === 'hard' && data.revealCount === 0 && data.lookupCount <= 3), 'Inconsistent challenge record');
-  need(data.outcome !== 'revealed' || data.finishedMode === 'hard', 'Only Challenge can end early');
   if (data.outcome === 'solved') {
     need(isObject(data.values) && Object.keys(data.values).length === Object.keys(level.solution).length &&
       Object.entries(level.solution).every(([key, letter]) => data.values[key] === letter), 'Board is not solved', 422);

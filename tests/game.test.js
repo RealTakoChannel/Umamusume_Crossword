@@ -195,31 +195,61 @@ test('Assisted answer reveals leave the board untouched and the clock running fo
     time=9000;assert.equal(session.elapsed,8000);assert.equal(session.revealedEntries.size,1);
   }
 });
-test('only three distinct answers can be revealed, repeat viewing is free, and mode switches keep usage',()=>{
+test('Assisted can view every answer without filling the board or spending Challenge reveals',()=>{
   const session=new GameSession(base,'easy');
-  for(const entry of base.entries.slice(0,3))assert.equal(session.reveal(entry.id).status,'ok');
-  assert.equal(session.revealedEntries.size,3);
-  assert.equal(session.reveal(base.entries[3].id).status,'limit');
-  const repeated=session.reveal(base.entries[0].id);assert.equal(repeated.status,'ok');assert.equal(repeated.reused,true);
-  session.setMode('hard');assert.equal(session.reveal(base.entries[3].id).status,'unavailable');
-  session.setMode('easy');assert.equal(session.reveal(base.entries[3].id).status,'limit');
-  assert.equal(session.hardSearches,0);session.query(characters,'米浴');assert.equal(session.revealedEntries.size,3);
-  session.restart(advanced);assert.equal(session.revealedEntries.size,0);assert.equal(session.reveal(advanced.entries[0].id).status,'ok');
+  for(const entry of base.entries)assert.equal(session.reveal(entry.id).status,'ok');
+  assert.equal(session.revealedEntries.size,22);assert.equal(session.hardRevealedEntries.size,0);
+  assert.deepEqual(session.values,{});assert.equal(session.completed,false);
+  assert.equal(session.reveal(base.entries[0].id).reused,true);
+  session.setMode('hard');
+  for(const entry of base.entries.slice(0,3))assert.equal(session.reveal(entry.id).reused,false);
+  assert.equal(session.hardRevealedEntries.size,3);assert.equal(session.reveal(base.entries[3].id).status,'limit');
+  session.setMode('easy');assert.equal(session.reveal(base.entries[3].id).status,'ok');
+  session.setMode('hard');assert.equal(session.reveal(base.entries[3].id).status,'limit');
+  assert.equal(session.reveal(base.entries[0].id).reused,true);assert.equal(session.hardRevealedEntries.size,3);
+  assert.equal(session.hardSearches,0);assert.equal(session.query(characters,'米浴').status,'ok');assert.equal(session.hardRevealedEntries.size,3);
+  session.restart(advanced);assert.equal(session.revealedEntries.size,0);assert.equal(session.hardRevealedEntries.size,0);assert.equal(session.revealedCells.size,0);
 });
-test('invalid answer requests do not use a reveal, and Assisted cannot end by revealing the full solution',()=>{
-  const session=new GameSession(base,'easy');
-  assert.equal(session.reveal('not-an-entry').status,'invalid');assert.equal(session.revealedEntries.size,0);
-  assert.equal(session.endAndReveal(),false);assert.equal(session.completed,false);assert.deepEqual(session.values,{});
+test('invalid answer requests spend no allowance in either mode',()=>{
+  for(const mode of ['easy','hard']){
+    const session=new GameSession(base,mode);
+    assert.equal(session.reveal('not-an-entry').status,'invalid');assert.equal(session.revealedEntries.size,0);assert.equal(session.hardRevealedEntries.size,0);
+    assert.equal(session.completed,false);assert.deepEqual(session.values,{});
+  }
 });
-test('ending Challenge freezes time, reveals the whole solution, and is distinct from solving',()=>{
-  for(const level of levels){
-    let time=1000;const session=new GameSession(level,'hard',()=>time);session.update({[entryCells(level.entries[0])[0]]:'X'});
+test('ending either mode freezes time, reveals the whole solution, and is distinct from solving',()=>{
+  for(const level of levels)for(const mode of ['easy','hard']){
+    let time=1000;const session=new GameSession(level,mode,()=>time);session.update({[entryCells(level.entries[0])[0]]:'X'});
     time=9000;assert.equal(session.endAndReveal(),true);assert.equal(session.completed,true);
-    assert.equal(session.finishReason,'revealed');assert.equal(session.finishedMode,'hard');assert.deepEqual(session.values,solution(level));
+    assert.equal(session.finishReason,'revealed');assert.equal(session.finishedMode,mode);assert.deepEqual(session.values,solution(level));
     const frozen={...session.values};time=20000;assert.equal(session.elapsed,8000);
     assert.equal(session.update({[entryCells(level.entries[0])[0]]:'Z'}),false);assert.deepEqual(session.values,frozen);
     session.setMode('easy');assert.equal(session.elapsed,8000);assert.equal(session.reveal(level.entries[0].id).status,'finished');
     assert.equal(session.endAndReveal(),false);session.restart(level);assert.equal(session.finishReason,null);assert.equal(session.completed,false);
+  }
+});
+
+test('Challenge reveals fill and lock only the chosen word, keep the timer running and hide other correct words',()=>{
+  for(const level of levels){
+    let time=1000;const session=new GameSession(level,'hard',()=>time),revealed=level.entries[0],other=level.entries.find((e)=>e.id!==revealed.id);
+    session.update(Object.fromEntries(entryCells(other).map((key,i)=>[key,[...other.answer][i]])));
+    time=9000;assert.equal(session.reveal(revealed.id).status,'ok');assert.equal(session.everAssisted,true);
+    assert.equal(session.completed,false);time=12000;assert.equal(session.elapsed,11000);
+    const feedback=feedbackFor(level.entries,session.values,'hard',session.hardRevealedEntries);
+    assert.deepEqual([...feedback.solved],[revealed.id]);assert.deepEqual(feedback.greenCells,new Set(entryCells(revealed)));
+    for(const key of entryCells(revealed)){const correct=session.values[key];session.update({[key]:'?'});assert.equal(session.values[key],correct);}
+    session.setMode('easy');session.update({[entryCells(revealed)[0]]:''});session.setMode('hard');
+    assert.ok(entryCells(revealed).every((key)=>session.values[key]));assert.equal(session.hardRevealedEntries.size,1);
+  }
+});
+
+test('revealing the last missing word completes once and freezes the clock with help recorded',()=>{
+  for(const level of levels){
+    let time=0;const session=new GameSession(level,'hard',()=>time),entry=level.entries[0],values=solution(level);
+    delete values[entryCells(entry)[0]];session.update(values);time=15000;
+    assert.equal(session.reveal(entry.id).status,'ok');assert.equal(session.completed,true);assert.equal(session.finishReason,'solved');
+    assert.equal(session.hardRevealedEntries.size,1);assert.equal(session.revealedEntries.size,1);assert.equal(session.everAssisted,true);
+    time=30000;assert.equal(session.elapsed,15000);assert.equal(session.reveal(entry.id).status,'finished');
   }
 });
 test('normal completion stays a win and cannot subsequently be converted to an early ending',()=>{

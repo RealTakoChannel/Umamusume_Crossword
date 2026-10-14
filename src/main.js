@@ -29,8 +29,8 @@ const currentLevel = () => session?.level || previewLevel;
 const entries = () => currentLevel()?.entries || [];
 const currentMode = () => session?.mode || draft.mode;
 const solutionView = () => session?.finishReason === 'revealed';
-const feedback = () => solutionView() ? { solved:new Set(), greenCells:new Set() } : feedbackFor(entries(), session?.values || {}, currentMode());
-const answerVisible = (entry, solved) => solutionView() || (currentMode()==='easy' && (solved.has(entry.id) || session?.revealedEntries.has(entry.id)));
+const feedback = () => solutionView() ? { solved:new Set(), greenCells:new Set() } : feedbackFor(entries(), session?.values || {}, currentMode(), session?.hardRevealedEntries);
+const answerVisible = (entry, solved) => solutionView() || session?.hardRevealedEntries.has(entry.id) || (currentMode()==='easy' && (solved.has(entry.id) || session?.revealedEntries.has(entry.id)));
 const announce = (text) => { $('announcement').textContent = text; };
 
 function nameCard(character, className = 'answer-names') {
@@ -168,7 +168,11 @@ function renderGame() {
     ? t('progressCorrect',{n:solved.size,total:entries().length})
     : t('progressFilled',{n:Object.values(session?.values || {}).filter(Boolean).length,total:inputs.size});
   const selected = new Set(entryCells(active));
+  const locked = session?.revealedCells || new Set();
   for (const [key, cell] of containers) {
+    const input = inputs.get(key);
+    input.value = session?.values[key] || '';
+    input.readOnly = Boolean(session?.completed) || locked.has(key);
     cell.classList.toggle('active-word', selected.has(key)); cell.classList.toggle('selected',key===activeKey);
     cell.classList.toggle('correct',greenCells.has(key));
     cell.classList.toggle('solution',solutionView());
@@ -189,19 +193,19 @@ function renderGame() {
   $('finish-mode').textContent = t((session?.finishedMode || currentMode())==='easy'?'easy':'hard');
   $('finish-title').textContent=t(solutionView()?'endedTitle':'finishTitle');
   $('finish-dialog').querySelector('.dialog-copy').textContent=t(solutionView()?'endedCopy':'finishCopy');
-  renderAnswerActions(solved); renderClues(solved); updateTimer();
+  renderAnswerActions(); renderClues(solved); updateTimer();
 }
 
-function renderAnswerActions(solved = feedback().solved) {
-  const easy=currentMode()==='easy', remaining=Math.max(0,3-(session?.revealedEntries.size||0));
-  const alreadyViewed=session?.revealedEntries.has(active.id);
-  $('reveal-answer').hidden=!easy||Boolean(session?.completed);
+function renderAnswerActions() {
+  const easy=currentMode()==='easy', remaining=Math.max(0,3-(session?.hardRevealedEntries.size||0));
+  const alreadyViewed=(easy?session?.revealedEntries:session?.hardRevealedEntries)?.has(active.id);
+  $('reveal-answer').hidden=Boolean(session?.completed);
   $('reveal-answer').textContent=t(alreadyViewed?'revealAgain':'revealAnswer');
-  $('reveal-answer').disabled=!session||session.completed||(remaining===0&&!alreadyViewed);
-  $('reveal-allowance').hidden=!easy||Boolean(session?.completed);
-  $('reveal-allowance').textContent=t('revealRemaining',{n:remaining});
-  $('end-game').hidden=easy||!session||session.completed;
-  $('answer-action-note').textContent=session?.completed?'':t(easy?'revealNote':'endActionNote');
+  $('reveal-answer').disabled=!session||session.completed||(!easy&&remaining===0&&!alreadyViewed);
+  $('reveal-allowance').hidden=Boolean(session?.completed);
+  $('reveal-allowance').textContent=easy?t('revealUnlimited'):t('revealRemaining',{n:remaining});
+  $('end-game').hidden=!session||session.completed;
+  $('answer-action-note').textContent=session?.completed?'':t(easy?'revealNote':'hardRevealNote');
 }
 
 function renderAnswerDialog() {
@@ -209,7 +213,8 @@ function renderAnswerDialog() {
   $('revealed-clue').textContent=`${t('currentEntry',{number:entry.number,direction:t(entry.direction)})} · ${entry.clues[language]}`;
   $('revealed-literal').textContent=entry.answer;
   $('revealed-names').replaceChildren(nameCard(characterMap.get(entry.characterId)));
-  $('answer-dialog-note').textContent=`${t('revealRemaining',{n:Math.max(0,3-session.revealedEntries.size)})} · ${t('revealNote')}`;
+  const easy=currentMode()==='easy';
+  $('answer-dialog-note').textContent=`${easy?t('revealUnlimited'):t('revealRemaining',{n:Math.max(0,3-session.hardRevealedEntries.size)})} · ${t(easy?'revealNote':'hardRevealNote')}`;
 }
 
 function renderClues(solved = feedback().solved) {
@@ -410,10 +415,13 @@ $('reveal-answer').addEventListener('click',()=>{
   if(!session||session.completed)return;
   const result=session.reveal(active.id);
   if(result.status!=='ok'){if(result.status==='limit')announce(t('revealLimit'));return;}
+  if(session.completed){
+    void analytics.end(runHandle,session);renderGame();announce(t('finishAnnouncement',{time:formatTime(session.elapsed)}));finish.showModal();return;
+  }
   revealedEntryId=active.id;renderGame();renderAnswerDialog();$('answer-dialog').showModal();
 });
 $('close-answer').addEventListener('click',()=>$('answer-dialog').close());
-$('end-game').addEventListener('click',()=>{if(session&&!session.completed&&session.mode==='hard')$('end-dialog').showModal();});
+$('end-game').addEventListener('click',()=>{if(session&&!session.completed)$('end-dialog').showModal();});
 $('cancel-end').addEventListener('click',()=>$('end-dialog').close());
 $('confirm-end').addEventListener('click',()=>{
   $('end-dialog').close();if(!session?.endAndReveal())return;

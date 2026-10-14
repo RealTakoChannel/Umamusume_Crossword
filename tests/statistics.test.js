@@ -69,7 +69,7 @@ test('revealing the full solution records an early ending without a successful c
 });
 test('incomplete boards, unknown puzzles and revisions, impossible times and erased help history are rejected',async () => {
   const f=fixture(),run=f.start({startMode:'easy'}); await f.send('/api/runs/start',run);
-  for(const extra of [{values:{}},{elapsedMs:-1},{elapsedMs:8*86400000},{revealCount:4},{everAssisted:false},{revision:'stale'}]) {
+  for(const extra of [{values:{}},{elapsedMs:-1},{elapsedMs:8*86400000},{revealCount:level.entryCount+1},{everAssisted:false},{revision:'stale'}]) {
     const response=await f.send('/api/runs/finish',f.finish(run,{everAssisted:true,...extra})); assert.ok(response.status>=400);
   }
   assert.equal((await f.stats()).solved,0);
@@ -161,4 +161,23 @@ test('completion during an in-flight start is delivered without losing or duplic
   const session=new GameSession(puzzle,'hard'),handle=client.begin(session);await handle.ready;
   session.update(level.solution);const ending=client.end(handle,session);release();await ending;await client.flush();
   assert.equal((await f.stats()).starts,1);assert.equal((await f.stats()).solved,1);client.dispose();
+});
+
+test('unlimited Assisted answer views are accepted and an Assisted early end is not a win',async()=>{
+  const f=fixture(),run=f.start({startMode:'easy'});await f.send('/api/runs/start',run);
+  const finish=f.finish(run,{everAssisted:true,finishedMode:'easy',revealCount:22});
+  assert.equal((await f.send('/api/runs/finish',finish)).status,200);assert.equal((await f.stats()).solved,1);assert.equal((await f.stats()).challengeSolved,0);
+  const ended=f.start({startMode:'easy'});await f.send('/api/runs/start',ended);
+  assert.equal((await f.send('/api/runs/finish',f.finish(ended,{outcome:'revealed',everAssisted:true,finishedMode:'easy',revealCount:10}))).status,200);
+  assert.equal((await f.stats()).solved,1);
+});
+
+test('a Challenge win completed by a reveal is reported once and excluded from no-answer-help statistics',async()=>{
+  const f=fixture(),client=new AnalyticsClient({apiBaseUrl:'https://stats.example',fetcher:apiFetch(f)});
+  let time=0;const session=new GameSession(puzzle,'hard',()=>time),handle=client.begin(session);await flush(client,handle);
+  const entry=puzzle.entries[0],values=solutionCells(puzzle);delete values[Object.keys(values).find((key)=>key===`${entry.row},${entry.column}`)];
+  session.update(values);time=45000;session.reveal(entry.id);assert.equal(session.finishReason,'solved');
+  await client.end(handle,session);await client.end(handle,session);await client.flush();client.dispose();
+  const stats=await f.stats();assert.equal(stats.starts,1);assert.equal(stats.solved,1);assert.equal(stats.averageMs,45000);assert.equal(stats.challengeSolved,0);
+  assert.equal(f.sqlite.prepare('SELECT reveal_count FROM game_runs').get().reveal_count,1);
 });

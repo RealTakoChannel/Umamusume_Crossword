@@ -12,15 +12,15 @@ The interface and clues support Simplified Chinese, English and Japanese. Answer
 | --- | --- |
 | Puzzle selection | Select a collection, answer script and individual puzzle |
 | Assisted mode | Fully correct words turn green and reveal all three character names; name lookups are unlimited |
-| Answer assistance | Reveal up to three distinct answers per game; revisiting an answer is free. Reveals do not fill the board or pause the timer |
-| Challenge mode | Hide correctness feedback until every answer is correct; allow three nonempty name searches per game, including searches with no matches |
-| Early ending | End a Challenge game, stop the timer and reveal the full solution, separately from a successful completion |
+| Answer assistance | Assisted offers unlimited answer views without filling the board. Challenge reveals up to three distinct words, fills and locks them in green. The timer continues; repeat views are free |
+| Challenge mode | Hide correctness for unrevealed answers until completion; allow three nonempty name searches per game, including misses. Searches and answer reveals have separate allowances |
+| Early ending | Either mode can end the game, stop the timer and reveal the full solution, separately from a successful completion |
 | Name lookup | Search Chinese, English, kana, partial names and dictionary aliases; results show all three names |
 | Input | Keyboard navigation, direction switching at crossings, whole-word paste and Japanese IME support |
 | Settings | Interface-language and play-mode changes preserve the board, timer and used allowances; applying a different puzzle or answer script starts a new game |
 | Cloud statistics | Starts, successful completions and average solve times by puzzle revision; separate all-Challenge results and multilingual display |
 
-Timing starts when a game session is created and stops on success or confirmed early ending. Settings, search and answer dialogs do not pause it. Searches and answer reveals use separate allowances; switching modes does not restore either allowance.
+Timing starts when a game session is created and stops on success or confirmed early ending. Settings, search and answer dialogs do not pause it. Searches and Challenge reveals use separate allowances; switching modes does not restore either allowance. Assisted answer views do not consume Challenge reveals. Challenge-revealed cells stay locked across mode changes. Games with any answer views count toward total completions but not no-answer-help Challenge statistics.
 
 ## Development environment and commands
 
