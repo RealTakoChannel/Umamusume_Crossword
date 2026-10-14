@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "id": "epithets-1-kana",
+  "title": {
+    "zh-CN": "专属称号 1 · 片假名",
+    "en": "Signature Epithets 1 · Katakana",
+    "ja": "二つ名 1・カタカナ"
+  },
+  "description": {
+    "zh-CN": "看二つ名猜马娘。原表同时列出游戏和毛巾二つ名时，两项都显示。中英文为本项目译文，日文保留原文。",
+    "en": "Name the runner from her epithets. Both game and towel epithets appear when separately listed in the source table. Chinese and English clues are our translations.",
+    "ja": "二つ名からウマ娘を当てよう。参照表にゲーム版とタオル版の両方がある場合は併記。中国語・英語は本サイトの訳です。"
+  },
+  "difficulty": "epithets",
+  "answerLanguage": "ja",
+  "grid": {
+    "rows": 20,
+    "columns": 18,
+    "layout": [
+      "####.########.####",
+      "##.......#.##.####",
+      "####.#####.#......",
+      "###........##.#.##",
+      "####.#####.##.#.##",
+      "####.#####.##.#.##",
+      "##########.##.#.##",
+      "######.##.....#.##",
+      "####......###.###.",
+      ".#####.##.#######.",
+      ".#......#.#######.",
+      ".###.#.#.......##.",
+      ".###.#.##.#######.",
+      "........#.#.##.##.",
+      ".###.#.##.........",
+      ".###.######.##.###",
+      "#........##.##.###",
+      "###########.##.###",
+      "###########.##.###",
+      "######.........###"
+    ]
+  },
+  "entries": [
+    {
+      "id": "3-across",
+      "number": 3,
+      "direction": "across",
+      "row": 1,
+      "column": 2,
+      "characterId": "admire-vega",
+      "answer": "アドマイヤベガ",
+      "clues": {
+        "zh-CN": "二つ名：闪耀的一等星",
+        "en": "Epithet: A Shining First-Magnitude Star",
+        "ja": "二つ名：煌めく一等星"
+      }
+    },
+    {
+      "id": "5-across",
+      "number": 5,
+      "direction": "across",
+      "row": 2,
+      "column": 12,
+      "characterId": "buena-vista",
+      "answer": "ブエナビスタ",
+      "clues": {
+        "zh-CN": "二つ名：约定的绝景\n毛巾二つ名：奔向未曾见过的绝景",
+        "en": "Epithet: The Promised Breathtaking View\nTowel epithet: Onward to an Unseen Breathtaking View",
+        "ja": "二つ名：約束の絶景\nタオルの二つ名：見果てぬ絶景を往く"
+      }
+    },
+    {
+      "id": "7-across",
+      "number": 7,
+      "direction": "across",
+      "row": 3,
+      "column": 3,
+      "characterId": "ikuno-dictus",
+      "answer": "イクノディクタス",
+      "clues": {
+        "zh-CN": "二つ名：铁之女",
+        "en": "Epithet: The Iron Lady",
+        "ja": "二つ名：鉄の女"
+      }
+    },
+    {
+      "id": "9-across",
+      "number": 9,
+      "direction": "across",
+      "row": 7,
+      "column": 9,
+      "characterId": "cesario",
+      "answer": "シーザリオ",
+      "clues": {
+        "zh-CN": "二つ名：明星丽人\n毛巾二つ名：双国女王",
+        "en": "Epithet: The Starlit Beauty\nTowel epithet: Queen of Two Nations",
+        "ja": "二つ名：明星の麗人\nタオルの二つ名：双国の女王"
+      }
+    },
+    {
+      "id": "10-across",
+      "number": 10,
+      "direction": "across",
+      "row": 8,
+      "column": 4,
+      "characterId": "hishi-amazon",
+      "answer": "ヒシアマゾン",
+      "clues": {
+        "zh-CN": "二つ名：女杰",
+        "en": "Epithet: The Heroine",
+        "ja": "二つ名：女傑"
+      }
+    },
+    {
+      "id": "13-across",
+      "number": 13,
+      "direction": "across",
+      "row": 10,
+      "column": 2,
+      "characterId": "duramente",
+      "answer": "ドゥラメンテ",
+      "clues": {
+        "zh-CN": "二つ名：最强的体现者\n毛巾二つ名：成为“最强”。",
+        "en": "Epithet: The Embodiment of Strength\nTowel epithet: Be “the Strongest”.",
+        "ja": "二つ名：最強の体現者\nタオルの二つ名：”最強”たれ。"
+      }
+    },
+    {
+      "id": "15-across",
+      "number": 15,
+      "direction": "across",
+      "row": 11,
+      "column": 8,
+      "characterId": "tsurumaru-tsuyoshi",
+      "answer": "ツルマルツヨシ",
+      "clues": {
+        "zh-CN": "二つ名：全力积极向前的刚志\n毛巾二つ名：不屈的乐观女孩",
+        "en": "Epithet: Tsuyoshi, Always Giving Her All and Looking Forward\nTowel epithet: The Unyielding Optimist",
+        "ja": "二つ名：全力前向きツヨシ\nタオルの二つ名：不屈のポジティブ娘"
+      }
+    },
+    {
+      "id": "16-across",
+      "number": 16,
+      "direction": "across",
+      "row": 13,
+      "column": 0,
+      "characterId": "super-creek",
+      "answer": "スーパークリーク",
+      "clues": {
+        "zh-CN": "二つ名：高速长途跑者",
+        "en": "Epithet: The High-Speed Stayer",
+        "ja": "二つ名：高速ステイヤー"
+      }
+    },
+    {
+      "id": "19-across",
+      "number": 19,
+      "direction": "across",
+      "row": 14,
+      "column": 9,
+      "characterId": "fine-motion",
+      "answer": "ファインモーション",
+      "clues": {
+        "zh-CN": "二つ名：随心所欲的大小姐\n毛巾二つ名：随心所欲的公主",
+        "en": "Epithet: The Free-Spirited Young Lady\nTowel epithet: The Free-Spirited Princess",
+        "ja": "二つ名：気ままなお嬢様\nタオルの二つ名：気ままなお姫様"
+      }
+    },
+    {
+      "id": "20-across",
+      "number": 20,
+      "direction": "across",
+      "row": 16,
+      "column": 1,
+      "characterId": "mayano-top-gun",
+      "answer": "マヤノトップガン",
+      "clues": {
+        "zh-CN": "二つ名：变幻自在",
+        "en": "Epithet: Ever-Changing",
+        "ja": "二つ名：変幻自在"
+      }
+    },
+    {
+      "id": "21-across",
+      "number": 21,
+      "direction": "across",
+      "row": 19,
+      "column": 6,
+      "characterId": "el-condor-pasa",
+      "answer": "エルコンドルパサー",
+      "clues": {
+        "zh-CN": "二つ名：怪鸟",
+        "en": "Epithet: The Mysterious Bird",
+        "ja": "二つ名：怪鳥"
+      }
+    },
+    {
+      "id": "1-down",
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "column": 4,
+      "characterId": "tamamo-cross",
+      "answer": "タマモクロス",
+      "clues": {
+        "zh-CN": "二つ名：白色闪电",
+        "en": "Epithet: White Lightning",
+        "ja": "二つ名：白い稲妻"
+      }
+    },
+    {
+      "id": "2-down",
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "column": 13,
+      "characterId": "t-m-opera-o",
+      "answer": "テイエムオペラオー",
+      "clues": {
+        "zh-CN": "二つ名：世纪末霸王",
+        "en": "Epithet: Overlord of the Century’s End",
+        "ja": "二つ名：世紀末覇王"
+      }
+    },
+    {
+      "id": "4-down",
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "column": 10,
+      "characterId": "grass-wonder",
+      "answer": "グラスワンダー",
+      "clues": {
+        "zh-CN": "二つ名：不死鸟",
+        "en": "Epithet: The Phoenix",
+        "ja": "二つ名：不死鳥"
+      }
+    },
+    {
+      "id": "6-down",
+      "number": 6,
+      "direction": "down",
+      "row": 2,
+      "column": 15,
+      "characterId": "biwa-hayahide",
+      "answer": "ビワハヤヒデ",
+      "clues": {
+        "zh-CN": "二つ名：胜利的探究者",
+        "en": "Epithet: Seeker of Victory",
+        "ja": "二つ名：勝利の探究者"
+      }
+    },
+    {
+      "id": "8-down",
+      "number": 8,
+      "direction": "down",
+      "row": 7,
+      "column": 6,
+      "characterId": "daring-heart",
+      "answer": "デアリングハート",
+      "clues": {
+        "zh-CN": "二つ名：果敢女王\n毛巾二つ名：心怀凛然",
+        "en": "Epithet: Daring Queen\nTowel epithet: A Resolute Heart",
+        "ja": "二つ名：Daring Queen\nタオルの二つ名：心、凛然と"
+      }
+    },
+    {
+      "id": "9-down",
+      "number": 9,
+      "direction": "down",
+      "row": 7,
+      "column": 9,
+      "characterId": "symboli-rudolf",
+      "answer": "シンボリルドルフ",
+      "clues": {
+        "zh-CN": "二つ名：皇帝",
+        "en": "Epithet: The Emperor",
+        "ja": "二つ名：皇帝"
+      }
+    },
+    {
+      "id": "11-down",
+      "number": 11,
+      "direction": "down",
+      "row": 8,
+      "column": 17,
+      "characterId": "mihono-bourbon",
+      "answer": "ミホノブルボン",
+      "clues": {
+        "zh-CN": "二つ名：坡道训练的宠儿",
+        "en": "Epithet: Prodigy of the Training Hill",
+        "ja": "二つ名：坂路の申し子"
+      }
+    },
+    {
+      "id": "12-down",
+      "number": 12,
+      "direction": "down",
+      "row": 9,
+      "column": 0,
+      "characterId": "maruzensky",
+      "answer": "マルゼンスキー",
+      "clues": {
+        "zh-CN": "二つ名：超级跑车",
+        "en": "Epithet: Supercar",
+        "ja": "二つ名：スーパーカー"
+      }
+    },
+    {
+      "id": "14-down",
+      "number": 14,
+      "direction": "down",
+      "row": 10,
+      "column": 4,
+      "characterId": "line-craft",
+      "answer": "ラインクラフト",
+      "clues": {
+        "zh-CN": "二つ名：绽放的开拓者\n毛巾二つ名：开朗的开拓者",
+        "en": "Epithet: The Blossoming Pioneer\nTowel epithet: The Cheerful Pioneer",
+        "ja": "二つ名：開花する開拓者\nタオルの二つ名：朗らかなる開拓者"
+      }
+    },
+    {
+      "id": "17-down",
+      "number": 17,
+      "direction": "down",
+      "row": 13,
+      "column": 11,
+      "characterId": "taiki-shuttle",
+      "answer": "タイキシャトル",
+      "clues": {
+        "zh-CN": "二つ名：最强一哩跑者",
+        "en": "Epithet: The Strongest Miler",
+        "ja": "二つ名：最強マイラー"
+      }
+    },
+    {
+      "id": "18-down",
+      "number": 18,
+      "direction": "down",
+      "row": 13,
+      "column": 14,
+      "characterId": "gold-city",
+      "answer": "ゴールドシチー",
+      "clues": {
+        "zh-CN": "二つ名：百年一遇的美少女",
+        "en": "Epithet: A Once-in-a-Century Beauty",
+        "ja": "二つ名：百年に一人の美少女"
+      }
+    }
+  ]
+}

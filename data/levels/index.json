@@ -7,6 +7,11 @@
       "enabled": true
     },
     {
+      "id": "beginner-1-kana",
+      "file": "beginner-1-kana.json",
+      "enabled": true
+    },
+    {
       "id": "advanced-1-en",
       "file": "advanced-1-en.json",
       "enabled": true
@@ -14,6 +19,26 @@
     {
       "id": "advanced-1-kana",
       "file": "advanced-1-kana.json",
+      "enabled": true
+    },
+    {
+      "id": "epithets-1-en",
+      "file": "epithets-1-en.json",
+      "enabled": true
+    },
+    {
+      "id": "epithets-1-kana",
+      "file": "epithets-1-kana.json",
+      "enabled": true
+    },
+    {
+      "id": "cinderella-1-en",
+      "file": "cinderella-1-en.json",
+      "enabled": true
+    },
+    {
+      "id": "cinderella-1-kana",
+      "file": "cinderella-1-kana.json",
       "enabled": true
     }
   ]

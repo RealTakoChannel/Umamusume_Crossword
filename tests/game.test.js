@@ -5,11 +5,11 @@ import { checkData } from '../scripts/check-data.mjs';
 import { GameSession, entryCells, feedbackFor, evaluate, normalizeAnswer, searchCharacters, validateLevel, formatTime, LANGUAGES } from '../src/game.js';
 import { messages, translate } from '../src/i18n.js';
 const {levels,characters}=await checkData();
-const base=levels.find((e)=>e.id==='beginner-1-en'), advanced=levels.find((e)=>e.id==='advanced-1-en'), kana=levels.find((e)=>e.id==='advanced-1-kana');
+const base=levels.find((e)=>e.id==='beginner-1-en'), advanced=levels.find((e)=>e.id==='advanced-1-en'), kana=levels.find((e)=>e.id==='beginner-1-kana'), advancedKana=levels.find((e)=>e.id==='advanced-1-kana');
 const solution=(level)=>Object.fromEntries(level.entries.flatMap((e)=>entryCells(e).map((key,i)=>[key,[...e.answer][i]])));
 
-test('all three migrated levels validate, with 11 across and 11 down and three clues each',()=>{
-  assert.equal(levels.length,3);assert.equal(characters.length,80);
+test('all eight levels validate, with 11 across and 11 down and three clues each',()=>{
+  assert.equal(levels.length,8);assert.equal(characters.length,97);
   for(const level of levels){
     assert.equal(level.entries.filter((e)=>e.direction==='across').length,11);
     assert.equal(level.entries.filter((e)=>e.direction==='down').length,11);
@@ -19,16 +19,100 @@ test('all three migrated levels validate, with 11 across and 11 down and three c
 });
 test('migrations preserve the original boards, positions, answers and Chinese clues',async()=>{
   // The original dimensions and character/clue correspondence are fixed fixtures.
-  const totals=levels.map((l)=>({id:l.id,rows:l.grid.rows,cols:l.grid.columns,entries:l.entries.length}));
-  assert.deepEqual(totals,[{id:'beginner-1-en',rows:24,cols:24,entries:22},{id:'advanced-1-en',rows:25,cols:25,entries:22},{id:'advanced-1-kana',rows:19,cols:20,entries:22}]);
+  const totals=[base,advanced,kana].map((l)=>({id:l.id,rows:l.grid.rows,cols:l.grid.columns,entries:l.entries.length}));
+  assert.deepEqual(totals,[{id:'beginner-1-en',rows:24,cols:24,entries:22},{id:'advanced-1-en',rows:25,cols:25,entries:22},{id:'beginner-1-kana',rows:19,cols:20,entries:22}]);
   const englishCharacters=new Set(base.entries.map((e)=>e.characterId));
   assert.deepEqual(new Set(kana.entries.map((e)=>e.characterId)),englishCharacters);
   for(const e of kana.entries)assert.equal(e.clues['zh-CN'].replace('名字意为','英文名是').replace('“双涡轮”。','“双涡轮”的意思。'),base.entries.find((x)=>x.characterId===e.characterId).clues['zh-CN']);
+});
+
+test('each of the four collections has both scripts, and advanced kana matches the advanced English puzzle',()=>{
+  for(const collection of ['beginner','advanced','epithets','cinderella'])for(const script of ['en','ja']){
+    assert.equal(levels.filter((l)=>l.difficulty===collection&&l.answerLanguage===script).length,1);
+  }
+  assert.equal(kana.difficulty,'beginner');assert.equal(advancedKana.difficulty,'advanced');
+  assert.deepEqual(new Set(advanced.entries.map((e)=>e.characterId)),new Set(advancedKana.entries.map((e)=>e.characterId)));
+  assert.notDeepEqual(new Set(kana.entries.map((e)=>e.characterId)),new Set(advancedKana.entries.map((e)=>e.characterId)));
+  for(const e of advanced.entries)assert.deepEqual(advancedKana.entries.find((x)=>x.characterId===e.characterId).clues,e.clues);
+});
+
+test('Cinderella Chinese display names and clue references follow the requested translations while old queries still work',async()=>{
+  const requested={
+    'dicta-striker':'狄杜射手','ellerslie-pride':'艾勒斯利荣耀','obey-your-master':'听命汝主',
+    'belno-light':'崭新光辉','michelle-my-baby':'米歇尔宝贝','moonlight-lunacy':'月光狂气',
+  };
+  const source=JSON.parse(await readFile(new URL('../data/cinderella-gray.json',import.meta.url),'utf8'));
+  for(const [id,name] of Object.entries(requested)){
+    assert.equal(characters.find((c)=>c.id===id).names['zh-CN'],name);
+    assert.equal(source.entries.find((c)=>c.characterId===id).names['zh-CN'],name);
+    assert.equal(searchCharacters(characters,name)[0].id,id);
+  }
+  for(const level of levels.filter((l)=>l.difficulty==='cinderella'))assert.match(level.entries.find((e)=>e.characterId==='gold-city').clues['zh-CN'],/艾勒斯利荣耀/);
+  for(const [query,id] of [['迪克塔斯强袭','dicta-striker'],['贝尔诺之光','belno-light'],['艾勒斯利骄傲','ellerslie-pride'],['服从命令','obey-your-master']])assert.equal(searchCharacters(characters,query)[0].id,id);
 });
 test('invalid crossings, missing translations and missing character references are rejected',()=>{
   const missing=structuredClone(base);delete missing.entries[0].clues.ja;assert.throws(()=>validateLevel(missing,characters),/Missing clue/);
   const ref=structuredClone(base);ref.entries[0].characterId='missing';assert.throws(()=>validateLevel(ref,characters),/mismatch/);
   const crossing=structuredClone(base);crossing.entries[0].column++;assert.throws(()=>validateLevel(crossing,characters));
+});
+
+test('epithet puzzles use the same 22 characters and all three clues in both answer scripts',()=>{
+  const en=levels.find((l)=>l.id==='epithets-1-en'),ja=levels.find((l)=>l.id==='epithets-1-kana');
+  assert.equal(en.difficulty,'epithets');assert.equal(ja.difficulty,'epithets');
+  assert.equal(en.answerLanguage,'en');assert.equal(ja.answerLanguage,'ja');
+  assert.deepEqual(new Set(en.entries.map((e)=>e.characterId)),new Set(ja.entries.map((e)=>e.characterId)));
+  for(const e of en.entries)assert.deepEqual(e.clues,ja.entries.find((x)=>x.characterId===e.characterId).clues);
+  for(const name of ['西沙里奥','大鸣大放','莱茵力量','果敢之心','迷人景致'])assert.ok(searchCharacters(characters,name).length);
+});
+
+test('Cinderella Gray boards share 22 story clues, including original characters rather than real-horse names',async()=>{
+  const en=levels.find((l)=>l.id==='cinderella-1-en'),ja=levels.find((l)=>l.id==='cinderella-1-kana');
+  const source=JSON.parse(await readFile(new URL('../data/cinderella-gray.json',import.meta.url),'utf8'));
+  assert.equal(source.entries.length,22);assert.equal(new Set(source.entries.map((r)=>r.characterId)).size,22);
+  assert.equal(en.difficulty,'cinderella');assert.equal(ja.difficulty,'cinderella');
+  assert.equal(en.answerLanguage,'en');assert.equal(ja.answerLanguage,'ja');
+  assert.deepEqual(new Set(en.entries.map((e)=>e.characterId)),new Set(ja.entries.map((e)=>e.characterId)));
+  for(const r of source.entries){
+    const e=en.entries.find((e)=>e.characterId===r.characterId),j=ja.entries.find((e)=>e.characterId===r.characterId);
+    assert.ok(e&&j);assert.deepEqual(e.clues,j.clues);assert.deepEqual(e.clues,r.clues);assert.ok(r.scene&&r.sources.length);
+  }
+  assert.equal(en.entries.find((e)=>e.characterId==='dicta-striker').answer,'DICTASTRIKER');
+  assert.equal(en.entries.find((e)=>e.characterId==='obey-your-master').answer,'OBEYYOURMASTER');
+  assert.equal(en.entries.find((e)=>e.characterId==='toni-bianca').answer,'TONIBIANCA');
+  assert.equal(ja.entries.find((e)=>e.characterId==='mini-the-lady').answer,'ミニーザレディ');
+  assert.ok(!en.entries.some((e)=>['SOCCERBOY','PAYTHEBUTLER','TONYBIN'].includes(e.answer)));
+  assert.match(en.entries.find((e)=>e.characterId==='inari-one').clues['zh-CN'],/漫画/);
+});
+
+test('Cinderella Gray character lookup includes Chinese variants, English spellings and kana',()=>{
+  for(const query of ['贝尔诺光','Belno','ベルノ','べるの'])assert.equal(searchCharacters(characters,query)[0].id,'belno-light');
+  for(const query of ['藤正进行曲','Fujimasa','フジマサ'])assert.equal(searchCharacters(characters,query)[0].id,'fujimasa-march');
+  assert.equal(searchCharacters(characters,'Minnie the Lady')[0].id,'mini-the-lady');
+  assert.equal(searchCharacters(characters,'Tony Bianca')[0].id,'toni-bianca');
+});
+
+test('source snapshot preserves all table rows, blanks and footnotes without inventing towel epithets',async()=>{
+  const source=JSON.parse(await readFile(new URL('../data/epithets.json',import.meta.url),'utf8'));
+  assert.equal(source.source.url,'https://note.com/show248379/n/n81d9ed620aa4');
+  assert.equal(source.records.length,145);assert.equal(new Set(source.records.map((r)=>r.characterJa)).size,145);
+  assert.equal(source.records.filter((r)=>r.usable).length,140);
+  assert.equal(source.records.filter((r)=>r.towelEpithetJa).length,34);
+  const fine=source.records.find((r)=>r.characterJa==='ファインモーション');
+  assert.equal(fine.gameCellOriginal,'気ままなお嬢様※1');assert.equal(fine.gameEpithetJa,'気ままなお嬢様');
+  const emperor=source.records.find((r)=>r.characterJa==='シンボリルドルフ');assert.equal(emperor.towelEpithetJa,null);
+  for(const r of source.records.filter((r)=>!r.usable)){assert.equal(r.gameCellOriginal,'×');assert.equal(r.gameEpithetJa,null);assert.equal(r.towelEpithetJa,null);}
+});
+
+test('dual-epithet clues retain both distinct source titles in every language and both boards',()=>{
+  for(const level of levels.filter((l)=>l.difficulty==='epithets')){
+    const cesario=level.entries.find((e)=>e.characterId==='cesario');
+    assert.equal(cesario.clues.ja,'二つ名：明星の麗人\nタオルの二つ名：双国の女王');
+    assert.equal(cesario.clues['zh-CN'],'二つ名：明星丽人\n毛巾二つ名：双国女王');
+    assert.equal(cesario.clues.en,'Epithet: The Starlit Beauty\nTowel epithet: Queen of Two Nations');
+    assert.equal(level.entries.filter((e)=>e.clues.ja.includes('タオルの二つ名：')).length,7);
+    const single=level.entries.find((e)=>e.characterId==='symboli-rudolf');assert.equal(single.clues.ja,'二つ名：皇帝');
+    for(const entry of level.entries)for(const lang of LANGUAGES)assert.equal(entry.clues[lang].split('\n').length,entry.clues.ja.split('\n').length);
+  }
 });
 test('English and kana normalization preserves distinct small kana and composes voiced letters',()=>{
   assert.equal(normalizeAnswer('Mejiro McQueen'),'MEJIROMCQUEEN');

@@ -98,7 +98,7 @@ export function validateCharacters(registry) {
 export function validateLevel(level, characters) {
   const fail = (message) => { throw new Error(`${level.id || 'level'}: ${message}`); };
   if (level.schemaVersion !== 1 || !/^[a-z0-9-]+$/.test(level.id)) fail('Invalid schemaVersion or id');
-  if (!['beginner', 'advanced'].includes(level.difficulty) || !['en', 'ja'].includes(level.answerLanguage)) fail('Invalid difficulty or answerLanguage');
+  if (!['beginner', 'advanced', 'epithets', 'cinderella'].includes(level.difficulty) || !['en', 'ja'].includes(level.answerLanguage)) fail('Invalid collection or answerLanguage');
   for (const lang of LANGUAGES) if (!level.title?.[lang]?.trim() || !level.description?.[lang]?.trim()) fail(`Missing metadata: ${lang}`);
   const { rows, columns, layout } = level.grid || {};
   if (!Number.isInteger(rows) || !Number.isInteger(columns) || rows < 1 || columns < 1 || rows > 60 || columns > 60) fail('Invalid dimensions');

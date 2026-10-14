@@ -9,7 +9,7 @@
     "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
     "title": { "$ref": "#/$defs/localized" },
     "description": { "$ref": "#/$defs/localized" },
-    "difficulty": { "enum": ["beginner", "advanced"] },
+    "difficulty": { "enum": ["beginner", "advanced", "epithets", "cinderella"] },
     "answerLanguage": { "enum": ["en", "ja"] },
     "grid": {
       "type": "object", "required": ["rows", "columns", "layout"], "additionalProperties": false,

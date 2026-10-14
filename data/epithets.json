@@ -1,0 +1,1431 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "url": "https://note.com/show248379/n/n81d9ed620aa4",
+    "title": "ウマ娘二つ名一覧",
+    "author": "松之助",
+    "published": "2026-06-22",
+    "retrieved": "2026-10-14",
+    "kind": "community-comparison"
+  },
+  "scope": "用户指定网页表格的全部145行快照；不是官方全集，也不补全原表的空白。",
+  "policy": "游戏栏和毛巾栏均有内容时在同一条提示中同时显示两项；只有一项时显示该项；不推断空白的毛巾栏。×视为缺失，双缺失项目不出题。中英文为本项目译文。",
+  "records": [
+    {
+      "characterJa": "スペシャルウィーク",
+      "characterId": "special-week",
+      "gameEpithetJa": "日本の総大将",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "日本の総大将",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サイレンススズカ",
+      "characterId": "silence-suzuka",
+      "gameEpithetJa": "異次元の逃亡者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "異次元の逃亡者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "トウカイテイオー",
+      "characterId": "tokai-teio",
+      "gameEpithetJa": "帝王",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "帝王",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "マルゼンスキー",
+      "characterId": "maruzensky",
+      "gameEpithetJa": "スーパーカー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "スーパーカー",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：超级跑车",
+        "en": "Epithet: Supercar",
+        "ja": "二つ名：スーパーカー"
+      }
+    },
+    {
+      "characterJa": "フジキセキ",
+      "characterId": "fuji-kiseki",
+      "gameEpithetJa": "麗しの三冠ウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "麗しの三冠ウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "オグリキャップ",
+      "characterId": "oguri-cap",
+      "gameEpithetJa": "アイドルウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "アイドルウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ゴールドシップ",
+      "characterId": "gold-ship",
+      "gameEpithetJa": "破天荒",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "破天荒",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ウオッカ",
+      "characterId": "vodka",
+      "gameEpithetJa": "常識破りの女帝",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "常識破りの女帝",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ダイワスカーレット",
+      "characterId": "daiwa-scarlet",
+      "gameEpithetJa": "ミスパーフェクト",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "ミスパーフェクト",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "タイキシャトル",
+      "characterId": "taiki-shuttle",
+      "gameEpithetJa": "最強マイラー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "最強マイラー",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：最强一哩跑者",
+        "en": "Epithet: The Strongest Miler",
+        "ja": "二つ名：最強マイラー"
+      }
+    },
+    {
+      "characterJa": "グラスワンダー",
+      "characterId": "grass-wonder",
+      "gameEpithetJa": "不死鳥",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "不死鳥",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：不死鸟",
+        "en": "Epithet: The Phoenix",
+        "ja": "二つ名：不死鳥"
+      }
+    },
+    {
+      "characterJa": "ヒシアマゾン",
+      "characterId": "hishi-amazon",
+      "gameEpithetJa": "女傑",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "女傑",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：女杰",
+        "en": "Epithet: The Heroine",
+        "ja": "二つ名：女傑"
+      }
+    },
+    {
+      "characterJa": "メジロマックイーン",
+      "characterId": "mejiro-mcqueen",
+      "gameEpithetJa": "名優",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "名優",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "エルコンドルパサー",
+      "characterId": "el-condor-pasa",
+      "gameEpithetJa": "怪鳥",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "怪鳥",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：怪鸟",
+        "en": "Epithet: The Mysterious Bird",
+        "ja": "二つ名：怪鳥"
+      }
+    },
+    {
+      "characterJa": "テイエムオペラオー",
+      "characterId": "t-m-opera-o",
+      "gameEpithetJa": "世紀末覇王",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "世紀末覇王",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：世纪末霸王",
+        "en": "Epithet: Overlord of the Century’s End",
+        "ja": "二つ名：世紀末覇王"
+      }
+    },
+    {
+      "characterJa": "ナリタブライアン",
+      "characterId": "narita-brian",
+      "gameEpithetJa": "影をも恐れぬ怪物",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "影をも恐れぬ怪物",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シンボリルドルフ",
+      "characterId": "symboli-rudolf",
+      "gameEpithetJa": "皇帝",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "皇帝",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：皇帝",
+        "en": "Epithet: The Emperor",
+        "ja": "二つ名：皇帝"
+      }
+    },
+    {
+      "characterJa": "エアグルーヴ",
+      "characterId": "air-groove",
+      "gameEpithetJa": "女帝",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "女帝",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "アグネスデジタル",
+      "characterId": "agnes-digital",
+      "gameEpithetJa": "万能オタク娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "万能オタク娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "セイウンスカイ",
+      "characterId": "seiun-sky",
+      "gameEpithetJa": "トリックスター",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "トリックスター",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "タマモクロス",
+      "characterId": "tamamo-cross",
+      "gameEpithetJa": "白い稲妻",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "白い稲妻",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：白色闪电",
+        "en": "Epithet: White Lightning",
+        "ja": "二つ名：白い稲妻"
+      }
+    },
+    {
+      "characterJa": "ファインモーション",
+      "characterId": "fine-motion",
+      "gameEpithetJa": "気ままなお嬢様",
+      "towelEpithetJa": "気ままなお姫様",
+      "gameCellOriginal": "気ままなお嬢様※1",
+      "towelCellOriginal": "気ままなお姫様",
+      "usable": true,
+      "note": "原表注1：游戏二つ名曾调整；这里保留表中游戏栏与毛巾栏的两种写法，不自行更新。",
+      "clues": {
+        "zh-CN": "二つ名：随心所欲的大小姐\n毛巾二つ名：随心所欲的公主",
+        "en": "Epithet: The Free-Spirited Young Lady\nTowel epithet: The Free-Spirited Princess",
+        "ja": "二つ名：気ままなお嬢様\nタオルの二つ名：気ままなお姫様"
+      }
+    },
+    {
+      "characterJa": "ビワハヤヒデ",
+      "characterId": "biwa-hayahide",
+      "gameEpithetJa": "勝利の探究者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "勝利の探究者",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：胜利的探究者",
+        "en": "Epithet: Seeker of Victory",
+        "ja": "二つ名：勝利の探究者"
+      }
+    },
+    {
+      "characterJa": "マヤノトップガン",
+      "characterId": "mayano-top-gun",
+      "gameEpithetJa": "変幻自在",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "変幻自在",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：变幻自在",
+        "en": "Epithet: Ever-Changing",
+        "ja": "二つ名：変幻自在"
+      }
+    },
+    {
+      "characterJa": "マンハッタンカフェ",
+      "characterId": "manhattan-cafe",
+      "gameEpithetJa": "漆黒の幻影",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "漆黒の幻影",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ミホノブルボン",
+      "characterId": "mihono-bourbon",
+      "gameEpithetJa": "坂路の申し子",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "坂路の申し子",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：坡道训练的宠儿",
+        "en": "Epithet: Prodigy of the Training Hill",
+        "ja": "二つ名：坂路の申し子"
+      }
+    },
+    {
+      "characterJa": "メジロライアン",
+      "characterId": "mejiro-ryan",
+      "gameEpithetJa": "麗しき実力者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "麗しき実力者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ヒシアケボノ",
+      "characterId": "hishi-akebono",
+      "gameEpithetJa": "超大型ウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "超大型ウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ユキノビジン",
+      "characterId": "yukino-bijin",
+      "gameEpithetJa": "岩手の純朴美人",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "岩手の純朴美人",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ライスシャワー",
+      "characterId": "rice-shower",
+      "gameEpithetJa": "黒い刺客",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "黒い刺客",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "アイネスフウジン",
+      "characterId": "ines-fujin",
+      "gameEpithetJa": "風神",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "風神",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "アグネスタキオン",
+      "characterId": "agnes-tachyon",
+      "gameEpithetJa": "超光速のプリンセス",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "超光速のプリンセス",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "アドマイヤベガ",
+      "characterId": "admire-vega",
+      "gameEpithetJa": "煌めく一等星",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "煌めく一等星",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：闪耀的一等星",
+        "en": "Epithet: A Shining First-Magnitude Star",
+        "ja": "二つ名：煌めく一等星"
+      }
+    },
+    {
+      "characterJa": "イナリワン",
+      "characterId": "inari-one",
+      "gameEpithetJa": "大井から来た天下人",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "大井から来た天下人",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ウイニングチケット",
+      "characterId": "winning-ticket",
+      "gameEpithetJa": "新時代の旗手",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "新時代の旗手",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "エアシャカール",
+      "characterId": "air-shakur",
+      "gameEpithetJa": "壁を超えた天才",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "壁を超えた天才",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "エイシンフラッシュ",
+      "characterId": "eishin-flash",
+      "gameEpithetJa": "閃光の切れ味",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "閃光の切れ味",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "カレンチャン",
+      "characterId": "curren-chan",
+      "gameEpithetJa": "閃光乙女",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "閃光乙女",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "カワカミプリンセス",
+      "characterId": "kawakami-princess",
+      "gameEpithetJa": "おませな姫君",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "おませな姫君",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ゴールドシチー",
+      "characterId": "gold-city",
+      "gameEpithetJa": "百年に一人の美少女",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "百年に一人の美少女",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：百年一遇的美少女",
+        "en": "Epithet: A Once-in-a-Century Beauty",
+        "ja": "二つ名：百年に一人の美少女"
+      }
+    },
+    {
+      "characterJa": "サクラバクシンオー",
+      "characterId": "sakura-bakushin-o",
+      "gameEpithetJa": "驀進王",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "驀進王",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シーキングザパール",
+      "characterId": "seeking-the-pearl",
+      "gameEpithetJa": "真珠の煌めき",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "真珠の煌めき",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シンコウウインディ",
+      "characterId": "shinko-windy",
+      "gameEpithetJa": "噛みつきイタズラ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "噛みつきイタズラ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "スイープトウショウ",
+      "characterId": "sweep-tosho",
+      "gameEpithetJa": "ワガママ魔法少女",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "ワガママ魔法少女",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "スーパークリーク",
+      "characterId": "super-creek",
+      "gameEpithetJa": "高速ステイヤー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "高速ステイヤー",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：高速长途跑者",
+        "en": "Epithet: The High-Speed Stayer",
+        "ja": "二つ名：高速ステイヤー"
+      }
+    },
+    {
+      "characterJa": "スマートファルコン",
+      "characterId": "smart-falcon",
+      "gameEpithetJa": "砂のハヤブサ",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "砂のハヤブサ",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ゼンノロブロイ",
+      "characterId": "zenno-rob-roy",
+      "gameEpithetJa": "大器の英雄",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "大器の英雄",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "トーセンジョーダン",
+      "characterId": "tosen-jordan",
+      "gameEpithetJa": "負けず嫌いのギャル",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "負けず嫌いのギャル",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ナカヤマフェスタ",
+      "characterId": "nakayama-festa",
+      "gameEpithetJa": "生粋のギャンブラー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "生粋のギャンブラー",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ナリタタイシン",
+      "characterId": "narita-taishin",
+      "gameEpithetJa": "逆転のウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "逆転のウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ニシノフラワー",
+      "characterId": "nishino-flower",
+      "gameEpithetJa": "小さな天才少女",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "小さな天才少女",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ハルウララ",
+      "characterId": "haru-urara",
+      "gameEpithetJa": "ハルウララがんばる",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "ハルウララがんばる",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "バンブーメモリー",
+      "characterId": "bamboo-memory",
+      "gameEpithetJa": "夢の体現者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "夢の体現者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ビコーペガサス",
+      "characterId": "biko-pegasus",
+      "gameEpithetJa": "ジャスティスビコー",
+      "towelEpithetJa": "ジャスティス・ビコー",
+      "gameCellOriginal": "ジャスティスビコー",
+      "towelCellOriginal": "ジャスティス・ビコー",
+      "usable": true
+    },
+    {
+      "characterJa": "マーベラスサンデー",
+      "characterId": "marvelous-sunday",
+      "gameEpithetJa": "マーベラスの伝道師",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "マーベラスの伝道師",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "マチカネフクキタル",
+      "characterId": "matikanefukukitaru",
+      "gameEpithetJa": "笑門来福",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "笑門来福",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ミスターシービー",
+      "characterId": null,
+      "gameEpithetJa": "ターフの演出家",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "ターフの演出家",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "メイショウドトウ",
+      "characterId": "meisho-doto",
+      "gameEpithetJa": "不屈の挑戦者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "不屈の挑戦者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "メジロドーベル",
+      "characterId": "mejiro-dober",
+      "gameEpithetJa": "クールビューティー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "クールビューティー",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ナイスネイチャ",
+      "characterId": "nice-nature",
+      "gameEpithetJa": "愛しき名脇役",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "愛しき名脇役",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "キングヘイロー",
+      "characterId": "king-halo",
+      "gameEpithetJa": "世代のキング",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "世代のキング",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "マチカネタンホイザ",
+      "characterId": "matikanetannhauser",
+      "gameEpithetJa": "大器晩成",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "大器晩成",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "イクノディクタス",
+      "characterId": "ikuno-dictus",
+      "gameEpithetJa": "鉄の女",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "鉄の女",
+      "towelCellOriginal": null,
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：铁之女",
+        "en": "Epithet: The Iron Lady",
+        "ja": "二つ名：鉄の女"
+      }
+    },
+    {
+      "characterJa": "メジロパーマー",
+      "characterId": "mejiro-palmer",
+      "gameEpithetJa": "波乱の逃げウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "波乱の逃げウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ダイタクヘリオス",
+      "characterId": "daitaku-helios",
+      "gameEpithetJa": "爆アゲパリピウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "爆アゲパリピウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ツインターボ",
+      "characterId": "twin-turbo",
+      "gameEpithetJa": "全力大逃げ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "全力大逃げ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サトノダイヤモンド",
+      "characterId": "satono-diamond",
+      "gameEpithetJa": "願い叶える宝石",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "願い叶える宝石",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "キタサンブラック",
+      "characterId": "kitasan-black",
+      "gameEpithetJa": "お祭り娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "お祭り娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サクラチヨノオー",
+      "characterId": "sakura-chiyono-o",
+      "gameEpithetJa": "花開くサクラ",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "花開くサクラ",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シリウスシンボリ",
+      "characterId": "sirius-symboli",
+      "gameEpithetJa": "赫々たる天狼",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "赫々たる天狼",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "メジロアルダン",
+      "characterId": "mejiro-ardan",
+      "gameEpithetJa": "割れないガラス",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "割れないガラス",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ヤエノムテキ",
+      "characterId": "yaeno-muteki",
+      "gameEpithetJa": "剛毅果断",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "剛毅果断",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ツルマルツヨシ",
+      "characterId": "tsurumaru-tsuyoshi",
+      "gameEpithetJa": "全力前向きツヨシ",
+      "towelEpithetJa": "不屈のポジティブ娘",
+      "gameCellOriginal": "全力前向きツヨシ",
+      "towelCellOriginal": "不屈のポジティブ娘",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：全力积极向前的刚志\n毛巾二つ名：不屈的乐观女孩",
+        "en": "Epithet: Tsuyoshi, Always Giving Her All and Looking Forward\nTowel epithet: The Unyielding Optimist",
+        "ja": "二つ名：全力前向きツヨシ\nタオルの二つ名：不屈のポジティブ娘"
+      }
+    },
+    {
+      "characterJa": "メジロブライト",
+      "characterId": "mejiro-bright",
+      "gameEpithetJa": "のんびりステイヤー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "のんびりステイヤー",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "デアリングタクト",
+      "characterId": "daring-tact",
+      "gameEpithetJa": null,
+      "towelEpithetJa": "純白のティアラ",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "純白のティアラ",
+      "usable": true
+    },
+    {
+      "characterJa": "サクラローレル",
+      "characterId": "sakura-laurel",
+      "gameEpithetJa": "大輪の遅咲き桜",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "大輪の遅咲き桜",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ナリタトップロード",
+      "characterId": "narita-top-road",
+      "gameEpithetJa": "麗しのステイヤー",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "麗しのステイヤー",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ヤマニンゼファー",
+      "characterId": "yamanin-zephyr",
+      "gameEpithetJa": "風の化身",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "風の化身",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "フリオーソ",
+      "characterId": null,
+      "gameEpithetJa": "船橋の英雄",
+      "towelEpithetJa": "希望の船で渡す夢の橋",
+      "gameCellOriginal": "船橋の英雄",
+      "towelCellOriginal": "希望の船で渡す夢の橋",
+      "usable": true
+    },
+    {
+      "characterJa": "トランセンド",
+      "characterId": null,
+      "gameEpithetJa": "未知の探求者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "未知の探求者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "エスポワールシチー",
+      "characterId": null,
+      "gameEpithetJa": "純情×反抗期ガール",
+      "towelEpithetJa": "純情リベリオンガール",
+      "gameCellOriginal": "純情×反抗期ガール",
+      "towelCellOriginal": "純情リベリオンガール",
+      "usable": true
+    },
+    {
+      "characterJa": "ノースフライト",
+      "characterId": "north-flight",
+      "gameEpithetJa": "輝きのフーちゃん",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "輝きのフーちゃん",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シンボリクリスエス",
+      "characterId": "symboli-kris-s",
+      "gameEpithetJa": "漆黒の帝王",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "漆黒の帝王",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "タニノギムレット",
+      "characterId": "tanino-gimlet",
+      "gameEpithetJa": "耽美系破壊神",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "耽美系破壊神",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ダイイチルビー",
+      "characterId": null,
+      "gameEpithetJa": "華麗なる令嬢",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "華麗なる令嬢",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "メジロラモーヌ",
+      "characterId": null,
+      "gameEpithetJa": "魔性の麗人",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "魔性の麗人",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "アストンマーチャン",
+      "characterId": null,
+      "gameEpithetJa": "不滅のマーちゃん",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "不滅のマーちゃん",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サトノクラウン",
+      "characterId": null,
+      "gameEpithetJa": "マジッククラウン",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "マジッククラウン",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "シュヴァルグラン",
+      "characterId": null,
+      "gameEpithetJa": "偉大なウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "偉大なウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ヴィルシーナ",
+      "characterId": null,
+      "gameEpithetJa": "頂点だけは譲れない",
+      "towelEpithetJa": "銀を纏いて頂点へ",
+      "gameCellOriginal": "頂点だけは譲れない",
+      "towelCellOriginal": "銀を纏いて頂点へ",
+      "usable": true
+    },
+    {
+      "characterJa": "ヴィブロス",
+      "characterId": null,
+      "gameEpithetJa": "小悪魔系ウマ娘",
+      "towelEpithetJa": "青き都の風",
+      "gameCellOriginal": "小悪魔系ウマ娘",
+      "towelCellOriginal": "青き都の風",
+      "usable": true
+    },
+    {
+      "characterJa": "ダンツフレーム",
+      "characterId": null,
+      "gameEpithetJa": "幕開く限り何度でも",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "幕開く限り何度でも",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ケイエスミラクル",
+      "characterId": null,
+      "gameEpithetJa": "奇跡の立役者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "奇跡の立役者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ジャングルポケット",
+      "characterId": null,
+      "gameEpithetJa": "最強咆哮娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "最強咆哮娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ビリーヴ",
+      "characterId": null,
+      "gameEpithetJa": "堅忍の速匠",
+      "towelEpithetJa": "堅忍貫く、刹那の名匠",
+      "gameCellOriginal": "堅忍の速匠",
+      "towelCellOriginal": "堅忍貫く、刹那の名匠",
+      "usable": true
+    },
+    {
+      "characterJa": "ノーリーズン",
+      "characterId": null,
+      "gameEpithetJa": "波乱万丈、天下道",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "波乱万丈、天下道",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "スティルインラブ",
+      "characterId": null,
+      "gameEpithetJa": "今でも愛してる",
+      "towelEpithetJa": "赤き魔物を抱いて",
+      "gameCellOriginal": "今でも愛してる",
+      "towelCellOriginal": "赤き魔物を抱いて",
+      "usable": true
+    },
+    {
+      "characterJa": "コパノリッキー",
+      "characterId": null,
+      "gameEpithetJa": "勝利を呼ぶ縁起者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "勝利を呼ぶ縁起者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ホッコータルマエ",
+      "characterId": null,
+      "gameEpithetJa": "苫小牧の星",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "苫小牧の星",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ワンダーアキュート",
+      "characterId": null,
+      "gameEpithetJa": "堅忍不抜のいぶし銀",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "堅忍不抜のいぶし銀",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サムソンビッグ",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": null,
+      "gameCellOriginal": "×",
+      "towelCellOriginal": null,
+      "usable": false
+    },
+    {
+      "characterJa": "サウンズオブアース",
+      "characterId": null,
+      "gameEpithetJa": "情熱的な芸術家",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "情熱的な芸術家",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ロイスアンドロイス",
+      "characterId": null,
+      "gameEpithetJa": "最強の自己演出家",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "最強の自己演出家",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "カツラギエース",
+      "characterId": null,
+      "gameEpithetJa": "世界制覇の大エース",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "世界制覇の大エース",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ネオユニヴァース",
+      "characterId": null,
+      "gameEpithetJa": "コズミックヴァース",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "コズミックヴァース",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ヒシミラクル",
+      "characterId": null,
+      "gameEpithetJa": "のんびり癒しウマ娘",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "のんびり癒しウマ娘",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "タップダンスシチー",
+      "characterId": null,
+      "gameEpithetJa": "夢追う踊り子",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "夢追う踊り子",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ドゥラメンテ",
+      "characterId": "duramente",
+      "gameEpithetJa": "最強の体現者",
+      "towelEpithetJa": "”最強”たれ。",
+      "gameCellOriginal": "最強の体現者",
+      "towelCellOriginal": "”最強”たれ。",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：最强的体现者\n毛巾二つ名：成为“最强”。",
+        "en": "Epithet: The Embodiment of Strength\nTowel epithet: Be “the Strongest”.",
+        "ja": "二つ名：最強の体現者\nタオルの二つ名：”最強”たれ。"
+      }
+    },
+    {
+      "characterJa": "ラインクラフト",
+      "characterId": "line-craft",
+      "gameEpithetJa": "開花する開拓者",
+      "towelEpithetJa": "朗らかなる開拓者",
+      "gameCellOriginal": "開花する開拓者",
+      "towelCellOriginal": "朗らかなる開拓者",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：绽放的开拓者\n毛巾二つ名：开朗的开拓者",
+        "en": "Epithet: The Blossoming Pioneer\nTowel epithet: The Cheerful Pioneer",
+        "ja": "二つ名：開花する開拓者\nタオルの二つ名：朗らかなる開拓者"
+      }
+    },
+    {
+      "characterJa": "シーザリオ",
+      "characterId": "cesario",
+      "gameEpithetJa": "明星の麗人",
+      "towelEpithetJa": "双国の女王",
+      "gameCellOriginal": "明星の麗人",
+      "towelCellOriginal": "双国の女王",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：明星丽人\n毛巾二つ名：双国女王",
+        "en": "Epithet: The Starlit Beauty\nTowel epithet: Queen of Two Nations",
+        "ja": "二つ名：明星の麗人\nタオルの二つ名：双国の女王"
+      }
+    },
+    {
+      "characterJa": "エアメサイア",
+      "characterId": null,
+      "gameEpithetJa": "宿命を果たす者",
+      "towelEpithetJa": "血の宿命に挑め",
+      "gameCellOriginal": "宿命を果たす者",
+      "towelCellOriginal": "血の宿命に挑め",
+      "usable": true
+    },
+    {
+      "characterJa": "デアリングハート",
+      "characterId": "daring-heart",
+      "gameEpithetJa": "Daring Queen",
+      "towelEpithetJa": "心、凛然と",
+      "gameCellOriginal": "Daring Queen",
+      "towelCellOriginal": "心、凛然と",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：果敢女王\n毛巾二つ名：心怀凛然",
+        "en": "Epithet: Daring Queen\nTowel epithet: A Resolute Heart",
+        "ja": "二つ名：Daring Queen\nタオルの二つ名：心、凛然と"
+      }
+    },
+    {
+      "characterJa": "フサイチパンドラ",
+      "characterId": null,
+      "gameEpithetJa": "希望の贈り物",
+      "towelEpithetJa": "”希望”を抱いて",
+      "gameCellOriginal": "希望の贈り物",
+      "towelCellOriginal": "”希望”を抱いて",
+      "usable": true
+    },
+    {
+      "characterJa": "ブエナビスタ",
+      "characterId": "buena-vista",
+      "gameEpithetJa": "約束の絶景",
+      "towelEpithetJa": "見果てぬ絶景を往く",
+      "gameCellOriginal": "約束の絶景",
+      "towelCellOriginal": "見果てぬ絶景を往く",
+      "usable": true,
+      "clues": {
+        "zh-CN": "二つ名：约定的绝景\n毛巾二つ名：奔向未曾见过的绝景",
+        "en": "Epithet: The Promised Breathtaking View\nTowel epithet: Onward to an Unseen Breathtaking View",
+        "ja": "二つ名：約束の絶景\nタオルの二つ名：見果てぬ絶景を往く"
+      }
+    },
+    {
+      "characterJa": "オルフェーヴル",
+      "characterId": null,
+      "gameEpithetJa": "金色の暴君",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "金色の暴君",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ジェンティルドンナ",
+      "characterId": null,
+      "gameEpithetJa": "剛毅なる貴婦人",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "剛毅なる貴婦人",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ウインバリアシオン",
+      "characterId": null,
+      "gameEpithetJa": "不屈のプリンシパル",
+      "towelEpithetJa": "舞い走るは茨道",
+      "gameCellOriginal": "不屈のプリンシパル",
+      "towelCellOriginal": "舞い走るは茨道",
+      "usable": true
+    },
+    {
+      "characterJa": "アドマイヤグルーヴ",
+      "characterId": null,
+      "gameEpithetJa": "孤高の女王",
+      "towelEpithetJa": "女王たる天稟を胸に",
+      "gameCellOriginal": "孤高の女王",
+      "towelCellOriginal": "女王たる天稟を胸に",
+      "usable": true
+    },
+    {
+      "characterJa": "ドリームジャーニー",
+      "characterId": null,
+      "gameEpithetJa": "旅の果てを見た者",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "旅の果てを見た者",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "カルストンライトオ",
+      "characterId": null,
+      "gameEpithetJa": "神速の直線番長",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "神速の直線番長",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "デュランダル",
+      "characterId": null,
+      "gameEpithetJa": "聖剣",
+      "towelEpithetJa": "聖剣の切れ味を見よ",
+      "gameCellOriginal": "聖剣",
+      "towelCellOriginal": "聖剣の切れ味を見よ",
+      "usable": true
+    },
+    {
+      "characterJa": "ジェニュイン",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": null,
+      "gameCellOriginal": "×",
+      "towelCellOriginal": null,
+      "usable": false
+    },
+    {
+      "characterJa": "バブルガムフェロー",
+      "characterId": null,
+      "gameEpithetJa": "世代の切り込み隊長",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "世代の切り込み隊長",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "サクラチトセオー",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "晩秋に咲く、千歳の桜",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "晩秋に咲く、千歳の桜",
+      "usable": true
+    },
+    {
+      "characterJa": "フェノーメノ",
+      "characterId": null,
+      "gameEpithetJa": "漆黒の怪物",
+      "towelEpithetJa": "執行せしは黄金の正義",
+      "gameCellOriginal": "漆黒の怪物",
+      "towelCellOriginal": "執行せしは黄金の正義",
+      "usable": true
+    },
+    {
+      "characterJa": "ブラストワンピース",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "絆を繋ぐ大きな架橋",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "絆を繋ぐ大きな架橋",
+      "usable": true
+    },
+    {
+      "characterJa": "アーモンドアイ",
+      "characterId": null,
+      "gameEpithetJa": "無比なる瞳",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "無比なる瞳",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ラッキーライラック",
+      "characterId": null,
+      "gameEpithetJa": "気高き紫丁香花",
+      "towelEpithetJa": "千紫万紅、上方の花",
+      "gameCellOriginal": "気高き紫丁香花",
+      "towelCellOriginal": "千紫万紅、上方の花",
+      "usable": true
+    },
+    {
+      "characterJa": "グランアレグリア",
+      "characterId": null,
+      "gameEpithetJa": "マイル界の絶対女王",
+      "towelEpithetJa": "マイルに響く大歓声",
+      "gameCellOriginal": "マイル界の絶対女王",
+      "towelCellOriginal": "マイルに響く大歓声",
+      "usable": true
+    },
+    {
+      "characterJa": "ラヴズオンリーユー",
+      "characterId": null,
+      "gameEpithetJa": "世界に広がる愛",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "世界に広がる愛",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "クロノジェネシス",
+      "characterId": null,
+      "gameEpithetJa": "創成の女帝",
+      "towelEpithetJa": "蹄跡にて創世す",
+      "gameCellOriginal": "創成の女帝",
+      "towelCellOriginal": "蹄跡にて創世す",
+      "usable": true
+    },
+    {
+      "characterJa": "カレンブーケドール",
+      "characterId": null,
+      "gameEpithetJa": "勝利に輝く花束",
+      "towelEpithetJa": "輝く花束を、あなたに",
+      "gameCellOriginal": "勝利に輝く花束",
+      "towelCellOriginal": "輝く花束を、あなたに",
+      "usable": true
+    },
+    {
+      "characterJa": "ステイゴールド",
+      "characterId": null,
+      "gameEpithetJa": "黄金の旅路",
+      "towelEpithetJa": "遥か黄金の旅路へと",
+      "gameCellOriginal": "黄金の旅路",
+      "towelCellOriginal": "遥か黄金の旅路へと",
+      "usable": true
+    },
+    {
+      "characterJa": "レッドディザイア",
+      "characterId": null,
+      "gameEpithetJa": "深紅の聖女",
+      "towelEpithetJa": "不撓の聖女",
+      "gameCellOriginal": "深紅の聖女",
+      "towelCellOriginal": "不撓の聖女",
+      "usable": true
+    },
+    {
+      "characterJa": "キセキ",
+      "characterId": null,
+      "gameEpithetJa": "神業の軌跡",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "神業の軌跡",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "フォーエバーヤング",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "果てしなき革新者",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "果てしなき革新者",
+      "usable": true
+    },
+    {
+      "characterJa": "マルシュロレーヌ",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "偉業へのマーチ",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "偉業へのマーチ",
+      "usable": true
+    },
+    {
+      "characterJa": "エピファネイア",
+      "characterId": null,
+      "gameEpithetJa": "運命の寵児",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "運命の寵児",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ロゴタイプ",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "繋ぎ、粘り、ゆるりと",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "繋ぎ、粘り、ゆるりと",
+      "usable": true
+    },
+    {
+      "characterJa": "ヴィクトワールピサ",
+      "characterId": null,
+      "gameEpithetJa": "希望を繋げて",
+      "towelEpithetJa": null,
+      "gameCellOriginal": "希望を繋げて",
+      "towelCellOriginal": null,
+      "usable": true
+    },
+    {
+      "characterJa": "ローズキングダム",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": "薔薇の王冠の器たれ",
+      "gameCellOriginal": "×",
+      "towelCellOriginal": "薔薇の王冠の器たれ",
+      "usable": true
+    },
+    {
+      "characterJa": "ルーラーシップ",
+      "characterId": null,
+      "gameEpithetJa": "盤上の支配者",
+      "towelEpithetJa": "あまねき盤上の支配者",
+      "gameCellOriginal": "盤上の支配者",
+      "towelCellOriginal": "あまねき盤上の支配者",
+      "usable": true
+    },
+    {
+      "characterJa": "エフフォーリア",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": null,
+      "gameCellOriginal": "×",
+      "towelCellOriginal": null,
+      "usable": false
+    },
+    {
+      "characterJa": "タイトルホルダー",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": null,
+      "gameCellOriginal": "×",
+      "towelCellOriginal": null,
+      "usable": false
+    },
+    {
+      "characterJa": "ファレノプシス",
+      "characterId": null,
+      "gameEpithetJa": null,
+      "towelEpithetJa": null,
+      "gameCellOriginal": "×",
+      "towelCellOriginal": null,
+      "usable": false
+    }
+  ]
+}

@@ -881,6 +881,241 @@
       },
       "aliases": [],
       "source": "https://umamusume.jp/character"
+    },
+    {
+      "id": "cesario",
+      "names": {
+        "zh-CN": "西沙里奥",
+        "en": "Cesario",
+        "ja": "シーザリオ"
+      },
+      "aliases": [
+        "西沙里奧"
+      ],
+      "source": "https://note.com/show248379/n/n81d9ed620aa4"
+    },
+    {
+      "id": "duramente",
+      "names": {
+        "zh-CN": "大鸣大放",
+        "en": "Duramente",
+        "ja": "ドゥラメンテ"
+      },
+      "aliases": [
+        "大鳴大放"
+      ],
+      "source": "https://note.com/show248379/n/n81d9ed620aa4"
+    },
+    {
+      "id": "line-craft",
+      "names": {
+        "zh-CN": "莱茵力量",
+        "en": "Line Craft",
+        "ja": "ラインクラフト"
+      },
+      "aliases": [
+        "萊茵力量"
+      ],
+      "source": "https://note.com/show248379/n/n81d9ed620aa4"
+    },
+    {
+      "id": "daring-heart",
+      "names": {
+        "zh-CN": "果敢之心",
+        "en": "Daring Heart",
+        "ja": "デアリングハート"
+      },
+      "aliases": [],
+      "source": "https://note.com/show248379/n/n81d9ed620aa4"
+    },
+    {
+      "id": "buena-vista",
+      "names": {
+        "zh-CN": "迷人景致",
+        "en": "Buena Vista",
+        "ja": "ブエナビスタ"
+      },
+      "aliases": [],
+      "source": "https://note.com/show248379/n/n81d9ed620aa4"
+    },
+    {
+      "id": "belno-light",
+      "names": {
+        "zh-CN": "崭新光辉",
+        "en": "Belno Light",
+        "ja": "ベルノライト"
+      },
+      "aliases": [
+        "贝尔诺光",
+        "貝爾諾之光",
+        "贝尔诺莱特",
+        "Berno Light",
+        "Bellno Light",
+        "贝尔诺之光",
+        "嶄新光輝"
+      ],
+      "source": "https://umamusu.wiki/Belno_Light"
+    },
+    {
+      "id": "fujimasa-march",
+      "names": {
+        "zh-CN": "藤正进行曲",
+        "en": "Fujimasa March",
+        "ja": "フジマサマーチ"
+      },
+      "aliases": [
+        "藤正進行曲"
+      ],
+      "source": "https://umamusu.wiki/Fujimasa_March"
+    },
+    {
+      "id": "norn-ace",
+      "names": {
+        "zh-CN": "诺伦王牌",
+        "en": "Norn Ace",
+        "ja": "ノルンエース"
+      },
+      "aliases": [
+        "诺伦艾斯",
+        "諾倫王牌",
+        "诺伦"
+      ],
+      "source": "https://umamusu.wiki/Norn_Ace"
+    },
+    {
+      "id": "rudy-lemono",
+      "names": {
+        "zh-CN": "鲁迪勒莫诺",
+        "en": "Rudy Lemono",
+        "ja": "ルディレモーノ"
+      },
+      "aliases": [
+        "鲁迪雷莫诺",
+        "鲁迪",
+        "Ruddy Lemono"
+      ],
+      "source": "https://umamusu.wiki/Rudy_Lemono"
+    },
+    {
+      "id": "mini-the-lady",
+      "names": {
+        "zh-CN": "迷你淑女",
+        "en": "Mini the Lady",
+        "ja": "ミニーザレディ"
+      },
+      "aliases": [
+        "米妮淑女",
+        "米妮",
+        "Minnie the Lady"
+      ],
+      "source": "https://umamusu.wiki/Mini_the_Lady"
+    },
+    {
+      "id": "dicta-striker",
+      "names": {
+        "zh-CN": "狄杜射手",
+        "en": "Dicta Striker",
+        "ja": "ディクタストライカ"
+      },
+      "aliases": [
+        "狄克塔斯强袭",
+        "迪克塔",
+        "ディクタ",
+        "迪克塔斯强袭"
+      ],
+      "source": "https://umamusu.wiki/Dicta_Striker"
+    },
+    {
+      "id": "mr-cb",
+      "names": {
+        "zh-CN": "千明代表",
+        "en": "Mr. C.B.",
+        "ja": "ミスターシービー"
+      },
+      "aliases": [
+        "千明代表马",
+        "Mr CB",
+        "Mister CB"
+      ],
+      "source": "https://umamusu.wiki/Mr._C.B."
+    },
+    {
+      "id": "toni-bianca",
+      "names": {
+        "zh-CN": "托尼比安卡",
+        "en": "Toni Bianca",
+        "ja": "トニビアンカ"
+      },
+      "aliases": [
+        "托尼·比安卡",
+        "托妮比安卡",
+        "Tony Bianca"
+      ],
+      "source": "https://umamusu.wiki/Toni_Bianca"
+    },
+    {
+      "id": "obey-your-master",
+      "names": {
+        "zh-CN": "听命汝主",
+        "en": "Obey Your Master",
+        "ja": "オベイユアマスター"
+      },
+      "aliases": [
+        "听从主人",
+        "唯命是从",
+        "遵从主人",
+        "服從命令",
+        "服从命令",
+        "聽命汝主"
+      ],
+      "source": "https://umamusu.wiki/Obey_Your_Master"
+    },
+    {
+      "id": "moonlight-lunacy",
+      "names": {
+        "zh-CN": "月光狂气",
+        "en": "Moonlight Lunacy",
+        "ja": "ムーンライトルナシー"
+      },
+      "aliases": [
+        "月光狂热",
+        "月光狂想曲",
+        "月光狂想",
+        "月光狂氣"
+      ],
+      "source": "https://umamusu.wiki/Moonlight_Lunacy"
+    },
+    {
+      "id": "michelle-my-baby",
+      "names": {
+        "zh-CN": "米歇尔宝贝",
+        "en": "Michelle My Baby",
+        "ja": "ミシェルマイベイビー"
+      },
+      "aliases": [
+        "米歇尔麦贝比",
+        "米歇尔",
+        "米歇爾我的寶貝",
+        "米歇尔我的宝贝",
+        "米歇爾寶貝"
+      ],
+      "source": "https://umamusu.wiki/Michelle_My_Baby"
+    },
+    {
+      "id": "ellerslie-pride",
+      "names": {
+        "zh-CN": "艾勒斯利荣耀",
+        "en": "Ellerslie Pride",
+        "ja": "エラズリープライド"
+      },
+      "aliases": [
+        "艾勒斯利的骄傲",
+        "艾拉兹莉普莱德",
+        "艾勒斯利驕傲",
+        "艾勒斯利骄傲",
+        "艾勒斯利榮耀"
+      ],
+      "source": "https://umamusu.wiki/Ellerslie_Pride"
     }
   ]
 }

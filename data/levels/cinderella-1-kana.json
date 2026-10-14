@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "id": "cinderella-1-kana",
+  "title": {
+    "zh-CN": "芦毛灰姑娘 1 · 片假名",
+    "en": "Cinderella Gray 1 · Katakana",
+    "ja": "シンデレラグレイ 1・カタカナ"
+  },
+  "description": {
+    "zh-CN": "进阶难度，含笠松、中央与日本杯篇的剧情剧透。猜作品中的马娘角色名，包含未在手游登场的角色；不要填原型马名。",
+    "en": "Advanced story clues with spoilers from the Kasamatsu, national-academy and Japan Cup arcs. Name the fictional characters, including those outside the mobile game, rather than their real-horse counterparts.",
+    "ja": "発展レベル。カサマツ・中央・ジャパンカップ編のネタバレを含みます。アプリ未登場のキャラクターも出題。元の競走馬ではなく、作品中のウマ娘の名前を入力してください。"
+  },
+  "difficulty": "cinderella",
+  "answerLanguage": "ja",
+  "grid": {
+    "rows": 20,
+    "columns": 20,
+    "layout": [
+      "#######.......######",
+      ".######.############",
+      ".........##.#####.##",
+      ".######.###........#",
+      ".###......#.#####.#.",
+      ".######.##......#.#.",
+      ".###.##.###.##.##.#.",
+      "####.........#.##.#.",
+      "####.##.###.##.##.#.",
+      ".......#.##.##.#.##.",
+      "####.###.##.####.##.",
+      "####.###.#..........",
+      "####......######.###",
+      "########.##.##.#.###",
+      "########.#.......###",
+      "#........##.##.#.###",
+      "########.##.##.#####",
+      "###########.##.#####",
+      "###########.##.#####",
+      "###########.########"
+    ]
+  },
+  "entries": [
+    {
+      "id": "1-across",
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "column": 7,
+      "characterId": "oguri-cap",
+      "answer": "オグリキャップ",
+      "clues": {
+        "zh-CN": "笠松初胜后的胜者舞台上，跳起“笠松音头”，让众人傻眼的主角。",
+        "en": "After her first Kasamatsu victory, the heroine surprises everyone by dancing the Kasamatsu Ondo at the winning live.",
+        "ja": "カサマツで初勝利を挙げた後、ウイニングライブで「カサマツ音頭」を踊って周囲を驚かせた主人公。"
+      }
+    },
+    {
+      "id": "3-across",
+      "number": 3,
+      "direction": "across",
+      "row": 2,
+      "column": 0,
+      "characterId": "ellerslie-pride",
+      "answer": "エラズリープライド",
+      "clues": {
+        "zh-CN": "日本杯篇背负大洋洲夺冠夙愿的新西兰代表；场外见到黄金城市时又露出粉丝的一面。",
+        "en": "New Zealand’s representative pursues Oceania’s dream of a Japan Cup win, yet reveals her fan side when meeting Gold City off the track.",
+        "ja": "オセアニアの悲願を背負いジャパンカップに挑むニュージーランド代表。場外ではゴールドシチーのファンの顔も見せる。"
+      }
+    },
+    {
+      "id": "6-across",
+      "number": 6,
+      "direction": "across",
+      "row": 3,
+      "column": 11,
+      "characterId": "symboli-rudolf",
+      "answer": "シンボリルドルフ",
+      "clues": {
+        "zh-CN": "亲眼见过小栗帽跑中京杯后邀她转入中央，之后还为她争取日本德比的特别出赛资格。",
+        "en": "After watching Oguri in the Chukyo Hai, she invites her to transfer, then pursues special permission for her to enter the Derby.",
+        "ja": "中京盃でオグリの走りを見て中央へ誘い、後には日本ダービーへの特例出走を働きかけた。"
+      }
+    },
+    {
+      "id": "7-across",
+      "number": 7,
+      "direction": "across",
+      "row": 4,
+      "column": 4,
+      "characterId": "toni-bianca",
+      "answer": "トニビアンカ",
+      "clues": {
+        "zh-CN": "带着凯旋门赏冠军头衔来日本杯，把这场比赛视为生涯集大成的意大利“欧洲王者”。",
+        "en": "Italy’s European champion arrives for the Japan Cup fresh from an Arc victory, intending it to be the culmination of her racing career.",
+        "ja": "凱旋門賞を制して来日し、ジャパンカップを競走人生の集大成とする覚悟で挑んだイタリアの「欧州王者」。"
+      }
+    },
+    {
+      "id": "9-across",
+      "number": 9,
+      "direction": "across",
+      "row": 5,
+      "column": 10,
+      "characterId": "belno-light",
+      "answer": "ベルノライト",
+      "clues": {
+        "zh-CN": "帮小栗帽挑选跑鞋，后来通过工作人员研修考试，陪她一起前往中央的挚友。",
+        "en": "She helps Oguri choose racing shoes, then passes the staff-trainee exam so she can accompany her to the national academy.",
+        "ja": "オグリのシューズ選びを助け、スタッフ研修生の試験に合格して一緒に中央へ向かった親友。"
+      }
+    },
+    {
+      "id": "12-across",
+      "number": 12,
+      "direction": "across",
+      "row": 7,
+      "column": 4,
+      "characterId": "dicta-striker",
+      "answer": "ディクタストライカ",
+      "clues": {
+        "zh-CN": "赛前主动帮小栗帽训练，不愿胜利被归因于对手状态不好；外号是“栗毛的子弹”。",
+        "en": "She helps Oguri train before their clash, refusing to win against an unprepared rival. Her nickname is the chestnut-haired bullet.",
+        "ja": "対戦前にオグリの練習を手伝い、相手の不調を言い訳にされる勝利を嫌った「栗毛の弾丸」。"
+      }
+    },
+    {
+      "id": "13-across",
+      "number": 13,
+      "direction": "across",
+      "row": 9,
+      "column": 0,
+      "characterId": "mini-the-lady",
+      "answer": "ミニーザレディ",
+      "clues": {
+        "zh-CN": "笠松三人组中出点子的黑发姑娘；曾替诺伦策划干扰小栗帽的跑鞋，实际上成绩是班级第二。",
+        "en": "The dark-haired schemer in the Kasamatsu trio suggests targeting Oguri’s shoes. Despite her pranks, she ranks second in class.",
+        "ja": "カサマツの三人組の黒髪の知恵者。オグリの靴を狙う策をノルンに提案したが、実は成績はクラス二位。"
+      }
+    },
+    {
+      "id": "16-across",
+      "number": 16,
+      "direction": "across",
+      "row": 11,
+      "column": 10,
+      "characterId": "moonlight-lunacy",
+      "answer": "ムーンライトルナシー",
+      "clues": {
+        "zh-CN": "前一年的日本杯未能夺冠，这次带着复仇之心再度来日的“英国贵妇人”。",
+        "en": "Having missed victory in the previous Japan Cup, this British lady returns to Japan seeking redemption.",
+        "ja": "前年のジャパンカップで優勝を逃し、雪辱を期して再来日した「英国の貴婦人」。"
+      }
+    },
+    {
+      "id": "17-across",
+      "number": 17,
+      "direction": "across",
+      "row": 12,
+      "column": 4,
+      "characterId": "norn-ace",
+      "answer": "ノルンエース",
+      "clues": {
+        "zh-CN": "从找小栗帽麻烦变成她的忠实拥趸，还亲自教她胜者舞台的舞蹈。",
+        "en": "She changes from picking on Oguri to cheering for her, even teaching her the dance for the winning live.",
+        "ja": "オグリに嫌がらせをしていたが、やがて熱心なファンとなり、ウイニングライブのダンスまで教えた。"
+      }
+    },
+    {
+      "id": "20-across",
+      "number": 20,
+      "direction": "across",
+      "row": 14,
+      "column": 10,
+      "characterId": "fujimasa-march",
+      "answer": "フジマサマーチ",
+      "clues": {
+        "zh-CN": "在小栗帽的出道战中获胜，随后又在Junior Crown与她再战的笠松宿敌。",
+        "en": "This Kasamatsu rival wins Oguri’s debut race, then faces her again in the Junior Crown.",
+        "ja": "オグリのデビュー戦で勝利し、ジュニアクラウンで再び対決したカサマツのライバル。"
+      }
+    },
+    {
+      "id": "21-across",
+      "number": 21,
+      "direction": "across",
+      "row": 15,
+      "column": 1,
+      "characterId": "mr-cb",
+      "answer": "ミスターシービー",
+      "clues": {
+        "zh-CN": "中央篇中与鲁道夫、丸善斯基一起关注小栗帽的另一位三冠前辈，以自由奔放的跑法著称。",
+        "en": "Another Triple Crown senior watches Oguri alongside Rudolf and Maruzensky in the national-academy arc; she is known for her free-spirited racing.",
+        "ja": "中央編でルドルフ、マルゼンスキーと共にオグリを見守る、自由奔放な走りで知られるもう一人の三冠ウマ娘。"
+      }
+    },
+    {
+      "id": "1-down",
+      "number": 1,
+      "direction": "down",
+      "row": 0,
+      "column": 7,
+      "characterId": "obey-your-master",
+      "answer": "オベイユアマスター",
+      "clues": {
+        "zh-CN": "来日前没有GⅠ冠军，却研究并模仿强者的跑法，在日本杯同时击败玉藻十字与小栗帽的美国来客。",
+        "en": "Without a G1 win before arriving, this American studies and imitates elite runners, then beats both Tamamo Cross and Oguri in the Japan Cup.",
+        "ja": "来日前はGⅠ未勝利。強者の走りを研究・模倣し、ジャパンカップでタマモとオグリを破ったアメリカの刺客。"
+      }
+    },
+    {
+      "id": "2-down",
+      "number": 2,
+      "direction": "down",
+      "row": 1,
+      "column": 0,
+      "characterId": "yaeno-muteki",
+      "answer": "ヤエノムテキ",
+      "clues": {
+        "zh-CN": "小栗帽无法参加的那场皋月赏，由这位武术少女击败樱花千代王等对手，夺得一冠。",
+        "en": "With Oguri unable to enter the Satsuki Sho, this martial artist defeats Sakura Chiyono O and the others to take the title.",
+        "ja": "オグリが出走できなかった皐月賞で、サクラチヨノオーらを破り一冠を手にした武術少女。"
+      }
+    },
+    {
+      "id": "4-down",
+      "number": 4,
+      "direction": "down",
+      "row": 2,
+      "column": 11,
+      "characterId": "michelle-my-baby",
+      "answer": "ミシェルマイベイビー",
+      "clues": {
+        "zh-CN": "日本杯来日的美国“巨神”，用强悍体格进行激烈的位置争夺；也会展示惊人的篮球本领。",
+        "en": "America’s giant arrives for the Japan Cup, using her powerful build in fierce position battles and showing remarkable basketball skills.",
+        "ja": "ジャパンカップに来日した「アメリカの巨神」。強靭な体で激しく位置を争い、驚異的なバスケの腕前も見せた。"
+      }
+    },
+    {
+      "id": "5-down",
+      "number": 5,
+      "direction": "down",
+      "row": 2,
+      "column": 17,
+      "characterId": "maruzensky",
+      "answer": "マルゼンスキー",
+      "clues": {
+        "zh-CN": "日本德比篇中，樱花千代王希望将胜利献给她；这位前辈自己曾因参赛资格而与德比无缘。",
+        "en": "Sakura Chiyono O hopes to dedicate her Derby victory to this senior, who was once kept out of that race by eligibility rules.",
+        "ja": "日本ダービーでチヨノオーが勝利を捧げようとした先輩。自身はかつて出走資格の壁でダービーを走れなかった。"
+      }
+    },
+    {
+      "id": "8-down",
+      "number": 8,
+      "direction": "down",
+      "row": 4,
+      "column": 19,
+      "characterId": "sakura-chiyono-o",
+      "answer": "サクラチヨノオー",
+      "clues": {
+        "zh-CN": "日本德比最后直道重新追上目白阿尔丹，把胜利献给憧憬的丸善斯基。",
+        "en": "She rallies to catch Mejiro Ardan in the Derby’s final stretch, dedicating the victory to her idol, Maruzensky.",
+        "ja": "日本ダービーの直線でメジロアルダンを差し返し、憧れのマルゼンスキーに勝利を捧げた。"
+      }
+    },
+    {
+      "id": "10-down",
+      "number": 10,
+      "direction": "down",
+      "row": 5,
+      "column": 14,
+      "characterId": "inari-one",
+      "answer": "イナリワン",
+      "clues": {
+        "zh-CN": "漫画中从大井转入中央，后来在每日王冠与小栗帽激烈对决的江户子。",
+        "en": "In the manga, this Edo-style runner transfers from Oi to the national academy and later battles Oguri fiercely in the Mainichi Okan.",
+        "ja": "漫画で大井から中央へ移籍し、後に毎日王冠でオグリと激闘を繰り広げる江戸っ子。"
+      }
+    },
+    {
+      "id": "11-down",
+      "number": 11,
+      "direction": "down",
+      "row": 6,
+      "column": 4,
+      "characterId": "rudy-lemono",
+      "answer": "ルディレモーノ",
+      "clues": {
+        "zh-CN": "笠松三人组中的金发姑娘；跟着诺伦行动，却常被黑发同伴的恶作剧波及。",
+        "en": "The blonde member of the Kasamatsu trio follows Norn’s lead, but often gets caught up in her dark-haired friend’s pranks.",
+        "ja": "カサマツの三人組の金髪の子。ノルンと行動する一方、黒髪の仲間のいたずらに巻き込まれがち。"
+      }
+    },
+    {
+      "id": "14-down",
+      "number": 14,
+      "direction": "down",
+      "row": 9,
+      "column": 8,
+      "characterId": "super-creek",
+      "answer": "スーパークリーク",
+      "clues": {
+        "zh-CN": "与奈濑文乃搭档夺得菊花赏，却在随后有马纪念中因妨碍其他选手而被取消资格。",
+        "en": "Partnered with Fumino Nase, she wins the Kikuka Sho, only to be disqualified for interference in the following Arima Kinen.",
+        "ja": "奈瀬文乃と菊花賞を制したが、続く有馬記念では進路妨害により失格となった。"
+      }
+    },
+    {
+      "id": "15-down",
+      "number": 15,
+      "direction": "down",
+      "row": 9,
+      "column": 16,
+      "characterId": "gold-city",
+      "answer": "ゴールドシチー",
+      "clues": {
+        "zh-CN": "日本杯篇参加迎战海外强者的金发模特马娘；新西兰来客艾勒斯利荣耀其实也是她的粉丝。",
+        "en": "This blonde model races against the overseas stars in the Japan Cup arc; New Zealand’s Ellerslie Pride is also her fan.",
+        "ja": "ジャパンカップ編で海外勢を迎え撃つ金髪のモデルウマ娘。ニュージーランドのエラズリープライドも彼女のファン。"
+      }
+    },
+    {
+      "id": "18-down",
+      "number": 18,
+      "direction": "down",
+      "row": 13,
+      "column": 11,
+      "characterId": "mejiro-ardan",
+      "answer": "メジロアルダン",
+      "clues": {
+        "zh-CN": "日本德比中一度冲到最前，最终惜败于樱花千代王；她用脆弱的双腿争取属于自己的光芒。",
+        "en": "She takes the lead in the Derby’s closing stretch but narrowly loses to Sakura Chiyono O, racing for her own moment despite fragile legs.",
+        "ja": "日本ダービーの直線で一度先頭に立つも、サクラチヨノオーに惜敗。繊細な脚で自分だけの輝きを求めた。"
+      }
+    },
+    {
+      "id": "19-down",
+      "number": 19,
+      "direction": "down",
+      "row": 13,
+      "column": 14,
+      "characterId": "tamamo-cross",
+      "answer": "タマモクロス",
+      "clues": {
+        "zh-CN": "秋季天皇赏中进入“领域”，终结小栗帽中央连胜纪录的芦毛宿敌。",
+        "en": "Oguri’s gray-haired rival enters the Zone in the autumn Tenno Sho and ends her winning streak at the national level.",
+        "ja": "天皇賞（秋）で「領域」に入り、オグリの中央での連勝を止めた芦毛のライバル。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "id": "beginner-1-kana",
+  "title": {
+    "zh-CN": "入门版 1 · 片假名",
+    "en": "Starter 1 · Katakana",
+    "ja": "入門 1・カタカナ"
+  },
+  "description": {
+    "zh-CN": "熟悉的角色与直接的提示，练习角色的片假名写法。",
+    "en": "Familiar runners and direct clues for practicing their katakana names.",
+    "ja": "おなじみのウマ娘とわかりやすいヒントで、カタカナの名前を練習。"
+  },
+  "difficulty": "beginner",
+  "answerLanguage": "ja",
+  "grid": {
+    "rows": 19,
+    "columns": 20,
+    "layout": [
+      "###########.........",
+      "#.######.#####.#####",
+      "#.######.#.........#",
+      "#.........####.#####",
+      "#.######.#####.#####",
+      "#.######.#.........#",
+      "#.######.###.#.#####",
+      "#.#.####.###.#.#####",
+      "........##.........#",
+      "###.##.#####.#######",
+      "###.##.###.#.#######",
+      "###.##.......#.#.###",
+      "###.##.###.###.#.###",
+      "##.#.#.###.###.#.###",
+      ".......##........###",
+      "##.#.#####.###.#####",
+      "##.#.#####.##......#",
+      "##.#.#########.#####",
+      "####.####.........##"
+    ]
+  },
+  "entries": [
+    {
+      "id": "1-across",
+      "number": 1,
+      "direction": "across",
+      "row": 0,
+      "column": 11,
+      "characterId": "mejiro-mcqueen",
+      "answer": "メジロマックイーン",
+      "clues": {
+        "zh-CN": "目白家的长距离大小姐；原型马连夺1991、1992年春季天皇赏。",
+        "en": "A long-distance lady of the Mejiro family. Her counterpart won the spring Tenno Sho in both 1991 and 1992.",
+        "ja": "メジロ家の長距離のお嬢様。モデル馬は1991年と1992年の天皇賞（春）を連覇。"
+      }
+    },
+    {
+      "id": "5-across",
+      "number": 5,
+      "direction": "across",
+      "row": 2,
+      "column": 10,
+      "characterId": "daiwa-scarlet",
+      "answer": "ダイワスカーレット",
+      "clues": {
+        "zh-CN": "凡事都要争第一的好胜优等生；与伏特加同室，视她为劲敌。",
+        "en": "This fiercely competitive honor student always aims for first. She shares a room with her rival, Vodka.",
+        "ja": "いつでも一番を目指す負けず嫌いの優等生。同室のウオッカをライバル視。"
+      }
+    },
+    {
+      "id": "6-across",
+      "number": 6,
+      "direction": "across",
+      "row": 3,
+      "column": 1,
+      "characterId": "seeking-the-pearl",
+      "answer": "シーキングザパール",
+      "clues": {
+        "zh-CN": "在海外辗转长大，表现力十足；虽不会说英语，却擅长用肢体沟通。",
+        "en": "Raised in many countries, she is wonderfully expressive. She cannot speak English but communicates through gestures.",
+        "ja": "海外を転々として育った表現力豊かな女性。英語は話せないが、身ぶりで伝える。"
+      }
+    },
+    {
+      "id": "7-across",
+      "number": 7,
+      "direction": "across",
+      "row": 5,
+      "column": 10,
+      "characterId": "sakura-bakushin-o",
+      "answer": "サクラバクシンオー",
+      "clues": {
+        "zh-CN": "一往无前的班长，口号是“爆进！爆进！”；尤其擅长短距离。",
+        "en": "An unstoppable class representative whose cry is \"Bakushin!\" She excels at sprinting.",
+        "ja": "「バクシン！」が口癖の猪突猛進な学級委員長。短距離が大得意。"
+      }
+    },
+    {
+      "id": "10-across",
+      "number": 10,
+      "direction": "across",
+      "row": 8,
+      "column": 0,
+      "characterId": "tokai-teio",
+      "answer": "トウカイテイオー",
+      "clues": {
+        "zh-CN": "憧憬鲁道夫象征；原型马休赛364天后赢下1993年有马纪念。",
+        "en": "She admires Symboli Rudolf. Her real-life counterpart won the 1993 Arima Kinen after a 364-day layoff.",
+        "ja": "シンボリルドルフに憧れる。モデル馬は364日ぶりの実戦で1993年の有馬記念を制した。"
+      }
+    },
+    {
+      "id": "12-across",
+      "number": 12,
+      "direction": "across",
+      "row": 8,
+      "column": 10,
+      "characterId": "special-week",
+      "answer": "スペシャルウィーク",
+      "clues": {
+        "zh-CN": "来自北海道，向两位母亲许下成为“日本第一赛马娘”的约定。",
+        "en": "From Hokkaido, she promised her two mothers she would become Japan's number-one Umamusume.",
+        "ja": "北海道出身。二人の母に「日本一のウマ娘になる」と約束した。"
+      }
+    },
+    {
+      "id": "14-across",
+      "number": 14,
+      "direction": "across",
+      "row": 11,
+      "column": 6,
+      "characterId": "king-halo",
+      "answer": "キングヘイロー",
+      "clues": {
+        "zh-CN": "坚持证明自己是“一流”的大小姐；母亲也是出色的赛马娘和设计师。",
+        "en": "A proud lady determined to prove she is first-rate. Her mother is both a great Umamusume and a designer.",
+        "ja": "自分が「一流」だと認めさせたいお嬢様。母は優秀なウマ娘でありデザイナー。"
+      }
+    },
+    {
+      "id": "19-across",
+      "number": 19,
+      "direction": "across",
+      "row": 14,
+      "column": 0,
+      "characterId": "gold-ship",
+      "answer": "ゴールドシップ",
+      "clues": {
+        "zh-CN": "特雷森头号搞怪自由人，体重栏写着“无法测量”；昵称“皮皮船”。",
+        "en": "Tracen's unpredictable prankster. Her weight is listed as \"unmeasurable,\" and fans call her Golshi.",
+        "ja": "トレセン随一の自由なトリックスター。体重は「測定不能」、愛称はゴルシ。"
+      }
+    },
+    {
+      "id": "20-across",
+      "number": 20,
+      "direction": "across",
+      "row": 14,
+      "column": 9,
+      "characterId": "silence-suzuka",
+      "answer": "サイレンススズカ",
+      "clues": {
+        "zh-CN": "只想看见无人领先的风景；擅长大逃，是特别周的室友。",
+        "en": "She seeks the scenery at the front, with nobody ahead. A runaway leader and Special Week's roommate.",
+        "ja": "誰もいない先頭の景色を求める大逃げの天才。スペシャルウィークのルームメイト。"
+      }
+    },
+    {
+      "id": "21-across",
+      "number": 21,
+      "direction": "across",
+      "row": 16,
+      "column": 13,
+      "characterId": "yukino-bijin",
+      "answer": "ユキノビジン",
+      "clues": {
+        "zh-CN": "来自岩手农家的纯朴姑娘，向往都市生活；憧憬的对象是黄金城市。",
+        "en": "A sincere farm girl from Iwate who dreams of city life. She looks up to Gold City.",
+        "ja": "岩手の農家出身の純朴な少女。都会に憧れ、ゴールドシチーを目標にしている。"
+      }
+    },
+    {
+      "id": "22-across",
+      "number": 22,
+      "direction": "across",
+      "row": 18,
+      "column": 9,
+      "characterId": "manhattan-cafe",
+      "answer": "マンハッタンカフェ",
+      "clues": {
+        "zh-CN": "喜欢慢慢喝咖啡；总说身边有一位旁人看不见的“朋友”。",
+        "en": "She drinks coffee slowly and says a friend nobody else can see is always beside her.",
+        "ja": "コーヒーはゆっくり飲む派。そばには他人に見えない「お友だち」がいるという。"
+      }
+    },
+    {
+      "id": "2-down",
+      "number": 2,
+      "direction": "down",
+      "row": 0,
+      "column": 14,
+      "characterId": "matikanefukukitaru",
+      "answer": "マチカネフクキタル",
+      "clues": {
+        "zh-CN": "凡事先占卜，热衷祈福；随身的招财猫包包叫作“喵桑”。",
+        "en": "She relies on fortune-telling and lucky charms. Her beckoning-cat bag is called Nyaa-san.",
+        "ja": "占いやおまじないが大好き。招き猫のバッグの名前は「にゃーさん」。"
+      }
+    },
+    {
+      "id": "3-down",
+      "number": 3,
+      "direction": "down",
+      "row": 1,
+      "column": 1,
+      "characterId": "meisho-doto",
+      "answer": "メイショウドトウ",
+      "clues": {
+        "zh-CN": "垂耳、胆怯又笨手笨脚，总想改变自己；很羡慕好歌剧的自信。",
+        "en": "Droopy-eared, timid, and clumsy, she wants to change herself and admires T.M. Opera O's confidence.",
+        "ja": "垂れ耳で弱気なドジっ子。自分を変えたいと願い、テイエムオペラオーの自信に憧れる。"
+      }
+    },
+    {
+      "id": "4-down",
+      "number": 4,
+      "direction": "down",
+      "row": 1,
+      "column": 8,
+      "characterId": "biko-pegasus",
+      "answer": "ビコーペガサス",
+      "clues": {
+        "zh-CN": "身高144厘米，迷恋特摄英雄“胡萝卜超人”，常在校园扮演英雄。",
+        "en": "144 cm tall and a fan of the tokusatsu hero Carrot Man, she plays hero around campus.",
+        "ja": "身長144cm。特撮ヒーロー「キャロットマン」に憧れ、学園でもヒーローごっこ。"
+      }
+    },
+    {
+      "id": "8-down",
+      "number": 8,
+      "direction": "down",
+      "row": 5,
+      "column": 12,
+      "characterId": "rice-shower",
+      "answer": "ライスシャワー",
+      "clues": {
+        "zh-CN": "总把周围的不幸归咎于自己；最爱的绘本与“幸福的蓝玫瑰”有关。",
+        "en": "She blames herself for others' misfortune. Her favorite picture book is about a happy blue rose.",
+        "ja": "周囲の不幸を自分のせいだと思い込む。お気に入りの絵本は『しあわせの青いバラ』。"
+      }
+    },
+    {
+      "id": "9-down",
+      "number": 9,
+      "direction": "down",
+      "row": 7,
+      "column": 3,
+      "characterId": "twin-turbo",
+      "answer": "ツインターボ",
+      "clues": {
+        "zh-CN": "总是全力奔跑，把自己逼到极限；名字意为“双涡轮”。",
+        "en": "Always running flat out and pushing her limits. Her name refers to a pair of turbochargers.",
+        "ja": "いつも全力で走り、限界まで自分を追い込む。名前は二つのターボを意味する。"
+      }
+    },
+    {
+      "id": "11-down",
+      "number": 11,
+      "direction": "down",
+      "row": 8,
+      "column": 6,
+      "characterId": "oguri-cap",
+      "answer": "オグリキャップ",
+      "clues": {
+        "zh-CN": "《芦毛灰姑娘》主角，从笠松起步；食量惊人的天然系少女。",
+        "en": "The heroine of Cinderella Gray starts out in Kasamatsu: a naturally absent-minded girl with an enormous appetite.",
+        "ja": "『シンデレラグレイ』の主人公。カサマツから歩み始めた、食欲旺盛な天然少女。"
+      }
+    },
+    {
+      "id": "13-down",
+      "number": 13,
+      "direction": "down",
+      "row": 10,
+      "column": 10,
+      "characterId": "nice-nature",
+      "answer": "ナイスネイチャ",
+      "clues": {
+        "zh-CN": "总把自己当配角，常说第三名也不错；很受家乡街坊长辈喜爱。",
+        "en": "She sees herself as a supporting character and says third place is fine. Her hometown elders adore her.",
+        "ja": "自分は脇役、三番手でもいいと言いがち。地元の年配の人たちに愛されている。"
+      }
+    },
+    {
+      "id": "15-down",
+      "number": 15,
+      "direction": "down",
+      "row": 11,
+      "column": 14,
+      "characterId": "agnes-tachyon",
+      "answer": "アグネスタキオン",
+      "clues": {
+        "zh-CN": "把训练员叫作“豚鼠君”的研究者，执着于探索速度的极限。",
+        "en": "A researcher who calls her trainer a guinea pig and pursues the limits of speed.",
+        "ja": "トレーナーを「モルモット君」と呼び、速度の限界を追い求める研究者。"
+      }
+    },
+    {
+      "id": "16-down",
+      "number": 16,
+      "direction": "down",
+      "row": 11,
+      "column": 16,
+      "characterId": "vodka",
+      "answer": "ウオッカ",
+      "clues": {
+        "zh-CN": "一心追求帅气；原型是赢得2007年日本德比的雌马。",
+        "en": "She wants to look cool. Her real-life counterpart was the mare that won the 2007 Japanese Derby.",
+        "ja": "カッコよさを追い求める。モデル馬は2007年の日本ダービーを制した牝馬。"
+      }
+    },
+    {
+      "id": "17-down",
+      "number": 17,
+      "direction": "down",
+      "row": 13,
+      "column": 2,
+      "characterId": "haru-urara",
+      "answer": "ハルウララ",
+      "clues": {
+        "zh-CN": "从高知来到特雷森，屡败也不气馁；入学笔试很糟，面试却过关了。",
+        "en": "From Kochi, she never gives up despite losing. Her entrance exam went badly, but she passed the interview.",
+        "ja": "高知から来た、負けてもめげない少女。入学試験は散々でも、面接で合格した。"
+      }
+    },
+    {
+      "id": "18-down",
+      "number": 18,
+      "direction": "down",
+      "row": 13,
+      "column": 4,
+      "characterId": "hishi-akebono",
+      "answer": "ヒシアケボノ",
+      "clues": {
+        "zh-CN": "身高180厘米，喜欢做饭、喂饱大家，也热爱相扑；口头禅“波诺”！",
+        "en": "180 cm tall, she loves cooking, feeding everyone, and sumo. Her catchphrase is \"Buono!\"",
+        "ja": "身長180cm。料理も食べさせることも相撲も大好き。「ボーノ！」が口癖。"
+      }
+    }
+  ]
+}
