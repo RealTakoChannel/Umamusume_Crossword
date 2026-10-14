@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "songId": 58,
+      "sourceFacts": {
+        "title": "Endless World",
+        "artist": "RYOHEI KOHNO/保立美和子",
+        "aliases": [
+          "无尽世界"
+        ]
+      },
+      "clues": {
+        "zh-CN": "把“尽头”从世界里拿走；RYOHEI KOHNO 与保立美和子留下的旅程，还没有终点。",
+        "en": "Take the end away from the world. The journey credited to RYOHEI KOHNO and 保立美和子 has no finish line.",
+        "ja": "世界から「終わり」を取り去ったら。RYOHEI KOHNOと保立美和子の旅には、まだ終点がない。"
+      }
+    },
+    {
+      "songId": 82,
+      "sourceFacts": {
+        "title": "Reach For The Stars",
+        "artist": "大谷智哉, Jean Paul Makhlouf of Cash Cash「ソニック カラーズ」",
+        "aliases": [
+          "追星",
+          "索尼克"
+        ]
+      },
+      "clues": {
+        "zh-CN": "跟着索尼克追逐星星；大谷智哉与 Cash Cash 的 Jean Paul Makhlouf 为这趟旅程配乐。",
+        "en": "Follow Sonic toward the stars, with a soundtrack credited to 大谷智哉 and Jean Paul Makhlouf of Cash Cash.",
+        "ja": "ソニックと一緒に星を追いかけよう。旅の音楽を手がけるのは、大谷智哉とCash CashのJean Paul Makhlouf。"
+      }
+    },
+    {
+      "songId": 100,
+      "sourceFacts": {
+        "title": "Tell Your World",
+        "artist": "livetune",
+        "aliases": [
+          "告诉你的世界"
+        ]
+      },
+      "clues": {
+        "zh-CN": "把你的世界讲给别人听，livetune 把这句话留在了曲名里。",
+        "en": "An invitation from livetune to tell someone about your own world, written right into the title.",
+        "ja": "君の世界を誰かに伝えて。livetuneからのそんな誘いが、そのまま曲名に込められている。"
+      }
+    },
+    {
+      "songId": 133,
+      "sourceFacts": {
+        "title": "We Gonna Party",
+        "artist": "Cranky",
+        "aliases": [
+          "我们去派对",
+          "埃菲尔铁塔着火"
+        ]
+      },
+      "clues": {
+        "zh-CN": "Cranky 的派对热闹到什么程度？玩家连“埃菲尔铁塔着火”都喊出来了。",
+        "en": "How lively is Cranky’s party? The players’ nickname has the Eiffel Tower catching fire.",
+        "ja": "Crankyのパーティーはどれほどにぎやか？プレイヤーの呼び名では、エッフェル塔まで燃えてしまう。"
+      }
+    },
+    {
+      "songId": 143,
+      "sourceFacts": {
+        "title": "Fragrance",
+        "artist": "Tsukasa(Arte Refact)",
+        "aliases": [
+          "香水",
+          "斜塔"
+        ]
+      },
+      "clues": {
+        "zh-CN": "一瓶“香水”，一座“斜塔”，竟是 Tsukasa 同一首作品的两条路标。",
+        "en": "A bottle of perfume and a leaning tower: two unlikely nicknames pointing to the same Tsukasa track.",
+        "ja": "一本の「香水」と一つの「斜塔」。意外な二つの呼び名が、Tsukasaの同じ曲を指している。"
+      }
+    },
+    {
+      "songId": 145,
+      "sourceFacts": {
+        "title": "Starlight Disco",
+        "artist": "loos feat. Meramipop",
+        "aliases": [
+          "星光迪斯科"
+        ]
+      },
+      "clues": {
+        "zh-CN": "星光洒进迪斯科舞池，loos 与 Meramipop 的名字也一起亮了起来。",
+        "en": "Starlight spills onto a disco floor, lighting up the names loos and Meramipop together.",
+        "ja": "星明かりがディスコのフロアに降り注ぐ。loosとMeramipopの名前も、一緒に輝き始める。"
+      }
+    },
+    {
+      "songId": 200,
+      "sourceFacts": {
+        "title": "Bad Apple!! feat.nomico",
+        "artist": "Masayoshi Minoshima",
+        "aliases": [
+          "坏苹果"
+        ]
+      },
+      "clues": {
+        "zh-CN": "Masayoshi Minoshima 端来一颗“坏苹果”；别把完整曲名里那位 nomico 留在题盘外。",
+        "en": "Masayoshi Minoshima serves an apple gone bad. Leave room in the full title for nomico, too.",
+        "ja": "Masayoshi Minoshimaが差し出すのは「悪いリンゴ」。正式な曲名にいるnomicoも、マスの外に置き忘れないで。"
+      }
+    },
+    {
+      "songId": 231,
+      "sourceFacts": {
+        "title": "Heartbeats",
+        "artist": "RAMM feat. 若井友希",
+        "aliases": [
+          "心跳"
+        ],
+        "bpm": 170
+      },
+      "clues": {
+        "zh-CN": "RAMM 与若井友希把“心跳”留在歌名里，170 BPM 给它数着拍子。",
+        "en": "RAMM and 若井友希 put a beating heart into the title; 170 BPM counts out its pulse.",
+        "ja": "RAMMと若井友希が曲名に残した「鼓動」。170 BPMが、その拍を数えている。"
+      }
+    },
+    {
+      "songId": 238,
+      "sourceFacts": {
+        "title": "Get Happy",
+        "artist": "Jimmy Weckl",
+        "aliases": [
+          "变得开心"
+        ],
+        "charts": [
+          {
+            "type": "standard",
+            "difficulty": 3,
+            "level": "13+"
+          }
+        ]
+      },
+      "clues": {
+        "zh-CN": "Jimmy Weckl 发来“开心起来”的邀请，标准紫谱却把门槛放在了 13+。",
+        "en": "Jimmy Weckl sends an invitation to cheer up. The standard MASTER chart sets the entry bar at 13+.",
+        "ja": "Jimmy Wecklから「楽しくなろう」というお誘い。ただしスタンダードの紫譜面は13+。"
+      }
+    },
+    {
+      "songId": 261,
+      "sourceFacts": {
+        "title": "Death Scythe",
+        "artist": "SHIKI",
+        "aliases": [
+          "死镰"
+        ],
+        "charts": [
+          {
+            "type": "standard",
+            "difficulty": 4,
+            "level": "14"
+          }
+        ]
+      },
+      "clues": {
+        "zh-CN": "SHIKI 把镰刀交给死神；到了标准白谱，这把利刃留下了 14 级的影子。",
+        "en": "SHIKI places a scythe in Death’s hands; its blade casts a level-14 shadow over the standard Re:MASTER chart.",
+        "ja": "SHIKIが死神に渡す鎌。スタンダードの白譜面には、その刃がレベル14の影を落とす。"
+      }
+    },
+    {
+      "songId": 456,
+      "sourceFacts": {
+        "title": "Glorious Crown",
+        "artist": "xi",
+        "aliases": [
+          "皇冠"
+        ],
+        "bpm": 225
+      },
+      "clues": {
+        "zh-CN": "xi 的这顶“皇冠”，在 225 BPM 的节奏里闪闪发亮。",
+        "en": "A crown from xi, gleaming to the beat of 225 BPM.",
+        "ja": "xiの「王冠」が、225 BPMのリズムに乗ってきらめく。"
+      }
+    },
+    {
+      "songId": 494,
+      "sourceFacts": {
+        "title": "CITRUS MONSTER",
+        "artist": "D-Cee",
+        "aliases": [
+          "橘子怪兽"
+        ],
+        "bpm": 220
+      },
+      "clues": {
+        "zh-CN": "一颗橘子里钻出了 D-Cee 的怪兽，脚步快到 220 BPM。",
+        "en": "D-Cee’s monster crawls out of a citrus fruit, then races away at 220 BPM.",
+        "ja": "一個の柑橘から飛び出した、D-Ceeの怪獣。その足取りは220 BPM。"
+      }
+    },
+    {
+      "songId": 521,
+      "sourceFacts": {
+        "title": "ECHO",
+        "artist": "CIRCRUSH",
+        "aliases": [
+          "回声"
+        ]
+      },
+      "clues": {
+        "zh-CN": "CIRCRUSH 向远处喊了一声，山谷把它送了回来；中文绰号只有两个字。",
+        "en": "CIRCRUSH calls into the distance and the valley sends the sound back. The Chinese nickname is just two characters long.",
+        "ja": "遠くへ放ったCIRCRUSHの声を、谷が送り返す。中国語の呼び名は、たった二文字。"
+      }
+    },
+    {
+      "songId": 593,
+      "sourceFacts": {
+        "title": "conflict",
+        "artist": "siromaru + cranky",
+        "aliases": [
+          "公交车"
+        ]
+      },
+      "clues": {
+        "zh-CN": "siromaru 与 Cranky 碰面，曲名里起了“冲突”，玩家的绰号里却开来一辆“公交车”。",
+        "en": "siromaru meets Cranky: a clash in the title, but a bus pulling up in the players’ nickname.",
+        "ja": "siromaruとCrankyが出会い、曲名には「衝突」が。ところがプレイヤーの呼び名には「バス」がやって来る。"
+      }
+    },
+    {
+      "songId": 641,
+      "sourceFacts": {
+        "title": "Calamity Fortune",
+        "artist": "LeaF",
+        "aliases": [
+          "东风谷早苗"
+        ]
+      },
+      "clues": {
+        "zh-CN": "灾厄与幸运挤进 LeaF 的同一个曲名，“东风谷早苗”是玩家留给它的另一条路标。",
+        "en": "Disaster and luck share a title in this LeaF track. The players’ nickname “Sanae Kochiya” is another way to find it.",
+        "ja": "LeaFの曲名で、災厄と幸運が同居する。プレイヤーが残したもう一つの目印は「東風谷早苗」。"
+      }
+    },
+    {
+      "songId": 689,
+      "sourceFacts": {
+        "title": "Credits",
+        "artist": "Frums",
+        "aliases": [
+          "学分",
+          "制作组"
+        ],
+        "charts": [
+          {
+            "type": "standard",
+            "difficulty": 3,
+            "level": "14+"
+          }
+        ]
+      },
+      "clues": {
+        "zh-CN": "从片尾的制作人员名单，猜到玩家口中的“学分”；Frums 给这个词配上了 14+ 的标准紫谱。",
+        "en": "From the names at the end of a film to what you earn for a course: Frums gives this word a 14+ standard MASTER chart.",
+        "ja": "映画の最後に並ぶ名前から、授業で取る「単位」へ。同じ英単語に、Frumsが14+のスタンダード紫譜面を添える。"
+      }
+    },
+    {
+      "songId": 734,
+      "sourceFacts": {
+        "title": "ENERGY SYNERGY MATRIX",
+        "artist": "Tanchiky",
+        "aliases": [
+          "一只猫拖着另一只猫跑"
+        ],
+        "bpm": 160
+      },
+      "clues": {
+        "zh-CN": "一只猫拖着另一只猫跑，Tanchiky 给这趟追逐配上 160 BPM；能量与协同，最后都落进一个矩阵。",
+        "en": "One cat drags another along to Tanchiky’s 160-BPM chase. Energy and cooperation finally fall into a matrix.",
+        "ja": "一匹の猫がもう一匹を引っ張って走る。Tanchikyの160 BPMに乗り、エネルギーと相乗効果が最後には行列へ。"
+      }
+    },
+    {
+      "songId": 736,
+      "sourceFacts": {
+        "title": "World Vanquisher",
+        "artist": "void (Mournfinale)",
+        "aliases": [
+          "世界征服者",
+          "我的碗筷洗"
+        ]
+      },
+      "clues": {
+        "zh-CN": "征服世界的野心，到了玩家嘴里却成了“我的碗筷洗”；这次出手的是 void。",
+        "en": "A would-be conqueror of the world becomes “wash my bowls and chopsticks” in a Chinese player nickname. void is behind it.",
+        "ja": "世界征服の野望が、中国語の呼び名では「私の食器を洗って」に。この仕掛けの主はvoid。"
+      }
+    },
+    {
+      "songId": 738,
+      "sourceFacts": {
+        "title": "Brain Power",
+        "artist": "ノマ",
+        "aliases": [
+          "脑力",
+          "地精老头"
+        ]
+      },
+      "clues": {
+        "zh-CN": "跟着“地精老头”动动脑，ノマ 把大脑的力量直接写进了歌名。",
+        "en": "Give your mind a workout with the players’ “old goblin”; NOMA puts the power of the mind right in the title.",
+        "ja": "プレイヤーの呼ぶ「ゴブリン爺さん」と頭をひねろう。ノマは頭脳の力を、そのまま曲名にしている。"
+      }
+    },
+    {
+      "songId": 773,
+      "sourceFacts": {
+        "title": "SILENT BLUE",
+        "artist": "かねこちはる",
+        "aliases": [
+          "静蓝",
+          "四块钱"
+        ]
+      },
+      "clues": {
+        "zh-CN": "かねこちはる 的蓝色悄无声息，玩家却偏偏用“四块钱”给它记账。",
+        "en": "かねこちはる paints a quiet blue, yet the players put it on the bill as “four yuan”.",
+        "ja": "かねこちはるの青は静かなのに、プレイヤーの帳簿にはなぜか「四元」と記される。"
+      }
+    },
+    {
+      "songId": 834,
+      "sourceFacts": {
+        "title": "PANDORA PARADOXXX",
+        "artist": "削除",
+        "aliases": [
+          "潘多拉魔盒",
+          "新手教程"
+        ],
+        "charts": [
+          {
+            "type": "standard",
+            "difficulty": 4,
+            "level": "15"
+          }
+        ]
+      },
+      "clues": {
+        "zh-CN": "别急着打开削除的盒子；绰号“新手教程”的背后，藏着 15 级的标准白谱。",
+        "en": "Think twice before opening Sakuzyo’s box. Behind the nickname “beginner tutorial” waits a level-15 standard Re:MASTER chart.",
+        "ja": "削除の箱を開けるのは少し待って。「初心者チュートリアル」の呼び名の奥には、レベル15のスタンダード白譜面が潜む。"
+      }
+    },
+    {
+      "songId": 1568,
+      "sourceFacts": {
+        "title": "INTERNET OVERDOSE",
+        "artist": "Aiobahn feat. KOTOKO",
+        "aliases": [
+          "超天酱"
+        ]
+      },
+      "clues": {
+        "zh-CN": "超天酱还在线，Aiobahn 与 KOTOKO 也没按下退出键；曲名把上网写成了一次过量摄入。",
+        "en": "“超天酱” is still online, and Aiobahn and KOTOKO have not logged off either. The title treats the internet as something you can take too much of.",
+        "ja": "「超天酱」はまだオンライン。AiobahnもKOTOKOもログアウトしない。曲名では、ネットを摂りすぎたことになっている。"
+      }
+    }
+  ]
+}

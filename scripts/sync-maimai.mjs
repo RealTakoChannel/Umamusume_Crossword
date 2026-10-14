@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { selectEnglishSongs, validateSongs, songClues } from '../src/songs.js';
+import { selectEnglishSongs, validateSongs } from '../src/songs.js';
+import { loadAuthoredSongClues } from './maimai-clues.mjs';
 import { validateLevel } from '../src/game.js';
 
 const root = new URL('../data/', import.meta.url);
@@ -43,6 +44,7 @@ if (!args.length || args[0] === '--from') {
 } else throw new Error('Use --snapshot to regenerate offline, --from <songs> <aliases>, or no arguments to fetch the API.');
 
 const registry = validateSongs({ schemaVersion: 1, source: snapshot.source, songs: selectEnglishSongs(snapshot) });
+const authoredClues = await loadAuthoredSongClues(registry.songs);
 // Positions are reviewed separately. Refreshing metadata never silently repacks a board.
 const levelUrl = new URL('levels/maimai-1-en.json', root);
 const level = JSON.parse(await readFile(levelUrl, 'utf8'));
@@ -50,7 +52,7 @@ const byId = new Map(registry.songs.map((song) => [song.id, song]));
 for (const entry of level.entries) {
   const song = byId.get(entry.songId);
   if (!song) throw new Error(`Unknown board song: ${entry.songId}`);
-  entry.answer = song.answer; entry.clues = songClues(song);
+  entry.answer = song.answer; entry.clues = authoredClues.get(song.id);
 }
 validateLevel(level, [], registry.songs);
 await mkdir(new URL('sources/', root), { recursive: true });

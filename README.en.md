@@ -6,7 +6,7 @@ A multilingual crossword game with Umamusume character names and maimai DX Engli
 
 The interface and clues support Simplified Chinese, English and Japanese. Answers can use English letters or katakana, independently of the interface language. The catalog contains five collections, nine puzzles, 97 characters and 22 songs.
 
-The maimai collection uses English titles only; every song has at least one level 13–15 chart, including 13+ and 14+. Clues use artists, community aliases, BPM and chart levels from the LXNS API. Lookups accept titles, artists and aliases. Titles with digits and non-English titles are excluded in this first edition; there is no katakana counterpart. See [maimai sources and maintenance](docs/舞萌DX题库与来源.md) for the snapshot and refresh commands.
+The maimai collection uses English titles only; every song has at least one level 13–15 chart, including 13+ and 14+. Each clue is individually written using title meanings and artists, community aliases, BPM or chart levels from the LXNS API. Lookups accept titles, artists and aliases. Titles with digits and non-English titles are excluded in this first edition; there is no katakana counterpart. See [maimai sources and maintenance](docs/舞萌DX题库与来源.md) for the editorial clues, snapshot and refresh commands.
 
 ## Features
 

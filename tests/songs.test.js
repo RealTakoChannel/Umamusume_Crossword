@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { checkData } from '../scripts/check-data.mjs';
-import { ENGLISH_SONG_SELECTION, qualifyingCharts, selectEnglishSongs, searchSongs, songClues, validateSongs } from '../src/songs.js';
+import { ENGLISH_SONG_SELECTION, qualifyingCharts, selectEnglishSongs, searchSongs, validateSongs } from '../src/songs.js';
+import { validateAuthoredSongClues } from '../scripts/maimai-clues.mjs';
 import { GameSession, entryCells, feedbackFor, normalizeAnswer, validateLevel } from '../src/game.js';
 import { revisionContent } from '../src/analytics-protocol.js';
 
@@ -10,6 +11,8 @@ const { levels, songs, characters } = await checkData();
 const level = levels.find((item) => item.id === 'maimai-1-en');
 const registry = JSON.parse(await readFile(new URL('../data/maimai.json', import.meta.url)));
 const snapshot = JSON.parse(await readFile(new URL('../data/sources/maimai-api.json', import.meta.url)));
+const clueCatalog = JSON.parse(await readFile(new URL('../data/maimai-clues.json', import.meta.url)));
+const authoredClues = validateAuthoredSongClues(clueCatalog, songs);
 const solution = Object.fromEntries(level.entries.flatMap((entry) => entryCells(entry).map((key, i) => [key, entry.answer[i]])));
 
 test('maimai snapshot joins API song IDs, preserves titles/artists/aliases and supports 13–15 charts', () => {
@@ -47,16 +50,15 @@ test('only reviewed English titles enter the registry; API drift fails instead o
   assert.throws(() => selectEnglishSongs(missingAlias), /changed/);
 });
 
-test('maimai has one connected English board, 11 across/11 down, with source-derived trilingual clues', () => {
+test('maimai has one connected English board, 11 across/11 down, with independently authored trilingual clues', () => {
   assert.equal(levels.filter((item) => item.difficulty === 'maimai').length, 1);
   assert.equal(level.answerLanguage, 'en');
   assert.equal(level.entries.length, 22);
   for (const direction of ['across', 'down']) assert.equal(level.entries.filter((entry) => entry.direction === direction).length, 11);
   validateLevel(level, characters, songs);
   for (const entry of level.entries) {
-    const song = songs.find((song) => song.id === entry.songId);
     assert.equal(entry.characterId, undefined);
-    assert.deepEqual(entry.clues, songClues(song));
+    assert.deepEqual(entry.clues, authoredClues.get(entry.songId));
   }
   const unknown = structuredClone(level); unknown.entries[0].songId = 999999;
   assert.throws(() => validateLevel(unknown, characters, songs), /song mismatch/);
@@ -66,6 +68,26 @@ test('maimai has one connected English board, 11 across/11 down, with source-der
   assert.throws(() => validateLevel(kana, characters, songs), /English/);
   const crossing = structuredClone(level); crossing.entries[0].row++;
   assert.throws(() => validateLevel(crossing, characters, songs));
+});
+
+test('editorial clues require complete unique wording and review when cited API facts change', () => {
+  const missing = structuredClone(clueCatalog); missing.entries.pop();
+  assert.throws(() => validateAuthoredSongClues(missing, songs), /Invalid/);
+  const duplicated = structuredClone(clueCatalog); duplicated.entries[1].clues.en = duplicated.entries[0].clues.en;
+  assert.throws(() => validateAuthoredSongClues(duplicated, songs), /duplicate/);
+  const untranslated = structuredClone(clueCatalog); delete untranslated.entries[0].clues.ja;
+  assert.throws(() => validateAuthoredSongClues(untranslated, songs), /Invalid/);
+  for (const mutate of [
+    (song) => { song.artist += ' changed'; },
+    (song) => { song.aliases = []; },
+    (song) => { song.bpm++; },
+  ]) {
+    const changed = structuredClone(songs); mutate(changed.find((song) => song.id === 456));
+    assert.throws(() => validateAuthoredSongClues(clueCatalog, changed), /source review/);
+  }
+  const newCharts = structuredClone(songs);
+  newCharts.find((song) => song.id === 834).charts.find((chart) => chart.difficulty === 4).level = '14+';
+  assert.throws(() => validateAuthoredSongClues(clueCatalog, newCharts), /source review/);
 });
 
 test('song lookup supports title fragments, artists, Chinese aliases and exact-match ranking', () => {

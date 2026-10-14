@@ -1,12 +1,14 @@
 import { readFile } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { validateCharacters, validateLevel } from '../src/game.js';
-import { selectEnglishSongs, validateSongs, songClues } from '../src/songs.js';
+import { selectEnglishSongs, validateSongs } from '../src/songs.js';
+import { loadAuthoredSongClues } from './maimai-clues.mjs';
 const root = new URL('../data/', import.meta.url);
 const read = async (path) => JSON.parse(await readFile(new URL(path, root), 'utf8'));
 export async function checkData() {
   const registry = validateCharacters(await read('characters.json'));
   const songRegistry = validateSongs(await read('maimai.json'));
+  const authoredClues = await loadAuthoredSongClues(songRegistry.songs);
   const snapshot = await read('sources/maimai-api.json');
   const expectedSongs = selectEnglishSongs(snapshot);
   if (JSON.stringify(expectedSongs) !== JSON.stringify(songRegistry.songs) || JSON.stringify(snapshot.source) !== JSON.stringify(songRegistry.source)) throw new Error('Song registry/API snapshot mismatch');
@@ -21,8 +23,7 @@ export async function checkData() {
     levels.push(level);
   }
   for (const level of levels.filter((level) => level.difficulty === 'maimai')) for (const entry of level.entries) {
-    const song = songRegistry.songs.find((song) => song.id === entry.songId);
-    if (JSON.stringify(entry.clues) !== JSON.stringify(songClues(song))) throw new Error(`Song clue/source mismatch: ${entry.songId}`);
+    if (JSON.stringify(entry.clues) !== JSON.stringify(authoredClues.get(entry.songId))) throw new Error(`Song clue/editorial catalog mismatch: ${entry.songId}`);
   }
   for (const english of levels.filter((level) => level.answerLanguage === 'en')) {
     const kana = levels.find((level) => level.id === english.id.replace(/-en$/, '-kana'));
