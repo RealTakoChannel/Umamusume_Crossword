@@ -64,6 +64,9 @@ function renderStrings() {
   document.documentElement.lang = language;
   document.title = t('pageTitle');
   document.querySelectorAll('[data-i18n]').forEach((element) => { element.textContent = t(element.dataset.i18n); });
+  document.querySelectorAll('[data-i18n-label]').forEach((element) => {
+    const label=t(element.dataset.i18nLabel); element.setAttribute('aria-label',label); element.title=label;
+  });
   for (const id of ['ui-language','setup-language']) { $(id).value = language; $(id).setAttribute('aria-label', t('uiLanguage')); }
   $('mode-switch').setAttribute('aria-label', t('modeLabel'));
   $('change-direction').setAttribute('aria-label', t('switchDirection'));
