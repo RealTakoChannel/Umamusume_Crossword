@@ -1,5 +1,6 @@
 export const messages = {
   'zh-CN': {
+    sourceRepository:'查看 GitHub 开源仓库（在新标签页打开）',
     statsTitle:'本关游玩统计', statsStarts:'开始局数', statsSolved:'成功通关', statsAverage:'平均通关用时',
     statsLoading:'正在读取统计…', statsDisabled:'此预览暂未连接云端统计。', statsError:'统计暂时无法读取，不影响游玩。',
     statsNoCompletions:'暂无', statsRefresh:'刷新', statsChallenge:'全程挑战且未查看答案：通关 {n} 局 · 平均 {time}',
@@ -50,6 +51,7 @@ export const messages = {
     endActionNote:'提前结束后停止计时，并公布整张题盘的答案。',
   },
   en: {
+    sourceRepository:'View source on GitHub (opens in a new tab)',
     statsTitle:'Puzzle statistics', statsStarts:'Games started', statsSolved:'Games solved', statsAverage:'Average solve time',
     statsLoading:'Loading statistics…', statsDisabled:'Cloud statistics are not connected in this preview.', statsError:'Statistics are unavailable. You can keep playing.',
     statsNoCompletions:'No results', statsRefresh:'Refresh', statsChallenge:'Challenge throughout, no answer reveals: {n} solved · Average {time}',
@@ -100,6 +102,7 @@ export const messages = {
     endActionNote:'Ending early stops the timer and reveals the entire solution.',
   },
   ja: {
+    sourceRepository:'GitHubのソースコードを見る（新しいタブで開きます）',
     statsTitle:'この問題のプレイ統計', statsStarts:'開始したゲーム', statsSolved:'クリア数', statsAverage:'平均クリア時間',
     statsLoading:'統計を読み込み中…', statsDisabled:'このプレビューはクラウド統計に未接続です。', statsError:'統計を取得できません。プレイは続けられます。',
     statsNoCompletions:'データなし', statsRefresh:'更新', statsChallenge:'チャレンジのみ・解答表示なし：{n} クリア · 平均 {time}',

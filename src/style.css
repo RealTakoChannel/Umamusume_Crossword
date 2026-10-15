@@ -113,6 +113,10 @@ footer { display:flex; justify-content:space-between; gap:15px; padding:25px 0 2
 
 /* v0.2: collection selection, localization and the independent name dictionary. */
 .header-actions { display:flex; align-items:center; gap:20px; }
+.dialog-actions { display:flex; align-items:center; gap:12px; }
+.github-link { display:inline-flex; align-items:center; justify-content:center; width:36px; height:36px; flex-shrink:0; color:var(--green); border:1px solid var(--line); border-radius:8px; text-decoration:none; }
+.github-link:hover { background:var(--selected); border-color:#a6b899; }
+.github-link svg { display:block; width:21px; height:21px; fill:currentColor; }
 .language-control { display:flex; align-items:center; gap:8px; font-size:10px; color:var(--muted); }
 select { background:var(--white); border:1px solid #cbd5c0; border-radius:7px; color:var(--ink); padding:8px 10px; font:inherit; min-width:0; }
 select:focus-visible,input:focus-visible { outline:2px solid #a2b784; outline-offset:2px; }
